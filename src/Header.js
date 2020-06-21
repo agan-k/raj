@@ -1,27 +1,57 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
-export default function Header() {
-   return (
-      <div className="header-container">
 
-      <header>
-            <nav>
-               <ul className="menu">
-                  <li>Home</li>
-                  <li>Bio</li>
-                  <ul id="dropdown-media">
-                     <li id="media">Media</li>
-                     <li>photos</li>
-                     <li>videos</li>
+class Header extends React.Component {
+   constructor() {
+      super()
+      this.state = {
+         show: false
+      }
+      this.showDropdown = this.showDropdown.bind(this)
+      this.hideDropdown = this.hideDropdown.bind(this)
+   }
+
+   showDropdown() {
+      this.setState({
+         show: true
+      })
+   }
+   hideDropdown() {
+      this.setState({
+         show: false
+      })
+   }
+   render() {
+      return (
+         <div className="header-container">
+   
+         <header>
+               <nav>
+                  <ul className="menu">
+                     <li><Link to='/'>Home</Link></li>
+                     <li><Link to='/bio'>Bio</Link></li>
+                     <ul
+                        className={`${this.state.show ?
+                        "show" : ""} dropdown-media`}
+                        onMouseEnter={this.showDropdown}
+                        onMouseLeave={this.hideDropdown}
+                     >
+                        <li id="media">Media</li>
+                        <li><Link to='/photos'>Photos</Link></li>
+                        <li><Link to='/videos'>Videos</Link></li>
+                     </ul>
+                     <li><Link to='/shows'>Shows</Link></li>
+                     <li><Link to='/discography'>Discography</Link></li>
+                     <li><Link to='/press'>Press</Link></li>
+                     <li><Link to='/store'>Store</Link></li>
+                     
                   </ul>
-                  <li>Shows</li>
-                  <li>Discography</li>
-                  <li>Press</li>
-                  <li>Store</li>
-                  
-               </ul>
-            </nav> 
-      </header>
-      </div>
-   )
+               </nav> 
+         </header>
+         </div>
+      )
+
+   }
 }
+export default Header

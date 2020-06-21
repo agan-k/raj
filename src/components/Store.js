@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Store() {
    return (
-      <div>
-         
+      <div className="store">
+         <h1>Store here...</h1>
       </div>
    )
 }

@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Videos() {
    return (
-      <div>
+      <div className="videos">
+         <h1>Videos here..</h1>
          
       </div>
    )

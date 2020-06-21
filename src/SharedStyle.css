@@ -1,21 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@900&display=swap');
 body {
-  margin: 0 2vw;
+  margin: 0;
   /* background-color: black; */
 }
-
+.App {
+   margin: 0;
+}
+.App .layout {
+   opacity: 0;
+   margin: 0;
+}
+.App .layout.view {
+   opacity: 1;
+   height: 100vh;
+}
 /* ============== LANDING ================ */
 .landing {
    /* padding-top: 20vh; */
+   position: fixed;
+   top: 0;
    height: 100vh;
    width: 100vw;
    margin: 0;
    background-color: black ;
-   background-image: url(./assets/backgrounds/1a.jpg);
-   background-size: 93%;
+   background: url(./assets/backgrounds/1a.jpg);
+   background-size: cover;
    background-repeat: no-repeat;
    background-position: center top;
+}
+.hide.landing {
+   display: none;
 }
 .album-container {
    display: flex;
@@ -58,6 +73,8 @@ font-family: 'Roboto', sans-serif;
 font-size: 3em;
 text-transform: uppercase;
 color: rgb(255, 255, 255);
+cursor: pointer;
+margin-top: 0;
 }
 
 /* ============== HEADER ================ */
@@ -66,6 +83,7 @@ color: rgb(255, 255, 255);
    background: url('./assets/backgrounds/3.jpg') no-repeat;
    background-size: cover;
    background-position: center top;
+   /* background-color: rgba(119, 4, 4, 0.288); */
 }
 header {
    height: 40vh;
@@ -77,6 +95,10 @@ nav {
    padding-top: 32vh;
    display: flex;
 }
+nav a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+}
 .menu {
    display: flex;
    padding-left: 0;
@@ -85,7 +107,8 @@ nav {
    text-decoration: none;
    list-style-type: none;
    text-transform: uppercase;
-   font-family: 'Oswald', sans-serif;   color: rgb(255, 255, 255);
+   font-family: 'Oswald', sans-serif;   
+   color: rgb(255, 255, 255);
    font-size: 1.8em;
    padding: .2em;
    cursor: pointer;
@@ -94,29 +117,59 @@ nav {
 .menu li:hover {
    opacity: 1;
 }
-#dropdown-media {
-   padding-left: 0;
+.dropdown-media {
+   padding: 0;
+   height: 2.6em;
+   overflow: hidden;
 }
-#dropdown-media li {
+.show {
+   height: min-content;
+   background-color: rgb(170, 156, 118);
+   
+}
+.dropdown-media li {
    font-size: 1em;
    padding-left: .5em;
-   color: black;
+   /* color: black; */
 }
 #media {
    font-size: 1.8em !important;
    padding-left: .2em !important;
    color: white !important;
-}
-/* ============== LAYOUT ================ */
-.layout {
-   height: 100vh;
-   /* background-color: white; */
+   overflow: visible !important;
 }
 /* ============== HOME ================ */
 .home {
-   margin: 0;
    height: 100%;
    background-color: white;
+}
+/* ============== BIO ================ */
+.bio {
+   height: 100%;
+}
+/* ============== Photos ================ */
+.photos {
+   height: 100%;
+}
+/* ============== Videos ================ */
+.videos {
+   height: 100%;
+}
+/* ============== SHOWS ================ */
+.shows {
+   height: 100%;
+}
+/* ============== DISCOGRAPHY ================ */
+.discography {
+   height: 100%;
+}
+/* ============== PRESS ================ */
+.press {
+   height: 100%;
+}
+/* ============== STORE ================ */
+.store {
+   height: 100%;
 }
 /* ============== FOOTER ================ */
 .footer-container {
