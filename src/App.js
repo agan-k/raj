@@ -5,10 +5,11 @@ import Home from './components/Home'
 import Bio from './components/Bio'
 import Photos from './components/Photos'
 import Videos from './components/Videos'
-import Discography from './components/Discography'
+import Discography from './components/Discography/Discography'
 import Shows from './components/Shows'
 import Press from './components/Press'
 import Store from './components/Store'
+import Contact from './components/Contact'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -89,6 +90,9 @@ class App extends React.Component {
                </Route>
                <Route path='/store'>
                   <Store />
+               </Route>
+               <Route path='/contact'>
+                  <Contact />
                </Route>
             </Switch>
             <Footer/>

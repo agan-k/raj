@@ -45,6 +45,7 @@ class Header extends React.Component {
                      <li><Link to='/discography'>Discography</Link></li>
                      <li><Link to='/press'>Press</Link></li>
                      <li><Link to='/store'>Store</Link></li>
+                     <li><Link to='/contact'>Contact</Link></li>
                      
                   </ul>
                </nav> 
