@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@900&display=swap');
 body {
-  margin: 0;
+  margin: 0 2vw;
+  /* background-color: black; */
 }
+
 /* ============== LANDING ================ */
 .landing {
    /* padding-top: 20vh; */
@@ -56,4 +58,68 @@ font-family: 'Roboto', sans-serif;
 font-size: 3em;
 text-transform: uppercase;
 color: rgb(255, 255, 255);
+}
+
+/* ============== HEADER ================ */
+.header-container {
+   height: 40vh;
+   background: url('./assets/backgrounds/3.jpg') no-repeat;
+   background-size: cover;
+   background-position: center top;
+}
+header {
+   height: 40vh;
+   margin: 0;
+}
+nav {
+   width: min-content;
+   margin: 0 auto;
+   padding-top: 32vh;
+   display: flex;
+}
+.menu {
+   display: flex;
+   padding-left: 0;
+}
+.menu li {
+   text-decoration: none;
+   list-style-type: none;
+   text-transform: uppercase;
+   font-family: 'Oswald', sans-serif;   color: rgb(255, 255, 255);
+   font-size: 1.8em;
+   padding: .2em;
+   cursor: pointer;
+   opacity: .7;
+}
+.menu li:hover {
+   opacity: 1;
+}
+#dropdown-media {
+   padding-left: 0;
+}
+#dropdown-media li {
+   font-size: 1em;
+   padding-left: .5em;
+   color: black;
+}
+#media {
+   font-size: 1.8em !important;
+   padding-left: .2em !important;
+   color: white !important;
+}
+/* ============== LAYOUT ================ */
+.layout {
+   height: 100vh;
+   /* background-color: white; */
+}
+/* ============== HOME ================ */
+.home {
+   margin: 0;
+   height: 100%;
+   background-color: white;
+}
+/* ============== FOOTER ================ */
+.footer-container {
+   height: 10em;
+   background-color: grey;
 }

@@ -18,7 +18,8 @@ export default function Landing() {
                Sam Aning
             </p>
                <button>listen/buy</button><br></br>
-               <Link id="enter" to="/home">enter site >></Link>
+               <Link id="enter" to="/welcome">enter site >></Link>
+               {/* <a  id="enter" href="/index.js">enter site >></a> */}
             </div>
          </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import Landing from './components/Landing'
+import Layout from './Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Discography from './components/Discography'
@@ -17,11 +18,12 @@ import './SharedStyle.css'
 function App() {
   return (
     <div className="App">
-        <Header />
-
         <Switch>
            <Route exact path='/'>
               <Landing />
+           </Route>
+           <Route path='/welcome'>
+              <Layout />
            </Route>
            <Route path='/home'>
               <Home />
@@ -44,9 +46,7 @@ function App() {
            <Route path='/store'>
               <Store />
            </Route>
-           
         </Switch>
-        <Footer />
     </div>
   )
 }
