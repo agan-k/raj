@@ -22,7 +22,7 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
-         showLanding: true
+         // showLanding: true
       }
       this.closeLanding = this.closeLanding.bind(this)
    }

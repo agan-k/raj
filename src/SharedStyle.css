@@ -121,6 +121,7 @@ nav a {
    padding: 0;
    height: 2.6em;
    overflow: hidden;
+   z-index: 9 !important;
 }
 .show {
    height: min-content;
@@ -165,15 +166,27 @@ nav a {
    display: flex;
    /* align-content: space-around; */
 }
-.albums {
-   width: 60%;
-   height: 100%;
-   background-color: rgb(3, 21, 184);
-}
-.album-detail {
+.albums-container {
+   display: flex;
+   flex-wrap: wrap;
    width: 40%;
+   height: min-content;
+   margin: 2em 0 0 0;
+}
+.albums img {
+   height: 8em;
+   margin: 1em;
+   border: .5px solid grey;
+}
+.album-select {
+   width: 50%;
    height: 100%;
-   background-color: rgb(207, 22, 22);
+   padding: 2em 0 0 2em;
+   /* background-color: rgb(207, 22, 22); */
+}
+.album-detail img {
+   height: 18em;
+   border: .5px solid gray;
 }
 /* ============== PRESS ================ */
 .press {
