@@ -162,10 +162,11 @@ nav a {
 }
 /* ============== DISCOGRAPHY ================ */
 .discography {
-   height: 100%;
+   height: min-content;
    display: flex;
    /* align-content: space-around; */
 }
+/* ============== albums ============= */
 .albums-container {
    display: flex;
    flex-wrap: wrap;
@@ -174,20 +175,53 @@ nav a {
    margin: 2em 0 0 0;
 }
 .albums img {
-   height: 8em;
+   height: 6em;
    margin: 1em;
    border: .5px solid grey;
 }
 .album-select {
    width: 50%;
    height: 100%;
-   padding: 2em 0 0 2em;
-   /* background-color: rgb(207, 22, 22); */
+   padding: 3em 0 0 3em;
+   /* background-color: red; */
+}
+/* ============= album detail ======== */
+.album-detail {
+   width: min-content;
+   display: flex;
+   /* background-color: red; */
 }
 .album-detail img {
-   height: 18em;
+   height: 15em;
+   width: 15em;
+   margin: 0 2em 0 0;
    border: .5px solid gray;
 }
+.album-info {
+   width: 22vw;
+   font-family: Helvetica, sans-serif;
+   color: grey;
+   font-weight: 100;
+   font-size: .8em;
+   /* background-color: gray; */
+}
+.album-info .album-title {
+   font-size: 1.6em;
+   margin: 0 0 1em 0;
+}
+.track-list p{
+   margin: 0;
+   padding: 0;
+   line-height: .3em;
+}
+.credits p {
+   margin: .2em 0 0 0;
+   /* line-height: 1em; */
+}
+.credits.one p {
+   /* margin: 1em 0 0 0; */
+}
+
 /* ============== PRESS ================ */
 .press {
    height: 100%;

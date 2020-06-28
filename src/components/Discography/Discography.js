@@ -1,56 +1,85 @@
 import React from 'react'
-// import Albums from './Albums'
 import AlbumDetail from './AlbumDetail'
 
-import pistils from '../../assets/albums/pistils.jpg'
-import first from '../../assets/albums/1.jpg'
-import second from '../../assets/albums/2.jpg'
-import third from '../../assets/albums/3.jpg'
-import fourth from '../../assets/albums/4.jpg'
-import fifth from '../../assets/albums/5.png'
-import sixth from '../../assets/albums/1.jpg'
-import seventh from '../../assets/albums/2.jpg'
-import eight from '../../assets/albums/3.jpg'
-import ninth from '../../assets/albums/4.jpg'
-import tenth from '../../assets/albums/5.png'
+import albumsData from './albumsData'
 
 class Discography extends React.Component {
    constructor() {
       super()
       this.state = {
-         albumSelect: null
+         albumSelect: null,
+         // albumsData: albumsData
       }
       
    }
 
+   // componentDidMount(album) {
+   //    this.setState({
+   //       albumSelect: firstDetail
+   //    })
+   // }
+
    handleSelect = (item, index) =>{
       this.setState({
-         albumSelect: item
+         albumSelect: item,
+         // tracks: item.tracks
       })
    }
 
    render() {
-      let albumsArr = [pistils, first, second, third, fourth, fifth, sixth, seventh,
-      eight, ninth, tenth]
-   let albums = albumsArr.map((item, index) =>
-      <div
-         className="albums"
-         onClick={() => this.handleSelect(item, index)}
-         >
-         <img src={item} />
-      </div>
-   )
+      let firstDetail = albumsData.filter(album => album.id == 1) 
+      // console.log(firstDetail[0].cover)
+   
+      let albums = albumsData.map((item, index) =>
+         <div
+            className="albums"
+            onClick={() => this.handleSelect(item, index)}
+            >
+            <img src={item.cover} />
+         </div>
+      )
+      let trackList = albumsData[0].tracks.map((item, index) =>
+         <div>
+            <p>{item}</p><br/>
+         </div>
+         )
 
       return (
          <div className="discography">
+            
             <div className='album-select'>
-               {this.state.albumSelect && (
-                
+
+               {this.state.albumSelect ? 
+                  <AlbumDetail
+                     albumDetail={this.state.albumSelect}
+                     albumsData={albumsData}
+                     trackList={trackList}
+                  /> :
+                  
+                     <div className="album-detail">
+                     <img
+                        // style={{height: '15em'}}
+                        src={albumsData[0].cover} />
+                        <div className="album-info">
+                           <p className="album-title">{albumsData[0].title}</p>
+                           <p className="track-list">{trackList}</p>
+                           <p className="credits one">{firstDetail[0].credits1}</p>
+                           <p className="credits two">{firstDetail[0].credits2}</p>
+                           <p className="credits three">{firstDetail[0].credits3}</p>
+                       </div>
+                     </div>
+                     
+                  
+               }
+               {/* {this.state.albumSelect && (
                   <AlbumDetail
                      albumDetail={this.state.albumSelect}
                   />
-               )}
+               )} */}
+               
+            
             </div>
+                  
             <div className='albums-container'>
                {albums}
             </div>
