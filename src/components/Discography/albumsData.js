@@ -43,7 +43,8 @@ let albumsData = [
       ],
       credits3: [
         'Artwork,"Garden of Earthly Delights" by Dr. Priyantha Udagedera. Design by Lucas Carrillo'
-      ]
+      ],
+      
       
    },
 

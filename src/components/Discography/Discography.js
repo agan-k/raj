@@ -22,7 +22,7 @@ class Discography extends React.Component {
    handleSelect = (item, index) =>{
       this.setState({
          albumSelect: item,
-         // tracks: item.tracks
+         tracks: item.tracks
       })
    }
 
@@ -38,9 +38,9 @@ class Discography extends React.Component {
             <img src={item.cover} />
          </div>
       )
-      let trackList = albumsData[0].tracks.map((item, index) =>
+      let trackList = albums.map((item, index) =>
          <div>
-            <p>{item}</p><br/>
+            <p>{item.tracks}</p><br/>
          </div>
          )
 
@@ -48,13 +48,15 @@ class Discography extends React.Component {
          <div className="discography">
             
             <div className='album-select'>
-
-               {this.state.albumSelect ? 
+{/* 
+               {this.state.albumSelect ?  */}
                   <AlbumDetail
                      albumDetail={this.state.albumSelect}
                      albumsData={albumsData}
-                     trackList={trackList}
-                  /> :
+                     albums={albums}
+                     trackList={trackList }
+               /> 
+                  {/* :
                   
                      <div className="album-detail">
                      <img
@@ -63,14 +65,14 @@ class Discography extends React.Component {
                         <div className="album-info">
                            <p className="album-title">{albumsData[0].title}</p>
                            <p className="track-list">{trackList}</p>
-                           <p className="credits one">{firstDetail[0].credits1}</p>
-                           <p className="credits two">{firstDetail[0].credits2}</p>
-                           <p className="credits three">{firstDetail[0].credits3}</p>
+                           <p className="credits one">{albumsData[0].credits1}</p>
+                           <p className="credits two">{albumsData[0].credits2}</p>
+                           <p className="credits three">{albumsData[0].credits3}</p>
                        </div>
                      </div>
                      
                   
-               }
+               } */}
                {/* {this.state.albumSelect && (
                   <AlbumDetail
                      albumDetail={this.state.albumSelect}

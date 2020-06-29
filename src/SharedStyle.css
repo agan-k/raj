@@ -164,7 +164,6 @@ nav a {
 .discography {
    height: min-content;
    display: flex;
-   /* align-content: space-around; */
 }
 /* ============== albums ============= */
 .albums-container {
@@ -183,13 +182,11 @@ nav a {
    width: 50%;
    height: 100%;
    padding: 3em 0 0 3em;
-   /* background-color: red; */
 }
 /* ============= album detail ======== */
 .album-detail {
    width: min-content;
    display: flex;
-   /* background-color: red; */
 }
 .album-detail img {
    height: 15em;
@@ -203,16 +200,16 @@ nav a {
    color: grey;
    font-weight: 100;
    font-size: .8em;
-   /* background-color: gray; */
 }
 .album-info .album-title {
    font-size: 1.6em;
    margin: 0 0 1em 0;
 }
-.track-list p{
+.album-info .track-list {
    margin: 0;
    padding: 0;
-   line-height: .3em;
+   line-height: 1.8em;
+   /* background-color: red; */
 }
 .credits p {
    margin: .2em 0 0 0;
