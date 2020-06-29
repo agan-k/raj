@@ -22,7 +22,7 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
-         // showLanding: true
+         showLanding: true
       }
       this.closeLanding = this.closeLanding.bind(this)
    }
@@ -50,10 +50,13 @@ class App extends React.Component {
                    Lara Bello and<br></br>
                    Sam Aning
                 </p>
-                   <button>listen/buy</button><br></br>
-                     <h3 id="enter"
-                        onClick={this.closeLanding}>enter site >></h3>
-                   {/* <a  id="enter" href="/index.js">enter site >></a> */}
+                     <button onClick={this.closeLanding}>
+                        <Link to='/discography'>Listen/Buy</Link>
+                     </button><br/>
+                     <h3
+                        id="enter"
+                        onClick={this.closeLanding}>enter site >>
+                     </h3>
                 </div>
              </div>
             </div>
@@ -61,12 +64,6 @@ class App extends React.Component {
             <div className={`${this.state.showLanding ? "" : "view"} layout`}>
             <Header />
             <Switch>
-               {/* <Route exact path='/'>
-                  <Landing />
-               </Route>
-               <Route path='/welcome'>
-                  <Layout />
-               </Route> */}
                <Route exact path='/'>
                   <Home />
                </Route>

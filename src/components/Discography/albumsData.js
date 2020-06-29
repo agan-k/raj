@@ -33,7 +33,7 @@ let albumsData = [
          'First Last - instrument',
          'First Last - instrument',
          'First Last - instrument',
-         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Rajiv Jayaweera. Produced by Rajiv Jayaweera'
@@ -64,6 +64,13 @@ let albumsData = [
          '7. Track 0:00'
          
       ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
+      ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
@@ -92,6 +99,13 @@ let albumsData = [
          '6. Track 0:00',
          '7. Track 0:00'
          
+      ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Name',
@@ -123,6 +137,13 @@ let albumsData = [
          '7. Track 0:00'
          
       ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
+      ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
@@ -152,6 +173,13 @@ let albumsData = [
          '6. Track 0:00',
          '7. Track 0:00'
          
+      ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Name',
@@ -183,6 +211,13 @@ let albumsData = [
          '7. Track 0:00'
          
       ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
+      ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
@@ -212,6 +247,13 @@ let albumsData = [
          '6. Track 0:00',
          '7. Track 0:00'
          
+      ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Name',
@@ -243,6 +285,13 @@ let albumsData = [
          '7. Track 0:00'
          
       ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
+      ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
@@ -272,6 +321,13 @@ let albumsData = [
          '6. Track 0:00',
          '7. Track 0:00'
          
+      ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Name',
@@ -303,6 +359,13 @@ let albumsData = [
          '7. Track 0:00'
          
       ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
+      ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
@@ -332,6 +395,13 @@ let albumsData = [
          '6. Track 0:00',
          '7. Track 0:00'
          
+      ],
+      personnel: [
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument',
+         'First Last - instrument'
       ],
       credits1: [
          'All songs composed by Name',

@@ -12,12 +12,12 @@ class AlbumDetail extends React.Component {
 
    render() {
 
-      // let trackList = this.props.albumDetail.tracks.map(album => 
-      //    <div >
-      //       <p>{album}</p><br/>
-      //    </div>
+      let personnelOnLoad = this.props.albumsData[0].personnel.map(item => 
+         <div >
+            <p className="personnel">{item}</p>
+         </div>
      
-      //    )
+         )
       
       let trackListOnLoad = this.props.albumsData[0].tracks.map(item =>
          <div >
@@ -40,6 +40,12 @@ class AlbumDetail extends React.Component {
                         <p className="track-list">{item}</p>
                      </>
                      )}
+                 {this.props.albumDetail.personnel.map(item =>
+                     <>
+                        <p className="personnel">{item}</p>
+                     </>
+                     )}
+                  <p className="credits one">{this.props.albumDetail.personnel}</p>
                   <p className="credits one">{this.props.albumDetail.credits1}</p>
                   <p className="credits two">{this.props.albumDetail.credits2}</p>
                   <p className="credits three">{this.props.albumDetail.credits3}</p>
@@ -51,6 +57,7 @@ class AlbumDetail extends React.Component {
                <div className="album-info">
                   <p className="album-title">{this.props.albumsData[0].title}</p>
                   {trackListOnLoad}
+                  {personnelOnLoad}
                   <p className="credits one">{this.props.albumsData[0].credits1}</p>
                   <p className="credits two">{this.props.albumsData[0].credits2}</p>
                   <p className="credits three">{this.props.albumsData[0].credits3}</p>

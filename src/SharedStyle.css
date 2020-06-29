@@ -8,12 +8,13 @@ body {
    margin: 0;
 }
 .App .layout {
+   height: 100vh;
    opacity: 0;
    margin: 0;
 }
 .App .layout.view {
    opacity: 1;
-   height: 100vh;
+   
 }
 /* ============== LANDING ================ */
 .landing {
@@ -28,6 +29,7 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center top;
+   z-index: 99;
 }
 .hide.landing {
    display: none;
@@ -67,6 +69,10 @@ body {
    border: none;
    border-radius: .3em;
 }
+.landing button a {
+   text-decoration: none;
+   color: rgb(48, 47, 47);
+}
  #enter {
 text-decoration: none;
 font-family: 'Roboto', sans-serif;
@@ -74,25 +80,26 @@ font-size: 3em;
 text-transform: uppercase;
 color: rgb(255, 255, 255);
 cursor: pointer;
-margin-top: 0;
+margin: 0 0 0 0;
 }
 
 /* ============== HEADER ================ */
 .header-container {
-   height: 40vh;
+   height: 300px;
    background: url('./assets/backgrounds/3.jpg') no-repeat;
    background-size: cover;
    background-position: center top;
    /* background-color: rgba(119, 4, 4, 0.288); */
 }
 header {
-   height: 40vh;
-   margin: 0;
+   /* height: 2em; */
+   padding: 240px 0 0 0;
 }
 nav {
    width: min-content;
+   height: min-content;
    margin: 0 auto;
-   padding-top: 32vh;
+   /* padding-top: 32vh; */
    display: flex;
 }
 nav a {
@@ -209,6 +216,12 @@ nav a {
    margin: 0;
    padding: 0;
    line-height: 1.8em;
+   /* background-color: red; */
+}
+.album-info .personnel {
+   margin: 2em 0 0 0;
+   padding: 0;
+   line-height: .3em;
    /* background-color: red; */
 }
 .credits p {
