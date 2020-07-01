@@ -92,6 +92,7 @@ margin: 0 0 0 0;
    margin: 0 0 2em 0;
 }
 header {
+   /* margin: 0 auto; */
    padding: 240px 0 0 0;
 }
 nav {
@@ -151,8 +152,8 @@ nav a {
    align-content: space-between;
    /* Your container needs a fixed height, and it 
     * needs to be taller than your tallest column. */
-   height: 2000px; 
-   width: 90vw;
+   height: 1600px; 
+   width: 80vw;
    margin: 0 auto;
  }
  
@@ -161,29 +162,31 @@ nav a {
    margin-bottom: 1%; /* Optional */
    
    font-family: Helvetica, sans-serif;
-   font-size: .9em;
+   font-size: .7em;
    font-weight: 100;
    line-height: 1.2em;
    color: grey;
    /* background-color: rgba(241, 241, 241, 0.637); */
    box-shadow: 1px 3px 8px #e9e9e9;
+   
  }
- .item img {
-    width: 100%;
-    opacity: .9;
-    /* display: inline-block; */
-    /* margin-left: 1.5em; */
-    /* margin-top: .5em; */
-
+ .video {
+    opacity: .8;
  }
  
+ .item img {
+    width: 100%;
+    opacity: .8;
+ }
  .item p {
+    letter-spacing: .1em;
    padding: 1em;
+   margin: 0;
  }
  .item h2 {
    text-align: right;
    /* height: 3em; */
-   margin-right: .4em;
+   margin: .6em .4em 0 0;
    font-weight: 300;
    line-height: .9em;
    color: black;
@@ -254,19 +257,25 @@ nav a {
 /* ============== DISCOGRAPHY ================ */
 .discography {
    height: min-content;
+   width: 80vw;
+   margin: 0 auto;
    display: flex;
+   align-content: space-between;
 }
 /* ============== albums ============= */
 .albums-container {
    display: flex;
    flex-wrap: wrap;
+   padding: 0 0 0 1em;
    width: 40%;
    height: min-content;
-   margin: 2em 0 0 0;
+   margin: 0;
+   /* background-color: red; */
 }
 .albums img {
    height: 6em;
-   margin: 1em;
+   width: 6em;
+   margin: 0 .2em;
    border: .5px solid grey;
    cursor: pointer;
    opacity: .8;
@@ -275,9 +284,10 @@ nav a {
    opacity: 1;
 }
 .album-select {
-   width: 50%;
+   width: 60%;
    height: 100%;
-   padding: 3em 0 0 3em;
+   /* padding: 3em 0 0 3em; */
+   /* background-color: royalblue; */
 }
 
 
@@ -285,6 +295,7 @@ nav a {
 .album-detail {
    width: min-content;
    display: flex;
+   
 }
 .album-detail img {
    height: 15em;
@@ -293,7 +304,7 @@ nav a {
    border: .5px solid gray;
 }
 .album-info {
-   width: 22vw;
+   width: 29vw;
    font-family: Helvetica, sans-serif;
    color: grey;
    font-weight: 100;
