@@ -1,19 +1,15 @@
 import pistils from '../../assets/albums/pistils.jpg'
-import first from '../../assets/albums/1.jpg'
-import second from '../../assets/albums/2.jpg'
-import third from '../../assets/albums/3.jpg'
-import fourth from '../../assets/albums/4.jpg'
-import fifth from '../../assets/albums/5.png'
-import sixth from '../../assets/albums/1.jpg'
-import seventh from '../../assets/albums/2.jpg'
-import eight from '../../assets/albums/3.jpg'
-import nineth from '../../assets/albums/4.jpg'
-import tenth from '../../assets/albums/5.png'
+import laniakea from '../../assets/albums/laniakea.jpg'
+import wee3c from '../../assets/albums/wee3c.png'
+import sikame from '../../assets/albums/sikame.jpg'
+import ragstretch from '../../assets/albums/ragstretch.jpg'
+
+
 
 let albumsData = [
    {
       id: 1,
-      description: 'this is description of Pistils',
+      description: 'Rajiv Jayaweera',
       cover: pistils,
       title: 'Pistils',
       label: 'Earshift Music',
@@ -28,15 +24,17 @@ let albumsData = [
          '8. Malkoha Bird 6:42',
          '9. Pistils (feat. Chris Cheek) 5:51'
       ],
+      sound_cloud: 'https://soundcloud.com/euroraj/vocie-of-memory',
       personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument'
+         'Rajiv Jayaweera – drums, thammattama, caxixi',
+         'Chris Cheek – tenor and soprano saxophone',
+         'Aaron Parks – piano',
+         'Lara Bello – voice',
+         'Hugh Stuckey – guitar',
+         'Sam Anning – double bass'
       ],
       credits1: [
-         'All songs composed by Rajiv Jayaweera. Produced by Rajiv Jayaweera'
+         'All songs composed by Rajiv Jayaweera. Produced by Rajiv Jayaweera.'
       ],
       credits2: [
         ' Mixing by James Farber. Mastering by Mark Wilder.'
@@ -50,140 +48,148 @@ let albumsData = [
 
    {
       id: 2,
-      description: 'this is description of Album2',
-      cover: first,
-      title: 'Album2',
-      label: 'Label',
+      description: 'Trio Kleine Ahnung',
+      cover: laniakea,
+      title: 'Laniakea',
+      label: 'Earshift Music',
       tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00'
-         
+         '1. Intro (C. Morgan) 0:56',
+         '2. Datameta (S. Anning) 7:59',
+         '3. Kleine Ahnung (R. Jayaweera) 5:03',
+         '4. Laniakea (C. Morgan) 5:34',
+         '5. Ripples	(S. Anning)	5:42',
+         '6. Gott Liebt Diese Welt (W. Schulz) 6:39',
+         '7. Losdy (R. Jayaweera) 6:01',
+         '8. Outro (C. Morgan) 1:39'
+
       ],
       personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument'
-      ],
-      credits1: [
-         'All songs composed by Name',
-         'Produced by Name'
+         'Carl Morgan – guitar, voice',
+         'Sam Anning – d. bass, a. guitars (Datameta)',
+         'Rajiv Jayaweera – drums',
+         '+',
+         'Sean Wayland – synth (Kleine Ahnung)'
       ],
       credits2: [
-        ' Mixing by Name',
-        'Mastering by Name'
+        'Recorded at Kindred Studio in Neukölln, Berlin in April, 2019.',
+        ' Engineered & mixed by Carl Morgan',
+        'Mastered by David Darlington'
       ],
       credits3: [
-        'Artwork by Name',
-        'Design by Name'
+        'Cover art by Scott Bergey ',
+        'Design by Elle Deslandes'
       ]
    },
+
    {
       id: 3,
-      description: 'this is description of Album3',
-      cover: second,
-      title: 'Album3',
+      description: 'Dinesen Jayaweera Anning',
+      cover: wee3c,
+      title: 'We Three See',
       label: 'Label',
       tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00'
+         '1. Sweetheart',
+         '2. Bush Baby',
+         '3. The band',
+         '4. Three',
+         '5. Daggry',
+         '6. We See',
+         '7. Goodbye'
          
       ],
       personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument'
+         'Jakob Dinesen – tenor saxophone',
+         'Sam Anning – double bass',
+         'Rajiv Jayaweera – drums'
       ],
       credits1: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ],
-      credits2: [
-        ' Mixing by Name',
-        'Mastering by Name'
-      ],
-      credits3: [
-        'Artwork by Name',
-        'Design by Name'
+         'Recorded in Copenhagen 2013.', 
+         ' Released 2015.'
       ]
+      // credits2: [
+      //   'Mixing by Name',
+      //   'Mastering by Name'
+      // ],
+      // credits3: [
+      //   'Artwork by Name',
+      //   'Design by Name'
+      // ]
    },
-
    {
       id: 4,
-      description: 'this is description of Album4',
-      cover: third,
-      title: 'Album4',
-      label: 'Label',
+      description: 'Lara Bello',
+      cover: sikame,
+      title: 'Sikame',
+      label: 'Biophilia Records',
       tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00'
+         '1. Sola',
+         '2. Suave',
+         '3. Ave Fugaz',
+         '4. Our Spanish Love Song',
+         '5. Sikame',
+         '6. Hind Y El Amor',
+         '7. Farfalla',
+         '8. Simple Fado',
+         '9. A Woman and the Universe',
+         '10. La Semilla'
          
       ],
       personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument'
+         'Lara Bello – voice',
+         'Gil Goldstein – piano / accordion',
+         'Romero Lubambo – guitar',
+         'Jorge Pardo – flute',
+         'Lionel Loueke – guitar / voice',
+         'Richard Bona – bass',
+         'Dave Eggar – cello',
+         'Leni Stern – ngoni',
+         'Samuel Torres – percussion',
+         'Rajiv Jayaweera – percussion'
       ],
       credits1: [
          'All songs composed by Name',
          'Produced by Name'
       ],
       credits2: [
-        ' Mixing by Name',
+        'Mixing by Name',
         'Mastering by Name'
       ],
       credits3: [
-        'Artwork by Name',
-        'Design by Name'
+        'Recorded in New York, 2015',
+        'Released on Biophilia Records, 2017'
       ]
    },
-
    {
       id: 5,
-      description: 'this is description of Album5',
-      cover: fourth,
-      title: 'Album5',
+      description: 'Ragstretch',
+      cover: ragstretch,
+      title: 'Ragstretch',
       label: 'Label',
       tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00'
-         
+         '1. Dans La Rue d’Antibes',
+         '2. When I Grow Too Old Too Dream',
+         '3. Just a Closer Walk With Thee',
+         '4. Way Down Yonder in New Orleans',
+         '5. My Monday Date',
+         '6. Jazz Me Blues',
+         '7. Foolin’ Myself',
+         '8. Why Don’t You Go Down To New Orleans',
+         '9. Rocking Chair',
+         '10. Panama',
+         '11. Sweet Lorraine',
+         '12. I’ll Be Your Baby Tonight'
+
       ],
       personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument'
+         'Björn Ingelstam – trumpet / vocals',
+         'Chris Tanner – clarinet / vocals',
+         'Shannon Barnett – trombone / vocals',
+         'Craig Fermanis – guitar',
+         'Sam Anning – double bass',
+         'Rajiv Jayaweera – drums'
       ],
       credits1: [
-         'All songs composed by Name',
-         'Produced by Name'
+         'Recorded in Copenhagen, 2013'
       ],
       credits2: [
         ' Mixing by Name',
@@ -198,7 +204,7 @@ let albumsData = [
    {
       id: 6,
       description: 'this is description of Album6',
-      cover: fifth,
+      cover: pistils,
       title: 'Album6',
       label: 'Label',
       tracks: [
@@ -235,7 +241,7 @@ let albumsData = [
    {
       id: 7,
       description: 'this is description of Album7',
-      cover: sixth,
+      cover: laniakea,
       title: 'Album7',
       label: 'Label',
       tracks: [
@@ -272,7 +278,7 @@ let albumsData = [
    {
       id: 8,
       description: 'this is description of Album8',
-      cover: seventh,
+      cover: wee3c,
       title: 'Album8',
       label: 'Label',
       tracks: [
@@ -309,7 +315,7 @@ let albumsData = [
    {
       id: 9,
       description: 'this is description of Album9',
-      cover: eight,
+      cover: sikame,
       title: 'Album9',
       label: 'Label',
       tracks: [
@@ -346,7 +352,7 @@ let albumsData = [
    {
       id: 10,
       description: 'this is description of Album10',
-      cover: nineth,
+      cover: pistils,
       title: 'Album10',
       label: 'Label',
       tracks: [
@@ -382,8 +388,8 @@ let albumsData = [
 
    {
       id: 11,
-      description: 'this is description of Album10',
-      cover: tenth,
+      description: 'this is description of Album11',
+      cover: laniakea,
       title: 'Album11',
       label: 'Label',
       tracks: [

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
+
 import Home from './components/Home'
 import Bio from './components/Bio'
 import Photos from './components/Photos'
@@ -10,6 +11,7 @@ import Shows from './components/Shows'
 import Press from './components/Press'
 import Store from './components/Store'
 import Contact from './components/Contact'
+import Audio from './Audio'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -90,6 +92,9 @@ class App extends React.Component {
                </Route>
                <Route path='/contact'>
                   <Contact />
+               </Route>
+               <Route path='/audio'>
+                  <Audio />
                </Route>
             </Switch>
             <Footer/>
