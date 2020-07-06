@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
-
 import Home from './components/Home'
+import Laniakea from './components/store/products/Laniakea'
 import Bio from './components/Bio'
 import Photos from './components/Photos'
 import Videos from './components/Videos'
@@ -15,8 +15,8 @@ import Audio from './Audio'
 import Header from './Header'
 import Footer from './Footer'
 
-
 import './SharedStyle.css'
+import albumsData from './components/Discography/albumsData'
 import pistils from './assets/albums/pistils.jpg'
 
 
@@ -24,7 +24,8 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
-         showLanding: true
+         showLanding: true,
+         albumSelect: null
       }
       this.closeLanding = this.closeLanding.bind(this)
    }
@@ -34,8 +35,23 @@ class App extends React.Component {
          showLanding: false
       })
    }
+   
+   handleSelect = (item, index) =>{
+      this.setState({
+         albumSelect: item,
+         tracks: item.tracks,
+      })
+   }
 
    render() {
+      let albums = albumsData.map((item, index) =>
+         <div
+            className="albums"
+            onClick={() => this.handleSelect(item, index)}
+            >
+            <img src={item.cover} />
+         </div>
+      )
 
       return (
          <div className="App">
@@ -67,7 +83,16 @@ class App extends React.Component {
             <Header />
             <Switch>
                <Route exact path='/'>
-                  <Home />
+                     <Home
+                     albumDetail={this.state.albumSelect}
+                     albums={albums}
+                     albumsData={albumsData}
+                     />
+               </Route>
+               <Route path='/laniakea'>
+                     <Laniakea
+                        albumsData={albumsData}
+                     />
                </Route>
                <Route path='/bio'>
                   <Bio />
@@ -77,9 +102,13 @@ class App extends React.Component {
                </Route>
                <Route path='/videos'>
                   <Videos />
-                  </Route>
-                  <Route path='/discography'>
-                  <Discography />
+               </Route>
+               <Route path='/discography'>
+                     <Discography 
+                        albumDetail={this.state.albumSelect}
+                        albums={albums}
+                        albumsData={albumsData}
+                     />
                </Route>
                <Route path='/shows'>
                   <Shows />

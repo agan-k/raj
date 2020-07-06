@@ -146,17 +146,17 @@ let albumsData = [
          'Samuel Torres – percussion',
          'Rajiv Jayaweera – percussion'
       ],
-      credits1: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ],
-      credits2: [
-        'Mixing by Name',
-        'Mastering by Name'
-      ],
+      // credits1: [
+      //    'All songs composed by Name',
+      //    'Produced by Name'
+      // ],
+      // credits2: [
+      //   'Mixing by Name',
+      //   'Mastering by Name'
+      // ],
       credits3: [
-        'Recorded in New York, 2015',
-        'Released on Biophilia Records, 2017'
+        'Recorded in New York, 2015.',
+        ' Released on Biophilia Records, 2017'
       ]
    },
    {
@@ -191,14 +191,14 @@ let albumsData = [
       credits1: [
          'Recorded in Copenhagen, 2013'
       ],
-      credits2: [
-        ' Mixing by Name',
-        'Mastering by Name'
-      ],
-      credits3: [
-        'Artwork by Name',
-        'Design by Name'
-      ]
+      // credits2: [
+      //   ' Mixing by Name',
+      //   'Mastering by Name'
+      // ],
+      // credits3: [
+      //   'Artwork by Name',
+      //   'Design by Name'
+      // ]
    },
 
    {
