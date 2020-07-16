@@ -1,5 +1,5 @@
 import React from 'react'
-import bio_pic from '../assets/promo_shots/2.jpg'
+import bio_pic from '../assets/promo_shots/small/2.jpg'
 import bio_pic2 from '../assets/gig_shots/1.jpg'
 
 export default function Bio() {

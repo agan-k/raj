@@ -72,8 +72,8 @@ let albumsData = [
       ],
       credits2: [
         'Recorded at Kindred Studio in Neukölln, Berlin in April, 2019.',
-        ' Engineered & mixed by Carl Morgan',
-        'Mastered by David Darlington'
+        ' Engineered & mixed by Carl Morgan.',
+        ' Mastered by David Darlington.'
       ],
       credits3: [
         'Cover art by Scott Bergey ',

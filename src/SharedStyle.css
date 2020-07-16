@@ -83,7 +83,7 @@ margin: 0 0 0 0;
 /* ============== HEADER ================ */
 .header-container {
    height: 300px;
-   background: url('./assets/backgrounds/3bw.jpg') no-repeat;
+   background: url('./assets/backgrounds/3.jpg') no-repeat;
    background-size: cover;
    background-position: center top;
    margin: 0 0 2em 0;
@@ -177,13 +177,13 @@ nav a {
     opacity: .8;
  }
  .item p {
-    letter-spacing: .1em;
+   letter-spacing: .1em;
    padding: 1em;
    margin: 0;
  }
  .item h2 {
-   text-align: right;
-   margin: .6em .4em 0 0;
+   /* text-align: right; */
+   margin: .6em 0 0 .4em;
    font-weight: 300;
    line-height: .9em;
    color: black;
@@ -221,6 +221,15 @@ nav a {
 /* ============== Photos ================ */
 .photos {
    height: 100%;
+}
+.image-gallery {
+   height: min-content;
+   width: 70vw;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-items: space-between;
+   /* background-color: rgb(236, 236, 236); */
 }
 /* ============== Videos ================ */
 .videos {
@@ -328,7 +337,7 @@ nav a {
    height: 100%;
 }
 /* ==== products ===== */
-.laniakea {
+.product {
    height: min-content;
    width: 80vw;
    margin: 0 auto;

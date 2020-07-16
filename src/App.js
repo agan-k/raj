@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
 import Home from './components/Home'
 import Laniakea from './components/store/products/Laniakea'
+import Pistils from './components/store/products/Pistils'
+
 import Bio from './components/Bio'
 import Photos from './components/Photos'
 import Videos from './components/Videos'
@@ -24,7 +26,7 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
-         showLanding: true,
+         // showLanding: true,
          albumSelect: null
       }
       this.closeLanding = this.closeLanding.bind(this)
@@ -35,7 +37,7 @@ class App extends React.Component {
          showLanding: false
       })
    }
-   
+
    handleSelect = (item, index) =>{
       this.setState({
          albumSelect: item,
@@ -55,6 +57,7 @@ class App extends React.Component {
 
       return (
          <div className="App">
+{/* ======================= LANDING PAGE =========================== */}
             <div className={`${this.state.showLanding ? "" : "hide"} landing`}>
              <div className="album-container">
                 <img src={pistils} />
@@ -78,6 +81,7 @@ class App extends React.Component {
                 </div>
              </div>
             </div>
+{/* ======================= LANDING PAGE  end ======================== */}
             
             <div className={`${this.state.showLanding ? "" : "view"} layout`}>
             <Header />
@@ -91,6 +95,11 @@ class App extends React.Component {
                </Route>
                <Route path='/laniakea'>
                      <Laniakea
+                        albumsData={albumsData}
+                     />
+               </Route>
+               <Route path='/pistils'>
+                     <Pistils
                         albumsData={albumsData}
                      />
                </Route>

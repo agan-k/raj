@@ -3,7 +3,7 @@ import React from 'react'
 export default function Laniakea(props) {
    
    return (
-      <div className="laniakea">
+      <div className="product">
          <div className="album-detail">
                <img src={props.albumsData[1].cover} />
                <div className="album-info">
