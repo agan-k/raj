@@ -3,12 +3,19 @@ import photosData from './photosData'
 import PhotoDetail from './PhotoDetail'
 
 export default class Photos extends React.Component {
-   constructor() {
-      super()
+   constructor(props) {
+      super(props)
       this.state = {
          isShowing: false
       }
+      // this.handleClick = this.handleClick.bind(this)
    }
+
+   // handleClick() {
+   //    this.setState({
+   //       isShowing: false
+   //    })
+   // }
 
    handleSelect = (item, index) => {
       this.setState({
@@ -16,23 +23,21 @@ export default class Photos extends React.Component {
          index: index
       })
    }
-
-   colsePhotoDetail = () => {
+   
+   
+   
+   closePhotoDetail = () => {
       this.setState({
          isShowing: false
       })
-
    }
-
+   
+  
    render() {
       let photos = photosData.map((item, index) => 
          <div
-            style={{
-               height: '5em',
-               width: '5em',
-               padding: '.3em',
-               overflow: 'hidden'
-            }}
+            className='image-container'
+            key={item.id}
             onClick={() => this.handleSelect(item, index)}
          >
             <img
@@ -42,26 +47,20 @@ export default class Photos extends React.Component {
          )
       return (
          <div className="photos">
-            <div className='image-gallery'>
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-               {photos}
-            </div>
+            
             {this.state.isShowing && (
                <PhotoDetail
+                  closePhotoDetail={this.closePhotoDetail}
                   index={this.state.index}
                   photosData={photosData}
-                  colsePhotoDetail={this.colsePhotoDetail}
+                  // closeSlide={this.handleClick}
                />
             )}
+            <div className='image-gallery'>
+               {photos}
+            </div>
          </div>
+
          
          
       )
