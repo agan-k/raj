@@ -1,9 +1,4 @@
 import React from 'react'
-// import ReactSoundcloud from 'react-soundcloud-embed'
-// import ReactPlayer from 'react-player'
-// import Iframe from 'react-iframe'
-
-// import albumsData from './albumsData'
 
 class AlbumDetail extends React.Component {
    constructor(props) {
@@ -21,7 +16,6 @@ render() {
       let trackListOnLoad = this.props.albumsData[0].tracks.map(item =>
          <div >
             <p className="track-list">{item}</p>
-            
          </div>
       )
       //=================================================================

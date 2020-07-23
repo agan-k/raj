@@ -28,9 +28,6 @@ class App extends React.Component {
       super()
       this.state = {
          // showLanding: true,
-         videoThumbSelect: null,
-         albumSelect: null,
-         modalShowing: false
       }
    }
 
@@ -40,39 +37,7 @@ class App extends React.Component {
       })
    }
 
-   handleSelect = (item, index) => {
-      this.setState({
-         videoThumbSelect: item,
-         albumSelect: item,
-         tracks: item.tracks,
-         modalShowing: true,
-      })  
-   }
-
-   closeModal = () =>  {
-      this.setState({
-         modalShowing: false
-      })
-   }
-
    render() {
-
-      const videos = videosData.map(item => 
-         <div
-            className="video-thumbnail-container"
-            onClick={() => this.handleSelect(item)}>
-            <img src={item.thumbnail} />
-            <p>{item.caption}</p>
-         </div>
-      )
-      const albums = albumsData.map((item, index) =>
-         <div
-            className="albums"
-            onClick={() => this.handleSelect(item, index)}>
-            <img src={item.cover} />
-         </div>
-      )
-
       return (
          <div className="App">
 {/* ======================= LANDING PAGE =========================== */}
@@ -106,11 +71,7 @@ class App extends React.Component {
                
                <Switch>
                   <Route exact path='/'>
-                        <Home
-                        albumDetail={this.state.albumSelect}
-                        albums={albums}
-                        albumsData={albumsData}
-                        />
+                        <Home />
                   </Route>
                   <Route path='/laniakea'>
                      <Laniakea
@@ -126,22 +87,19 @@ class App extends React.Component {
                      <Bio />
                   </Route>
                   <Route path='/photos'>
-                     <Photos />
+                     <Photos
+                        albumsData={albumsData}
+                     />
                   </Route>
                   <Route path='/videos'>
                      <Videos
-                        videoDetail={this.state.videoThumbSelect}
-                        videos={videos}
-                        modalShowing={this.state.modalShowing}
-                        closeModal={this.closeModal}
+                        albumsData={albumsData}
                      />
                   </Route>
                   <Route path='/discography'>
-                     <Discography 
-                        albumDetail={this.state.albumSelect}
-                        albums={albums}
+                     <Discography
                         albumsData={albumsData}
-                        />
+                     />
                   </Route>
                   <Route path='/shows'>
                      <Shows />

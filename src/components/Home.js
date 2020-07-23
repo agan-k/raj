@@ -2,8 +2,6 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
-import Laniakea from './store/products/Laniakea'
-
 import pistils from '../assets/albums/pistils.jpg'
 import sikame from '../assets/albums/sikame.jpg'
 import laniakea from '../assets/albums/laniakea.jpg'
@@ -15,15 +13,8 @@ import two from '../assets/gig_shots/2.jpg'
 export default class Home extends React.Component {
    constructor(props) {
       super(props)
-      this.state = {
-         showLaniakea: false
-      }
    }
-   handleClick = () => {
-      this.setState({
-         showLaniakea: true
-      })
-   }
+   
    render() {
 
       return (
@@ -99,7 +90,6 @@ export default class Home extends React.Component {
                         }}
                      >
                      <img
-                        // style={{marginTop: '-3em'}}
                         src={two} />
                      </div>
                     
