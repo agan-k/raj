@@ -11,7 +11,8 @@ export default class VideoDetail extends Component {
       return (
          <div className='video-detail-container'>
             <div className='close-react-player-video' onClick={this.props.closeModal}>
-               &times; 
+               &times;
+               <p>close</p> 
             </div>
             <div className='react-player-video'>
                <ReactPlayer
