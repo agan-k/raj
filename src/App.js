@@ -19,6 +19,7 @@ import Footer from './Footer'
 
 import './SharedStyle.css'
 import albumsData from './components/Discography/albumsData'
+import videosData from './components/videosData'
 import pistils from './assets/albums/pistils.jpg'
 
 
@@ -27,9 +28,13 @@ class App extends React.Component {
       super()
       this.state = {
          // showLanding: true,
-         albumSelect: null
+         videoThumbSelect: null,
+         albumSelect: null,
+         modalShowing: false
       }
       this.closeLanding = this.closeLanding.bind(this)
+      this.closeModal = this.closeModal.bind(this)
+     
    }
 
    closeLanding() {
@@ -40,12 +45,33 @@ class App extends React.Component {
 
    handleSelect = (item, index) =>{
       this.setState({
+         videoThumbSelect: item,
          albumSelect: item,
          tracks: item.tracks,
+         modalShowing: true,
+      })  
+   }
+
+   closeModal() {
+      this.setState({
+         modalShowing: false
       })
    }
 
    render() {
+
+      const videos = videosData.map(item => 
+         <div
+            className="video-thumbnail-container"
+            onClick={() => this.handleSelect(item)}
+         >
+            <img
+               
+               src={item.thumbnail} />
+            <p>{item.caption}</p>
+         </div>
+      )
+
       let albums = albumsData.map((item, index) =>
          <div
             className="albums"
@@ -110,7 +136,12 @@ class App extends React.Component {
                   <Photos />
                </Route>
                <Route path='/videos'>
-                  <Videos />
+                  <Videos
+                        videoDetail={this.state.videoThumbSelect}
+                        videos={videos}
+                        modalShowing={this.state.modalShowing}
+                        closeModal={this.closeModal}
+                  />
                </Route>
                <Route path='/discography'>
                      <Discography 
@@ -135,6 +166,7 @@ class App extends React.Component {
                   <Audio />
                </Route>
             </Switch>
+               
             <Footer/>
             </div>
         </div>

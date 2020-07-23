@@ -321,9 +321,74 @@ nav a {
 
 
 /* ============== Videos ================ */
-.videos {
+.videos-container {
+   width: 80vw;
+   margin: 0 auto;
    height: 100%;
+   /* background-color: red; */
 }
+.video-thumbnail-container {
+
+}
+.video-thumbnail-container img {
+   height: 8em;
+   margin: .1em;
+   opacity: .8;
+   cursor: pointer;
+}
+.video-thumbnail-container img:hover {
+   opacity: 1;
+}
+.video-thumbnail-container p {
+   margin: 0;
+   font-family: Helvetica, sans-serif;
+   font-weight: 200;
+   color: rgba(128, 128, 128, 0.788);
+}
+.video-thumb-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   /* background-color: black; */
+}
+/* ======= VideoDetail ========= */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.video-detail-container {
+   animation: .7s ease-out fadeIn;
+}
+.video-detail-container {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 98;
+   background-color:rgba(10, 10, 10, 0.931);
+}
+.react-player-video {
+   height: min-content;
+   width: min-content;
+   margin: 1em auto;
+}
+.close-react-player-video {
+   height: 1em;
+   position: absolute;
+   top: 2vh;
+   right: 5vw;
+   font-size: 3em;
+   color: white;
+   opacity: .9;
+   cursor: pointer;
+   z-index: 999;
+}
+
 /* ============== SHOWS ================ */
 .shows {
    height: 100%;
