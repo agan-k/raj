@@ -30,8 +30,8 @@ class Discography extends React.Component {
             
             <div className='album-select'>
                   <AlbumDetail 
-                  albumDetail={this.state.albumSelect}
-                  albumsData={this.props.albumsData}
+                     albumDetail={this.state.albumSelect}
+                     albumsData={this.props.albumsData}
                   />
             </div>
                   

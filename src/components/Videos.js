@@ -29,7 +29,7 @@ export default class Videos extends Component {
    }
 
    render() {
-      const videos = videosData.map(item => 
+      const videos = this.props.videosData.map(item => 
          <div
             className="video-thumbnail-container"
             onClick={() => this.handleSelect(item)}>

@@ -19,8 +19,8 @@ import Footer from './Footer'
 
 import './SharedStyle.css'
 import albumsData from './components/Discography/albumsData'
+import photosData from './components/photosData'
 import videosData from './components/videosData'
-import pistils from './assets/albums/pistils.jpg'
 
 
 class App extends React.Component {
@@ -43,7 +43,7 @@ class App extends React.Component {
 {/* ======================= LANDING PAGE =========================== */}
             <div className={`${this.state.showLanding ? "" : "hide"} landing`}>
                <div className="album-container">
-                  <img src={pistils} />
+                  <img src={albumsData[0].cover} />
                   <div className="out-now">
                      <p>PISTILS</p>
                      <br></br>
@@ -71,7 +71,11 @@ class App extends React.Component {
                
                <Switch>
                   <Route exact path='/'>
-                        <Home />
+                     <Home
+                        albumsData={albumsData}
+                        photosData={photosData}
+                        videosData={videosData}
+                     />
                   </Route>
                   <Route path='/laniakea'>
                      <Laniakea
@@ -94,6 +98,7 @@ class App extends React.Component {
                   <Route path='/videos'>
                      <Videos
                         albumsData={albumsData}
+                        videosData={videosData}
                      />
                   </Route>
                   <Route path='/discography'>
