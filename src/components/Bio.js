@@ -23,8 +23,8 @@ export default function Bio() {
          <br/>
          <br/>
          In Australia he was a highly sought after drummer, touring and recording with the country’s finest 
-         musicians and ensembles including The Joe Chindamo, The Bennett’s Lane Big Band, Sam Anning’s Quintet, 
-         Bopstretch and The Australian Art Orchestra’s Crossing Roper Bar Project.
+         musicians and ensembles including The Joe Chindamo Trio, The Bennett’s Lane Big Band, The Sam Anning 
+         Quintet, Bopstretch and The Australian Art Orchestra’s Crossing Roper Bar Project.
          <br/>
          <br />
             <img
@@ -47,10 +47,11 @@ export default function Bio() {
          the <strong>Sydney Opera House</strong> in 2013.
          <br/>
          <br/>
-         He has toured extensively around the world, performing at <strong>Jazz at Lincoln Centre</strong>, 
-         Doha, The Cotton Club, Tokyo, The London Jazz Festival and around Europe. His own quintet were 
-         featured as ‘artists in residence’ at the <strong>Thailand International Jazz Conference 2020</strong>, 
-         and also performed as a headline act in the festival.
+         Jayaweera has toured extensively around the world, performing at <strong>Jazz at Lincoln Centre</strong>, 
+         Doha, The Cotton Club, Tokyo, The London Jazz Festival, The Montreux Jazz Festival, The Copenhagen Jazz 
+         Festival, among many others. 
+         His quintet were featured as ‘artists in residence’ and headline act at the <strong>Thailand International
+         Jazz Conference 2020</strong>.
          <br/>
             <br />
             {/* <img
@@ -63,8 +64,7 @@ export default function Bio() {
                borderRadius: '10px'
             }}
          /> */}
-         In June this year, he will release his debut album made up of his original compositions
-         entitled <strong>Pistils</strong>.
+         This year he released his debut album made up of his original compositions entitled <strong>Pistils</strong>.
          The album features <strong>Chris Cheek</strong>, <strong>Aaron Parks
          </strong>, <strong>Lara Bello</strong>, <strong>Hugh Stuckey</strong> and <strong>Sam Anniing</strong>, and
          will be released on <strong>Outside In Music</strong> (USA) and <strong>Earshift Music</strong> (Australia/Asia).</p>

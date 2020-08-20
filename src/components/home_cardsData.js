@@ -13,7 +13,7 @@ const home_cardsData = [
       thumbnail: '',
       video_url: '',
       date: 'August, 2020',
-      card_subject: 'Review of "Pistils" in The Australian',
+      card_subject: 'Five stars review of "Pistils" in The Australian',
       card_blurb: `The Australian This is such a lovely album that it's difficult to know where to start. 
       Drummer - percussionist Rajiv Jayaweera now lives in New York, where this albumPistils was recorded. 
       Born in London of Sri Lankan parents, he grew up in Melbourne and graduated from the Victorian
