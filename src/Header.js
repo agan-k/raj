@@ -31,7 +31,12 @@ class Header extends React.Component {
                   <ul className="menu">
                      <li><Link to='/'>Home</Link></li>
                      <li><Link to='/bio'>Bio</Link></li>
-                     <ul
+
+                     <li><Link to='/photos'>Photos</Link></li>
+                     <li><Link to='/videos'>Videos</Link></li>
+
+                     {/* ===== drop-down option ======== */}
+                     {/* <ul
                         className={`${this.state.show ?
                         "show" : ""} dropdown-media`}
                         onMouseEnter={this.showDropdown}
@@ -40,7 +45,9 @@ class Header extends React.Component {
                         <li id="media">Media</li>
                         <li><Link to='/photos'>Photos</Link></li>
                         <li><Link to='/videos'>Videos</Link></li>
-                     </ul>
+                     </ul> */}
+                     {/* ===== drop-down option end ===== */}
+                     
                      <li><Link to='/shows'>Shows</Link></li>
                      <li><Link to='/discography'>Discography</Link></li>
                      <li><Link to='/press'>Press</Link></li>

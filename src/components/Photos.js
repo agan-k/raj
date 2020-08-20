@@ -41,7 +41,7 @@ export default class Photos extends React.Component {
             onClick={() => this.handleSelect(item, index)}
          >
             <img
-               style={{ height: '5em' }}
+               // style={{ height: '5em' }}
                src={item.image} />
          </div>
          )
