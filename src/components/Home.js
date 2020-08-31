@@ -65,7 +65,7 @@ export default class Home extends React.Component {
 
                   <div className="card">
                      {home_cards[5]}
-                     {this.props.press_link[3]}
+                     {this.props.albums_link[1]}
                   </div>
 
                   <div className="card">

@@ -1,12 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
-import Home from './components/Home'
-import Laniakea from './components/store/products/Laniakea'
-import Pistils from './components/store/products/Pistils'
 
 import KA2021 from './components/press/tour_dates/KA2021'
 
+import Home from './components/Home'
 import Bio from './components/Bio'
 import Photos from './components/Photos'
 import Videos from './components/Videos'
@@ -179,16 +177,6 @@ class App extends React.Component {
                         press_link={press_link}
                         video_link={video_link}
                         albums_link={albums_link}
-                     />
-                  </Route>
-                  <Route path='/laniakea'>
-                     <Laniakea
-                        albumsData={albumsData}
-                     />
-                  </Route>
-                  <Route path='/pistils'>
-                     <Pistils
-                        albumsData={albumsData}
                      />
                   </Route>
                   <Route path='/ka2021-tour'>

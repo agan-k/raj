@@ -5,12 +5,9 @@ import AlbumDetail from './AlbumDetail'
 class Discography extends React.Component {
    constructor() {
       super()
-      this.state = {
-      }
    }
 
    render() {
-
       return (
          <div className="discography">
 
