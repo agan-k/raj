@@ -3,73 +3,78 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
 import VideoDetail from './VideoDetail'
 
-
-
 export default class Home extends React.Component {
    constructor(props) {
       super(props)
    }
-    
-   render() {
-      
 
+   render() {
+      const home_cards = this.props.home_cardsData.map(item =>
+         <div className="home-card">
+            <div
+               className="mask"
+               style={{
+                  maxHeight: '16em', overflow: 'hidden'
+               }}>
+               <img src={item.img}/>
+               <img src={item.thumbnail}/>
+            </div>
+            <h2>{item.date}</h2>
+            <h2>{item.card_subject}</h2>
+            <p>{item.card_blurb}</p>
+            <p>{item.link}</p>
+         </div>
+      )
       return (
                <div className="home-container">
-                  <div className="item">
-                     <Link to="/pistils-review">
-                        {this.props.home_cards[0]}
-                     </Link>
-                  </div>
-                  
-                  <div className="item">
-                     <a href="https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review">
-                        {this.props.home_cards[1]} 
-                     </a>
-                  </div>
-                  
-                  <div className="item">
-                     <Link to="/pistils-release">
-                        {this.props.home_cards[2]}
-                     </Link>
-                  </div>
-                  
-                  <div className="item">
-                     {/* <div className="video-card"> */}
-                        {this.props.home_cards[3]}
-                        {this.props.modalShowing && (
-                        <VideoDetail
-                           videoDetail={this.props.videoThumbSelect}
-                           closeModal={this.props.closeModal} />
-                        )}
-                     {/* </div> */}
-                  </div>
-                  
-                  <div className="item">
-                     {/* <div className="video-card"> */}
-                        {this.props.home_cards[4]}
-                        {this.props.modalShowing && (
-                        <VideoDetail
-                           videoDetail={this.props.videoThumbSelect}
-                           closeModal={this.props.closeModal} />
-                        )}
-                     {/* </div> */}
+
+                  <div className="card">
+                     {home_cards[0]}
+                     {this.props.press_link[0]}
                   </div>
 
-                  <div className="item">
-               
-                     <Link to="/laniakea-release">
-                        {this.props.home_cards[5]}
-                     </Link>
+                  <div className="card">
+                     {home_cards[1]}
+                     {this.props.press_link[1]}
                   </div>
-                  
-                  <div className="item">
+
+                  <div className="card">
+                     {home_cards[2]}
+                     {this.props.albums_link[0]}
+                  </div>
+
+                  <div className="card video">
+                        {home_cards[3]}
+                        {this.props.video_link[7]}
+                        {this.props.modalShowing && (
+                        <VideoDetail
+                           videoDetail={this.props.videoThumbSelect}
+                           closeModal={this.props.closeModal} />
+                        )}
+                  </div>
+
+                  <div className="card video">
+                        {home_cards[4]}
+                        {this.props.video_link[0]}
+                        {this.props.modalShowing && (
+                        <VideoDetail
+                           videoDetail={this.props.videoThumbSelect}
+                           closeModal={this.props.closeModal} />
+                        )}
+                  </div>
+
+                  <div className="card">
+                     {home_cards[5]}
+                     {this.props.press_link[3]}
+                  </div>
+
+                  <div className="card">
                      <Link to="/ka2021-tour">
-                        {this.props.home_cards[6]}
+                        {home_cards[6]}
                      </Link>
                   </div>
-            
+
                </div>
-          
       )
    }
 }

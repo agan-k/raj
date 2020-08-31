@@ -5,9 +5,6 @@ import Home from './components/Home'
 import Laniakea from './components/store/products/Laniakea'
 import Pistils from './components/store/products/Pistils'
 
-import PistilsReview from './components/press/reviews/PistilsReview'
-import PistilsRelease from './components/press/releases/PistilsRelease'
-import LaniakeaRelease from './components/press/releases/LaniakeaRelease'
 import KA2021 from './components/press/tour_dates/KA2021'
 
 import Bio from './components/Bio'
@@ -30,14 +27,15 @@ import pressData from './components/press/pressData'
 import home_cardsData from './components/home_cardsData'
 
 
+
 class App extends React.Component {
    constructor() {
       super()
       this.state = {
          // showLanding: true,
-         home_cardImageSelect: null,
          videoThumbSelect: null,
          albumSelect: null,
+         pressSelect: null,
          modalShowing: false
       }
    }
@@ -47,12 +45,11 @@ class App extends React.Component {
          showLanding: false
       })
    }
-   
+
    handleSelectHomeCard = (item, index) => {
       this.setState({
          home_cardImageSelect: item,
          videoThumbSelect: item,
-         // modalShowing: true
       })
    }
 
@@ -65,9 +62,13 @@ class App extends React.Component {
 
    handleSelectAlbums = (item, index) => {
       this.setState({
-         albumSelect: item,
-         tracks: item.tracks
-         
+         albumSelect: item
+      })
+
+   }
+   handleSelectPress = (item) => {
+      this.setState({
+         pressSelect: item
       })
    }
 
@@ -80,47 +81,51 @@ class App extends React.Component {
    }
 
    render() {
-      const home_cards = home_cardsData.map(item => 
-         <div
-            className="home-card"
-            onClick={() => this.handleSelectHomeCard(item)}>
-            <div
-               className="mask"
-               style={{ maxHeight: '16em', overflow: 'hidden'
-            }}>
-               <img src={item.img}
-               />
-               <img src={item.thumbnail}
-                  onClick={() => this.handleSelectVideos(item)}
-               />
-            </div>
-            <h2>{item.date}</h2>
-            <h2>{item.card_subject}</h2>
-            <p>{item.card_blurb}</p>
-         </div>
-      )
-      const videos = videosData.map(item => 
-         <div
-            className="video-thumbnail-container"
-            onClick={() => this.handleSelectVideos(item)}>
-            <p>{item.caption}</p>
-            <img
-               src={item.thumbnail}
-               // style={{width: '100%'}}
-            />
-            {/* <h2>{item.caption}</h2> */}
-            
-         </div>
-      )
-
       const albums = albumsData.map((item, index) =>
          <div
             className="albums"
             onClick={() => this.handleSelectAlbums(item, index)}>
-            <img
-               src={item.cover}
-            />
+            <img src={item.cover} />
          </div>
+      )
+      const press_releases = pressData.filter(item => item.publication === "Press Release").map(item =>
+         <div className="press-list"
+           onClick={() => this.handleSelectPress(item)}>
+           <li>
+             {`${item.publication} - ${item.album}`}
+           </li>
+         </div>
+      )
+      const press_reviews = pressData.filter(item => item.publication !== "Press Release").map(item =>
+         <div className="press-list"
+            onClick={() => this.handleSelectPress(item)}>
+            <li>
+              {`${item.publication} - ${item.album}`}
+            </li>
+         </div>
+      )
+      const press_link = pressData.map(item =>
+        <Link to='/press'>
+            <div className="home-card-link"
+               onClick={() => this.handleSelectPress(item)}>
+               {/* &#8599; */}
+            </div>
+         </Link>
+      )
+      const video_link = videosData.map(item =>
+
+         <div className="home-card-link"
+            onClick={() => this.handleSelectVideos(item)}>
+            {/* &#8599; */}
+         </div>
+      )
+      const albums_link = albumsData.map(item =>
+         <Link to='/discography'>
+            <div className="home-card-link"
+               onClick={() => this.handleSelectAlbums(item)}>
+               {/* &#8599; */}
+            </div>
+         </Link>
       )
 
       return (
@@ -135,7 +140,7 @@ class App extends React.Component {
                      <p>
                         featuring <br></br>
                         Chris Cheek,<br></br>
-                        Aaron Goldberg,<br></br> 
+                        Aaron Goldberg,<br></br>
                         Lara Bello and<br></br>
                         Sam Aning
                      </p>
@@ -150,71 +155,54 @@ class App extends React.Component {
                </div>
             </div>
 {/* ======================= LANDING PAGE  end ======================== */}
-            
+
             <div className={`${this.state.showLanding ? "" : "view"} layout`}>
                <Header />
-               
+
                <Switch>
                   <Route exact path='/'>
                      <Home
                         albumsData={albumsData}
                         photosData={photosData}
                         videosData={videosData}
-                        videos={videos}
                         pressData={pressData}
                         home_cardsData={home_cardsData}
-                        home_cards={home_cards}
                         modalShowing={this.state.modalShowing}
                         closeModal={this.closeModal}
                         videoThumbSelect={this.state.videoThumbSelect}
                         albums={albums}
+                        press_reviews={press_reviews}
+                        press_releases={press_releases}
+                        handleSelectHomeCard={this.handleSelectHomeCard}
+                        handleSelectVideos={this.handleSelectVideos}
+                        handleSelectPress={this.handleSelectPress}
+                        press_link={press_link}
+                        video_link={video_link}
+                        albums_link={albums_link}
                      />
                   </Route>
                   <Route path='/laniakea'>
                      <Laniakea
                         albumsData={albumsData}
-                        />
+                     />
                   </Route>
                   <Route path='/pistils'>
                      <Pistils
                         albumsData={albumsData}
-                        />
-                  </Route>
-                  <Route path='/pistils-review'>
-                     <PistilsReview
-                        albumsData={albumsData}
-                        />
-                  </Route>
-                  <Route path='/pistils-release'>
-                     <PistilsRelease
-                        pressData={pressData}
-                        />
-                  </Route>
-                  <Route path='/laniakea-release'>
-                     <LaniakeaRelease
-                        pressData={pressData}
-                        />
+                     />
                   </Route>
                   <Route path='/ka2021-tour'>
-                     <KA2021
-                        />
+                     <KA2021 />
                   </Route>
                   <Route path='/bio'>
                      <Bio />
                   </Route>
                   <Route path='/photos'>
-                     <Photos
-                        albumsData={albumsData}
-                     />
+                     <Photos />
                   </Route>
                   <Route path='/videos'>
                      <Videos
-                        albumsData={albumsData}
                         videosData={videosData}
-                        videoThumbSelect={this.state.videoThumbSelect}
-                        videos={videos}
-                        modalShowing={this.state.modalShowing}
-                        closeModal={this.closeModal}
                      />
                   </Route>
                   <Route path='/discography'>
@@ -228,7 +216,12 @@ class App extends React.Component {
                      <Shows />
                   </Route>
                   <Route path='/press'>
-                     <Press />
+                     <Press
+                        pressData={pressData}
+                        pressSelect={this.state.pressSelect}
+                        press_releases={press_releases}
+                        press_reviews={press_reviews}
+                     />
                   </Route>
                   <Route path='/store'>
                      <Store />
@@ -240,12 +233,10 @@ class App extends React.Component {
                      <Audio />
                   </Route>
                </Switch>
-               
                <Footer/>
             </div>
         </div>
       )
    }
 }
-
 export default App
