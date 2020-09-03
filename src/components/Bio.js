@@ -4,7 +4,7 @@ import bio_pic2 from '../assets/gig_shots/6.jpg'
 
 export default function Bio() {
    return (
-      <div className="bio">
+      <div className="bio container">
          <img
             src={bio_pic}
             style={{
@@ -15,7 +15,7 @@ export default function Bio() {
                borderRadius: '10px'
             }}
          />
-         <h1>Biography</h1>
+         <h2>Biography</h2>
          <p>Rajiv Jayaweera is truly a global citizen, a fact that permeates and weaves its way into his 
          playing and composing. He was born in London, grew up in Melbourne, is of Sri Lankan heritage and is 
          currently based in New York City. He completed his Bachelor of Music at the Victorian College of the 

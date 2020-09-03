@@ -23,7 +23,9 @@ import photosData from './components/photosData'
 import videosData from './components/videosData'
 import pressData from './components/press/pressData'
 import home_cardsData from './components/home_cardsData'
-
+import Data from './components/home_cardsData'
+import navigationData from './headerNavData'
+import navigation_link from './headerNavData'
 
 
 class App extends React.Component {
@@ -31,12 +33,16 @@ class App extends React.Component {
       super()
       this.state = {
          // showLanding: true,
+         navigationLinkSelect: null,
          videoThumbSelect: null,
          albumSelect: null,
          pressSelect: null,
          modalShowing: false
       }
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+  }
 
    closeLanding = () => {
       this.setState({
@@ -155,7 +161,11 @@ class App extends React.Component {
 {/* ======================= LANDING PAGE  end ======================== */}
 
             <div className={`${this.state.showLanding ? "" : "view"} layout`}>
-               <Header />
+               <Header
+                  // navigation_link={navigation_link}
+                  navigationData={navigationData}
+                  navigationLinkSelect={this.state.navigationLinkSelect}
+               />
 
                <Switch>
                   <Route exact path='/'>

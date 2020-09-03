@@ -1,6 +1,6 @@
 
 import australian from '../assets/logos/the-australian.png'
-import jazztrail from '../assets/logos/jazztrail.jpg'
+import jazztrail from '../assets/logos/jazztrail1.jpg'
 import pistils from '../assets/albums/pistils.jpg'
 import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
 import ellstandissa from '../assets/video_thumbs/ellstandissa.webp'
@@ -16,7 +16,7 @@ const home_cardsData = [
       date: 'August, 2020',
       card_subject: 'Five stars review of "Pistils" in The Australian',
       card_blurb: `The Australian This is such a lovely album that it's difficult to know where to start.
-      Drummer - percussionist Rajiv Jayaweera now lives in New York, where this albumPistils was recorded.
+      Drummer - percussionist Rajiv Jayaweera now lives in New York, where this album Pistils was recorded.
       Born in London of Sri Lankan parents, he grew up in Melbourne and graduated from the Victorian
       College of the Arts in 2000. His nine compositions on Pistils explore an array of contemporary
       time-feels and feature two Americans, Chris Cheek (saxophones) and..[more]`

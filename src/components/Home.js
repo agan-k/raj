@@ -7,6 +7,9 @@ export default class Home extends React.Component {
    constructor(props) {
       super(props)
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+  }
 
    render() {
       const home_cards = this.props.home_cardsData.map(item =>
@@ -14,19 +17,19 @@ export default class Home extends React.Component {
             <div
                className="mask"
                style={{
-                  maxHeight: '16em', overflow: 'hidden'
+                  maxHeight: '12em', overflow: 'hidden'
                }}>
                <img src={item.img}/>
                <img src={item.thumbnail}/>
             </div>
-            <h2>{item.date}</h2>
+            <h4>{item.date}</h4>
             <h2>{item.card_subject}</h2>
             <p>{item.card_blurb}</p>
             <p>{item.link}</p>
          </div>
       )
       return (
-               <div className="home-container">
+               <div className="home container">
 
                   <div className="card">
                      {home_cards[0]}

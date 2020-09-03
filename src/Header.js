@@ -2,64 +2,85 @@ import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
 
-class Header extends React.Component {
-   constructor() {
-      super()
-      this.state = {
-         show: false
-      }
-      this.showDropdown = this.showDropdown.bind(this)
-      this.hideDropdown = this.hideDropdown.bind(this)
-   }
 
-   showDropdown() {
-      this.setState({
-         show: true
-      })
+class Header extends React.Component {
+   constructor(props) {
+      super(props)
+      this.state = {
+         // show: false
+         navigationLinkSelect: null,
+      }
    }
-   hideDropdown() {
+   handleSelectNavigationLink = (item, index) => {
       this.setState({
-         show: false
+         navigationLinkSelect: item
       })
    }
    render() {
+      const navigation_link = this.props.navigationData.map((item, index) =>
+
+         <li onClick={() => this.handleSelectNavigationLink(item, index)}>
+            <Link to={item.navigation_route}>{item.navigation_description}</Link>
+         </li>
+      )
       return (
-         <div className="header-container">
-   
-         <header>
-               <nav>
-                  <ul className="menu">
-                     <li><Link to='/'>Home</Link></li>
-                     <li><Link to='/bio'>Bio</Link></li>
+         <div className="header">
 
-                     <li><Link to='/photos'>Photos</Link></li>
-                     <li><Link to='/videos'>Videos</Link></li>
+            <h1 id="logo">Rajiv Jayaweera</h1>
+            <nav>
+               <ul className="menu">
+                  
+                     {navigation_link}
+                  
 
-                     {/* ===== drop-down option ======== */}
-                     {/* <ul
-                        className={`${this.state.show ?
-                        "show" : ""} dropdown-media`}
-                        onMouseEnter={this.showDropdown}
-                        onMouseLeave={this.hideDropdown}
-                     >
-                        <li id="media">Media</li>
-                        <li><Link to='/photos'>Photos</Link></li>
-                        <li><Link to='/videos'>Videos</Link></li>
-                     </ul> */}
-                     {/* ===== drop-down option end ===== */}
-                     
-                     <li><Link to='/shows'>Shows</Link></li>
-                     <li><Link to='/discography'>Discography</Link></li>
-                     <li><Link to='/press'>Press</Link></li>
-                     <li><Link to='/store'>Store</Link></li>
-                     <li><Link to='/contact'>Contact</Link></li>
-                     
+                     {/* <li className={this.state.homeLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectHomeLink}
+                        to='/'>home</Link></li>
+
+                     <li className={this.state.bioLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectBioLink}
+                        to='/bio'>bio</Link></li>
+
+                     <li className={this.state.photosLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectPhotosLink}
+                        to='/photos'>photos</Link></li>
+
+                     <li className={this.state.videosLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectVideosLink}
+                        to='/videos'>videos</Link></li>
+
+                     <li className={this.state.showsLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectShowsLink}
+                        to='/shows'>shows</Link></li>
+
+                     <li className={this.state.discographyLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectDiscographyLink}
+                        to='/discography'>discography</Link></li>
+
+                     <li className={this.state.pressLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectPressLink}
+                        to='/press'>press</Link></li>
+
+                     <li className={this.state.storeLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectStoreLink}
+                        to='/store'>store</Link></li>
+
+                     <li className={this.state.contactLinkSelect ? 'current' : ''}>
+                     <Link
+                        onClick={this.handleSelectContactLink}
+                        to='/contact'>contact</Link></li> */}
                   </ul>
-               </nav> 
-         </header>
+               </nav>
          </div>
       )
-
    }
 }
 export default Header

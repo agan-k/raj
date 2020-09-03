@@ -21,19 +21,19 @@ export default class PhotoDetail extends Component {
    nextImage() {
       this.setState({
          count: this.state.count + 1,
-        
+
       })
    }
 
    previousImage() {
       this.setState({
          count: this.state.count - 1,
-         
+
       })
    }
 
-   
-   
+
+
    render() {
       // ===========================
     const BackArrow = (props) => (
@@ -51,7 +51,7 @@ export default class PhotoDetail extends Component {
       return (
          <div className='photo-detail-container'>
             <div className='close' onClick={this.props.closePhotoDetail}>
-               &times; 
+               &times;
             </div>
             <div className='photo-detail'>
 
@@ -66,10 +66,10 @@ export default class PhotoDetail extends Component {
                      return (
                         <div
                            className='photo-detail-img-container'
-                           key={item.id}   
+                           key={item.id}
                         >
                            <img src={item.image} />
-                           
+
                        </div>
                      )}
                   return ''
@@ -79,7 +79,7 @@ export default class PhotoDetail extends Component {
                   {this.state.count !== (this.props.photosData.length - 1) ?
                      <NextArrow nextImage={this.nextImage} /> :
                      ''}
-                  
+
                </div>
             </div>
          </div>

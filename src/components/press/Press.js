@@ -6,10 +6,13 @@ class Press extends React.Component {
    constructor(props) {
       super(props)
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+  }
 
    render() {
       return (
-         <div className='press-container'>
+         <div className='press container'>
             <div className='press-detail-container'>
                <PressDetail
                   pressSelect={this.props.pressSelect}

@@ -6,10 +6,13 @@ class Discography extends React.Component {
    constructor() {
       super()
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+  }
 
    render() {
       return (
-         <div className="discography">
+         <div className="discography container">
 
             <div className='album-select'>
                   <AlbumDetail
