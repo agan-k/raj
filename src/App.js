@@ -222,7 +222,9 @@ class App extends React.Component {
                      />
                   </Route>
                   <Route path='/store'>
-                     <Store />
+                     <Store
+                        albumsData={albumsData}
+                     />
                   </Route>
                   <Route path='/contact'>
                      <Contact />

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "font-awesome": "^4.7.0",
     "react": "^16.13.1",
+    "react-bandcamp": "^1.1.5",
     "react-dom": "^16.13.1",
     "react-iframe": "^1.8.0",
     "react-player": "^2.4.0",

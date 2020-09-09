@@ -9,6 +9,7 @@ import ragstretch from '../../assets/albums/ragstretch.jpg'
 let albumsData = [
    {
       id: 1,
+      bandcamp: '4057622917',
       description: 'Rajiv Jayaweera',
       cover: pistils,
       title: 'Pistils',
@@ -48,6 +49,7 @@ let albumsData = [
    {
       id: 2,
       description: 'Trio Kleine Ahnung',
+      bandcamp: '827241178',
       cover: laniakea,
       title: 'Laniakea',
       label: 'Earshift Music',
@@ -68,7 +70,7 @@ let albumsData = [
          'Sam Anning – d. bass, a. guitars (Datameta)',
          'Rajiv Jayaweera – drums',
          '+ Sean Wayland – synth (Kleine Ahnung)',
-         '-'
+         
       ],
       credits: [
         'Recorded at Kindred Studio in Neukölln, Berlin in April, 2019.',

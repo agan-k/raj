@@ -461,13 +461,13 @@ nav {
    display: flex;
    flex-wrap: wrap;
    padding: 0 0 0 1em;
-   width: 40%;
+   width: 30%;
    height: min-content;
    margin: 0;
 }
 .albums img {
-   height: 6em;
-   width: 6em;
+   height: 5em;
+   width: 5em;
    margin: 0 .2em;
    border: .5px solid grey;
    cursor: pointer;
@@ -477,22 +477,40 @@ nav {
    opacity: 1;
 }
 .album-select {
-   width: 60%;
+   width: 70%;
    height: 100%;
 }
 /* ====== album detail ===== */
 .album-detail {
-   width: min-content;
-   display: flex;
+   width: 100%;
+   font-family: Helvetica;
+   font-size: 1em;
+   font-weight: 100;
+   /* display: flex; */
+   /* background-color: blue; */
 }
 .album-detail img {
-   height: 15em;
-   width: 15em;
+   height: 21em;
+   width: 21em;
    margin: 0 2em 0 0;
    border: .5px solid gray;
 }
+.bandcamp-player {
+   width: min-content;
+   display: flex;
+}
 .album-info {
-   width: 29vw;
+   display: flex;
+   justify-content: space-between;
+   /* background-color: yellow; */
+   /* margin: 1em; */
+
+}
+.info-box {
+   width: 21em;
+   height: 22em;
+   /* margin: .2em; */
+   /* background-color: red; */
 }
 .album-info .album-title {
 
@@ -549,6 +567,7 @@ nav {
 }
 /* ============== STORE ================ */
 .store.container {
+   
 }
 /* ==== products ===== */
 .product {
