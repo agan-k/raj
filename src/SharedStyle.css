@@ -10,7 +10,7 @@ body {
    height: 100vh;
    /* opacity: 0; */
    margin: 0;
-   padding: 240px 0 0 0;
+   padding: 180px 0 0 0;
 }
 .App .layout.view {
    opacity: 1;
@@ -89,11 +89,12 @@ margin: 0 0 0 0;
    font-family: 'Montserrat', sans-serif;
    position: fixed;
    top: 0;
-   height: 180px;
+   height: 115px;
    width: 100vw;
-   background: url('./assets/backgrounds/header_bg5.jpg') no-repeat;
+   background: url('./assets/backgrounds/header1.jpg') no-repeat;
    background-size: cover;
    background-position: center top;
+   box-shadow: 0 .2px 3px rgb(59, 59, 59);
    /* margin: 0 0 2em 0; */
    z-index: 99;
 }
@@ -113,14 +114,17 @@ margin: 0 0 0 0;
 }
 nav {
    position: absolute;
-   top: 180px;
-   right: 2%;
-   width: 100%;
+   top: 94px;
+   left: 0;
+   width: 42%;
    height: min-content;
    /* margin: 0 auto; */
+   padding-right: 1em;
    display: flex;
    justify-content: flex-end;
-   background: white;
+   background:none;
+   /* box-shadow: 0 .5px 3px rgb(231, 231, 231); */
+   
    z-index: 99;
 }
 
@@ -137,16 +141,16 @@ nav {
 }
 .menu a {
    text-decoration: none;
-   color: black;
+   color: white;
    padding: 0 .2em;
-   opacity: .7;
+   opacity: .6;
 }
+
 .menu a:hover {
-   opacity: 1;
+   /* opacity: 1; */
+   background-color: rgb(221, 200, 107);
 }
-.menu li.current a{
-   color: red;
-}
+
 
 /* ===== drop-down option ==== */
 /* .dropdown-media {
@@ -486,6 +490,7 @@ nav {
    font-family: Helvetica;
    font-size: 1em;
    font-weight: 100;
+   color: rgb(77, 77, 77);
    /* display: flex; */
    /* background-color: blue; */
 }
@@ -495,16 +500,21 @@ nav {
    margin: 0 2em 0 0;
    border: .5px solid gray;
 }
-.bandcamp-player {
-   width: min-content;
-   display: flex;
-}
 .album-info {
    display: flex;
    justify-content: space-between;
    /* background-color: yellow; */
    /* margin: 1em; */
-
+}
+.album-info p{
+   font-size: .8em;
+   margin: 0;
+   padding: .2em;
+}
+.album-info h2 {
+   font-size: 2.2em;
+   font-weight: 300;
+   margin: 0;
 }
 .info-box {
    width: 21em;

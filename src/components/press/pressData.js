@@ -4,6 +4,7 @@ import jazztrail from '../../assets/logos/jazztrail.jpg'
 import redcatpubl from '../../assets/logos/redcatpubl.png'
 import earshift from '../../assets/logos/earshift.jpg'
 const pressData = [
+   
    {
       id: 1,
       img: australian,
@@ -188,6 +189,22 @@ const pressData = [
       Personnel: Carl Morgan (guitar, voice), Sam Anning (double bass & acoustic guitars),
       Rajiv Jayaweera (drums), guest Sean Wayland (synthesizer)`,
       writer: `www.earshift.com`
+   },
+   {
+      id: 5,
+      img: '',
+      title: '',
+      publication: 'The Australian',
+      artist: '',
+      album: '',
+      label: '',
+      quote: `"The basic character of the music is determined by Jayaweera, a drummer of unusual
+      subtlety and good taste, always alive to punctuating the music but never intrusive...
+      It's such a pleasure to know there are modern jazz musicians in the world playing like this."`,
+      body: ['', '', ''],
+      writer: 'Eric Myers',
+      link: '',
+      url: ''
    }
 
 ]

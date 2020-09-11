@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Link, NavLink } from "react-router-dom"
 
 
 import KA2021 from './components/press/tour_dates/KA2021'
@@ -39,14 +39,24 @@ class App extends React.Component {
          pressSelect: null,
          modalShowing: false
       }
+      this.baseState = this.state
+   }
+   resetState = () => {
+      this.setState(this.baseState)
    }
    componentDidMount() {
       window.scrollTo(0, 0);
-  }
+   }
 
    closeLanding = () => {
       this.setState({
          showLanding: false
+      })
+   }
+
+   handleSelectNavigationLink = (item, index) => {
+      this.setState({
+         navigationLinkSelect: item
       })
    }
 
@@ -85,6 +95,12 @@ class App extends React.Component {
    }
 
    render() {
+      const navigation_link = navigationData.map((item, index) =>
+
+         <li className={this.state} onClick={this.resetState}>
+            <NavLink exact to={item.navigation_route} activeStyle={{ color: 'grey', backgroundColor: 'white', }}>{item.navigation_description}</NavLink>
+         </li>
+      )
       const albums = albumsData.map((item, index) =>
          <div
             className="albums"
@@ -162,31 +178,21 @@ class App extends React.Component {
 
             <div className={`${this.state.showLanding ? "" : "view"} layout`}>
                <Header
-                  // navigation_link={navigation_link}
-                  navigationData={navigationData}
-                  navigationLinkSelect={this.state.navigationLinkSelect}
+                  navigation_link={navigation_link}
                />
 
                <Switch>
                   <Route exact path='/'>
                      <Home
-                        albumsData={albumsData}
-                        photosData={photosData}
-                        videosData={videosData}
-                        pressData={pressData}
                         home_cardsData={home_cardsData}
                         modalShowing={this.state.modalShowing}
                         closeModal={this.closeModal}
                         videoThumbSelect={this.state.videoThumbSelect}
-                        albums={albums}
-                        press_reviews={press_reviews}
-                        press_releases={press_releases}
-                        handleSelectHomeCard={this.handleSelectHomeCard}
-                        handleSelectVideos={this.handleSelectVideos}
-                        handleSelectPress={this.handleSelectPress}
                         press_link={press_link}
                         video_link={video_link}
                         albums_link={albums_link}
+                        pressData={pressData}
+                        albumsData={albumsData}
                      />
                   </Route>
                   <Route path='/ka2021-tour'>

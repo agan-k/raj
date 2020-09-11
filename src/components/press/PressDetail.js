@@ -26,8 +26,9 @@ export default class PressDetail extends Component {
                   </>
                   )}
 
+               <p>{this.props.pressSelect.quote}</p>
                <p>{this.props.pressSelect.writer}</p>
-               <a href={this.props.pressSelect.url}>link</a>
+               <a href={this.props.pressSelect.url}>{this.props.pressSelect.link}</a>
             </>
                :
                <div className="quotes-container">

@@ -39,11 +39,13 @@ export default class Home extends React.Component {
                   <div className="card">
                      {home_cards[1]}
                      {this.props.press_link[1]}
+                     {/* <Link to='/press'>{this.props.pressData[1]}</Link> */}
                   </div>
 
                   <div className="card">
                      {home_cards[2]}
                      {this.props.albums_link[0]}
+                     {/* <Link to='/discography'>{this.props.albumsData[0]}</Link> */}
                   </div>
 
                   <div className="card video">
