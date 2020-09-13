@@ -11,22 +11,16 @@ import Videos from './components/Videos'
 import Discography from './components/discography/Discography'
 import Shows from './components/Shows'
 import Press from './components/press/Press'
-import Store from './components/Store'
 import Contact from './components/Contact'
-import Audio from './Audio'
 import Header from './Header'
 import Footer from './Footer'
 
 import './SharedStyle.css'
 import albumsData from './components/discography/albumsData'
-import photosData from './components/photosData'
 import videosData from './components/videosData'
 import pressData from './components/press/pressData'
 import home_cardsData from './components/home_cardsData'
-import Data from './components/home_cardsData'
 import navigationData from './headerNavData'
-import navigation_link from './headerNavData'
-
 
 class App extends React.Component {
    constructor() {
@@ -47,45 +41,38 @@ class App extends React.Component {
    componentDidMount() {
       window.scrollTo(0, 0);
    }
-
-   closeLanding = () => {
-      this.setState({
-         showLanding: false
-      })
-   }
-
+   // closeLanding = () => {
+   //    this.setState({
+   //       showLanding: false
+   //    })
+   // }
    handleSelectNavigationLink = (item, index) => {
       this.setState({
          navigationLinkSelect: item
       })
    }
-
    handleSelectHomeCard = (item, index) => {
       this.setState({
          home_cardImageSelect: item,
          videoThumbSelect: item,
       })
    }
-
    handleSelectVideos = (item, index) => {
       this.setState({
          videoThumbSelect: item,
          modalShowing: true
       })
    }
-
    handleSelectAlbums = (item, index) => {
       this.setState({
          albumSelect: item
       })
-
    }
    handleSelectPress = (item) => {
       this.setState({
          pressSelect: item
       })
    }
-
    closeModal = () =>  {
       this.setState({
          modalShowing: false,
@@ -96,10 +83,16 @@ class App extends React.Component {
 
    render() {
       const navigation_link = navigationData.map((item, index) =>
-
          <li className={this.state} onClick={this.resetState}>
-            <NavLink exact to={item.navigation_route} activeStyle={{ color: 'grey', backgroundColor: 'white', }}>{item.navigation_description}</NavLink>
-         </li>
+            <NavLink exact to={item.navigation_route}
+               activeStyle={{ color: 'grey', backgroundColor: 'white', }}>{item.navigation_description}
+            </NavLink>
+            <li className={this.state}
+               
+               style={{ marginTop: '-19px' }}>
+               <a onClick={this.resetState} href={item.url}>{item.external_link}</a>
+            </li>
+         </li> 
       )
       const albums = albumsData.map((item, index) =>
          <div
@@ -108,7 +101,20 @@ class App extends React.Component {
             <img src={item.cover} />
          </div>
       )
-      const press_releases = pressData.filter(item => item.publication === "Press Release").map(item =>
+      const press_quotes = pressData.filter(item => item.quote).map(item =>
+         <div className="press-quote">
+               <p style={{padding: '.1em', margin: '0'}}><em>
+               <span style={{opacity: '.7', fontSize: '2.2em', verticalAlign: 'text-bottom', color: 'grey', padding: '.5em'}}>&#x275E;</span>
+                  {item.quote}
+               <span style={{ opacity: '.7', fontSize: '2.2em', verticalAlign: 'text-top', color: 'grey', padding: '.5em'}}>&#x275D;</span>
+               </em></p>
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+               <p >{`${item.writer}`}</p> &nbsp; &nbsp;
+               <p ><strong><em>{item.publication}</em></strong></p>
+            </div>
+         </div>
+         )
+      const press_releases = pressData.filter(item => item.press_release === true).map(item =>
          <div className="press-list"
            onClick={() => this.handleSelectPress(item)}>
            <li>
@@ -185,14 +191,13 @@ class App extends React.Component {
                   <Route exact path='/'>
                      <Home
                         home_cardsData={home_cardsData}
-                        modalShowing={this.state.modalShowing}
-                        closeModal={this.closeModal}
-                        videoThumbSelect={this.state.videoThumbSelect}
+                        albumsData={albumsData}
                         press_link={press_link}
                         video_link={video_link}
                         albums_link={albums_link}
-                        pressData={pressData}
-                        albumsData={albumsData}
+                        modalShowing={this.state.modalShowing}
+                        closeModal={this.closeModal}
+                        videoThumbSelect={this.state.videoThumbSelect}
                      />
                   </Route>
                   <Route path='/ka2021-tour'>
@@ -222,21 +227,14 @@ class App extends React.Component {
                   <Route path='/press'>
                      <Press
                         pressData={pressData}
+                        press_quotes={press_quotes}
                         pressSelect={this.state.pressSelect}
                         press_releases={press_releases}
                         press_reviews={press_reviews}
                      />
                   </Route>
-                  <Route path='/store'>
-                     <Store
-                        albumsData={albumsData}
-                     />
-                  </Route>
                   <Route path='/contact'>
                      <Contact />
-                  </Route>
-                  <Route path='/audio'>
-                     <Audio />
                   </Route>
                </Switch>
                <Footer/>

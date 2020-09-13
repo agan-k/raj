@@ -13,9 +13,9 @@ const pressData = [
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
       label: 'Earshift Music, 2020',
-      quote: `"The basic character of the music is determined by Jayaweera, a drummer of unusual
+      quote: `The basic character of the music is determined by Jayaweera, a drummer of unusual
       subtlety and good taste, always alive to punctuating the music but never intrusive...
-      It's such a pleasure to know there are modern jazz musicians in the world playing like this."`,
+      It's such a pleasure to know there are modern jazz musicians in the world playing like this.`,
       body: [`The Australian This is such a lovely album that it's difficult to know where to start.
       Drummer - percussionist Rajiv Jayaweera now lives in New York, where this album Pistils was recorded.
       Born in London of Sri Lankan parents, he grew up in Melbourne and graduated from the Victorian
@@ -41,9 +41,9 @@ const pressData = [
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
       label: 'Outside in Music, 2020',
-      quote: `"Eschewing any type of fireworks in favor of a relaxed, smooth flowing, the set of songs proposed
+      quote: `Eschewing any type of fireworks in favor of a relaxed, smooth flowing, the set of songs proposed
       by Jayaweera - his rhythmic sensibilities are reminiscent of Paul Motian, Brian Blade and Peter
-      Erskine - is fruitful, generous and transparent in its purest form."`,
+      Erskine - is fruitful, generous and transparent in its purest form.`,
       body: [`New York-based Sri Lankan/Australian drummer and composer Rajiv Jayaweera presents a
       wonderful set of original compositions on his commendable debut album, Pistils. Establishing a
       deep and intimate musical connection with the virtuosic members of the combo he leads -
@@ -189,22 +189,6 @@ const pressData = [
       Personnel: Carl Morgan (guitar, voice), Sam Anning (double bass & acoustic guitars),
       Rajiv Jayaweera (drums), guest Sean Wayland (synthesizer)`,
       writer: `www.earshift.com`
-   },
-   {
-      id: 5,
-      img: '',
-      title: '',
-      publication: 'The Australian',
-      artist: '',
-      album: '',
-      label: '',
-      quote: `"The basic character of the music is determined by Jayaweera, a drummer of unusual
-      subtlety and good taste, always alive to punctuating the music but never intrusive...
-      It's such a pleasure to know there are modern jazz musicians in the world playing like this."`,
-      body: ['', '', ''],
-      writer: 'Eric Myers',
-      link: '',
-      url: ''
    }
 
 ]

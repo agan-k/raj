@@ -17,6 +17,7 @@ class Press extends React.Component {
                <PressDetail
                   pressSelect={this.props.pressSelect}
                   pressData={this.props.pressData}
+                  press_quotes={this.props.press_quotes}
                />
             </div>
             <div className='press-list-container'>
@@ -24,7 +25,8 @@ class Press extends React.Component {
                <ul>{this.props.press_releases}</ul>
                <h2>Reviews</h2>
                <ul>{this.props.press_reviews}</ul>
-             </div>
+            </div>
+            
          </div>
       )
    }

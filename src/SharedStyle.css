@@ -1,10 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 body {
   margin: 0;
 }
 .App {
    margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   word-spacing: .2em;
+   font-weight: 300;
 }
 .App .layout {
    height: 100vh;
@@ -21,7 +25,6 @@ body {
    width: 80vw;
    margin: 0 auto;
 }
-
 /* ============== LANDING ================ */
 .landing {
    position: fixed;
@@ -86,7 +89,7 @@ margin: 0 0 0 0;
 
 /* ============== HEADER ================ */
 .header {
-   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
    position: fixed;
    top: 0;
    height: 115px;
@@ -95,10 +98,8 @@ margin: 0 0 0 0;
    background-size: cover;
    background-position: center top;
    box-shadow: 0 .2px 3px rgb(59, 59, 59);
-   /* margin: 0 0 2em 0; */
    z-index: 99;
 }
-
 #logo {
    position: absolute;
    top: 0px;
@@ -115,23 +116,14 @@ margin: 0 0 0 0;
 nav {
    position: absolute;
    top: 94px;
-   left: 0;
+   left: 10px;
    width: 42%;
    height: min-content;
-   /* margin: 0 auto; */
-   padding-right: 1em;
-   display: flex;
-   justify-content: flex-end;
    background:none;
-   /* box-shadow: 0 .5px 3px rgb(231, 231, 231); */
-   
    z-index: 99;
 }
-
-
 .menu {
    display: flex;
-   align-content: flex-end;
    margin: 0;
 }
 .menu li {
@@ -145,13 +137,9 @@ nav {
    padding: 0 .2em;
    opacity: .6;
 }
-
 .menu a:hover {
-   /* opacity: 1; */
    background-color: rgb(221, 200, 107);
 }
-
-
 /* ===== drop-down option ==== */
 /* .dropdown-media {
    padding: 0;
@@ -174,10 +162,8 @@ nav {
    overflow: visible !important;
 } */
 
-
 /* ============== HOME ================ */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 .home.container {
    display: flex;
    flex-flow: column wrap;
@@ -185,8 +171,8 @@ nav {
    /* The container needs a fixed height, and it
     * needs to be taller than your tallest column. */
    height: 1400px;
-   font-family: 'Montserrat', sans-serif;
-   word-spacing: .2em;
+   /* font-family: 'Montserrat', sans-serif; */
+   /* word-spacing: .2em; */
 
  }
  .video {
@@ -209,19 +195,14 @@ nav {
  .card p {
    /* color: rgb(83, 83, 83); */
    font-size: .8em;
-   font-weight: 100;
+   /* font-weight: 100; */
 
 
  }
  .card h2 {
-   /* text-transform: uppercase; */
-   /* color: #198FBD; */
    font-size: 1.2em;
-   /* font-weight: 400; */
  }
  .card h4 {
-   /* font-family: Helvetica, sans-serif; */
-   /* font-weight: 200; */
    font-size: .9em;
    color: grey;
 
@@ -274,7 +255,6 @@ nav {
    margin: .1em;
    overflow: hidden;
 }
-
 .image-container img {
    width: 19vw;
    overflow: hidden;
@@ -287,10 +267,6 @@ nav {
    }
 
 .image-gallery {
-   /* height: min-content;
-   width: 80vw; */
-   /* margin: 0 auto; */
-   /* padding-left: .8em; */
    display: flex;
    flex-wrap: wrap;
    justify-items: space-between;
@@ -372,7 +348,6 @@ nav {
    cursor: pointer;
    z-index: 999;
 }
-
 
 /* ============== Videos ================ */
 .videos.container {
@@ -491,8 +466,6 @@ nav {
    font-size: 1em;
    font-weight: 100;
    color: rgb(77, 77, 77);
-   /* display: flex; */
-   /* background-color: blue; */
 }
 .album-detail img {
    height: 21em;
@@ -503,8 +476,6 @@ nav {
 .album-info {
    display: flex;
    justify-content: space-between;
-   /* background-color: yellow; */
-   /* margin: 1em; */
 }
 .album-info p{
    font-size: .8em;
@@ -519,8 +490,6 @@ nav {
 .info-box {
    width: 21em;
    height: 22em;
-   /* margin: .2em; */
-   /* background-color: red; */
 }
 .album-info .album-title {
 
