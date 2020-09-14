@@ -6,7 +6,8 @@ export default class Photos extends React.Component {
    constructor(props) {
       super(props)
       this.state = {
-         isShowing: false
+         isShowing: false,
+         index: null
       }
    }
 
@@ -16,26 +17,18 @@ export default class Photos extends React.Component {
          index: index
       })
    }
-
-
-
    closePhotoDetail = () => {
       this.setState({
          isShowing: false
       })
    }
-
-
    render() {
       let photos = photosData.map((item, index) =>
-         <div
-            className='image-container'
-            key={item.id}
-            onClick={() => this.handleSelect(item, index)}
-         >
+         <div className='image-container'>
             <img
-               // style={{ height: '5em' }}
-               src={item.image} />
+               src={item.image}
+               onClick={() => this.handleSelect(item, index)}
+            />
          </div>
          )
       return (
@@ -48,13 +41,11 @@ export default class Photos extends React.Component {
                   photosData={photosData}
                />
             )}
+            
             <div className='image-gallery'>
                {photos}
             </div>
          </div>
-
-
-
       )
    }
 

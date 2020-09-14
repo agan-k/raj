@@ -138,7 +138,8 @@ nav {
    opacity: .6;
 }
 .menu a:hover {
-   background-color: rgb(221, 200, 107);
+   opacity: 1;
+   /* background-color: rgb(221, 200, 107); */
 }
 /* ===== drop-down option ==== */
 /* .dropdown-media {

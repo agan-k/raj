@@ -10,14 +10,12 @@ export default class Videos extends Component {
          modalShowing: false
       }
    }
-
    handleSelectShowcase = (item, index) => {
       this.setState({
          showcaseThumbSelect: item,
          modalShowing: true,
       })
    }
-
    closeModal = () =>  {
       this.setState({
          modalShowing: false
@@ -27,7 +25,6 @@ export default class Videos extends Component {
    render() {
       const showcase = this.props.videosData.filter(item =>
          item.videos_showcase !== 'no').map(item =>
-
          <div className="video-thumbnail-container"
             onClick={() => this.handleSelectShowcase(item)}>
             <p>{item.caption}</p>

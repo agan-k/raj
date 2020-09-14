@@ -1,6 +1,7 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
-
+import {ReactComponent as Instagram} from './assets/icons/instagram.svg'
+import {ReactComponent as Facebook} from './assets/icons/facebook.svg'
+import {ReactComponent as YouTube} from './assets/icons/youtube.svg'
 
 
 class Header extends React.Component {
@@ -14,11 +15,22 @@ class Header extends React.Component {
       return (
          <div className="header">
             <h1 id="logo">Rajiv Jayaweera</h1>
-                     <nav>
-                        <ul className="menu">
-                           {this.props.navigation_link}
-                        </ul>
-                     </nav>
+            <nav>
+               <ul className="menu">
+               {this.props.navigation_link}
+                  <div
+                     style={{
+                        width: 'min-content',
+                        height: 'min-content',
+                        display: 'flex',
+                        paddingLeft: '.2em',
+                     }}>
+                     <a href="https://www.instagram.com/euroraj/"><Instagram style={{height: '1.2em'}}/></a>
+                     <a href="https://www.facebook.com/rajivjayaweera/"><Facebook style={{height: '1.2em'}}/></a>
+                     <a href="https://www.youtube.com/user/euroraj/videos"><YouTube style={{height: '1.2em'}}/></a>
+                  </div>
+               </ul>
+            </nav>
             
          </div>
       )

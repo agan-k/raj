@@ -85,7 +85,7 @@ class App extends React.Component {
       const navigation_link = navigationData.map((item, index) =>
          <li className={this.state} onClick={this.resetState}>
             <NavLink exact to={item.navigation_route}
-               activeStyle={{ color: 'grey', backgroundColor: 'white', }}>{item.navigation_description}
+               activeStyle={{ color: 'white', opacity: '1' }}>{item.navigation_description}
             </NavLink>
             <li className={this.state}
                
