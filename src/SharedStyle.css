@@ -139,7 +139,6 @@ nav {
 }
 .menu a:hover {
    opacity: 1;
-   /* background-color: rgb(221, 200, 107); */
 }
 /* ===== drop-down option ==== */
 /* .dropdown-media {
@@ -172,9 +171,6 @@ nav {
    /* The container needs a fixed height, and it
     * needs to be taller than your tallest column. */
    height: 1400px;
-   /* font-family: 'Montserrat', sans-serif; */
-   /* word-spacing: .2em; */
-
  }
  .video {
     cursor: pointer;
@@ -194,12 +190,8 @@ nav {
     opacity: .8;
  }
  .card p {
-   /* color: rgb(83, 83, 83); */
    font-size: .8em;
-   /* font-weight: 100; */
-
-
- }
+}
  .card h2 {
    font-size: 1.2em;
  }
@@ -505,8 +497,8 @@ nav {
 }
 .press-list-container {
    width: 20vw;
+   font-size: .9em;
    text-align: right;
-   /* background-color: rgba(0, 0, 255, 0.438); */
 }
 .press-list li {
    cursor: pointer;

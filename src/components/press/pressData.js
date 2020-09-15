@@ -1,12 +1,22 @@
 import australian from '../../assets/logos/the-australian.png'
 import jazztrail from '../../assets/logos/jazztrail.jpg'
-
 import redcatpubl from '../../assets/logos/redcatpubl.png'
 import earshift from '../../assets/logos/earshift.jpg'
+import pbsFM from '../../assets/logos/pbsFM.png'
+import aajazz from '../../assets/logos/aajazz.png'
+import jazzhalo from '../../assets/logos/jazzhalo.png'
+import france_musique from '../../assets/logos/france_musique.png'
+import jazzsq from '../../assets/logos/jazzsq.gif'
+import abc_au_content from '../../assets/content/abc_au_content.jpg'
+import abc_au from '../../assets/logos/abc_au.jpg'
+import pbs_fm from '../../assets/content/pbs_fm.jpg'
+import happy_srilankans from '../../assets/content/happy_srilankans.jpg'
+import happysri from '../../assets/logos/happysri.jpg'
 const pressData = [
    
    {
       id: 1,
+      review: true,
       img: australian,
       title: '',
       publication: 'The Australian',
@@ -27,14 +37,15 @@ const pressData = [
       title track. The basic character of the music is determined by Jayaweera, a drummer of unusual
       subtlety and good taste, always alive to punctuating the music but never intrusive. Anning's bass
       lines, beautifully recorded, can be felt as well as heard. It's such a pleasure to know there
-      are modern jazz musicians in the world playing like this.`,
-   ],
+      are modern jazz musicians in the world playing like this.`],
+      // body_img: australian,
       writer: 'Eric Myers',
       url: 'https://ericmyersjazz.com/cd-reviews-page-35-1'
    },
 
    {
       id: 2,
+      review: true,
       img: jazztrail,
       title: '',
       publication: 'Jazz Trail',
@@ -79,7 +90,9 @@ const pressData = [
       `Eschewing any type of fireworks in favor of a relaxed, smooth flowing, the set of songs proposed
       by Jayaweera - his rhythmic sensibilities are reminiscent of Paul Motian, Brian Blade and Peter
       Erskine - is fruitful, generous and transparent in its purest form.`],
-      writer: 'Filipe Freitas'
+      body_img: '',
+      writer: 'Filipe Freitas',
+      url: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review'
    },
    {
       id: 3,
@@ -134,6 +147,7 @@ const pressData = [
       it. A "Malkoha Bird" is a tropical bird endemic to Sri Lanka with a long graduated tail. This is the
       only song on the album where saxophonist Chris Cheek switches from tenor to soprano, singing the
       melody like a bird.`],
+      body_img: '',
       comment: `More about Rajiv Jayaweera`,
       writer: `Press Enquiries on RAJIV JAYAWEERA & PISTILS:
       Contact Jason Paul Harman Byrne @ Red Cat Publicity
@@ -185,11 +199,257 @@ const pressData = [
       and lived in New York City for a number of years before returning to Melbourne. His recent
       release, Across a Field As Vast As One, was short-listed for the Australian Music Prize and won
       both The Age Music Victoria Awards for Jazz and a Jazz Bell Award. `],
+      body_img: '',
       comment: `Album: Laniakea Release: 10/01/2020 Label: Earshift Music distributed by MGM
       Personnel: Carl Morgan (guitar, voice), Sam Anning (double bass & acoustic guitars),
       Rajiv Jayaweera (drums), guest Sean Wayland (synthesizer)`,
       writer: `www.earshift.com`
-   }
+   },
+   
+   {
+      id: 5,
+      review: true,
+      img: aajazz,
+      title: '',
+      publication: 'All About Jazz',
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      label: 'Outside in Music, 2020',
+      quote: `While drummer-composers often feel a need to make their mark through a show of force, Jayaweera 
+      takes a more fanciful approach. Preferring blossoming expressions over bombast, he separates himself
+      from the pack with Pistils.`,
+      body: [`While London-born, Melbourne-reared, New York-based drummer Rajiv Jayaweera's work is naturally 
+      colored by his experiences spanning those points on the map, it's his Sri Lankan heritage that most
+      greatly informs and influences this debut. Drawing inspiration from memories of nature, sounds and scents
+      surrounding his grandparents' garden there, Jayaweera creates a musical sanctuary and wonderland painted
+      in vivid colors.`,
+         `Pistils, a title referencing the seed-bearing, reproductive portion of a flower, plays on blooming 
+      beauty at its first glances and in its final form. Opening and closing with different versions of the
+      title track—the former featuring guest vocalist Lara Bello's enchantments, the latter saxophonist Chris
+      Cheek's mellifluous lines—Jayaweera uses rubato fantasies to bookend his vision. The tracks between the
+      "Pistils" prove just as meaningful and fascinating in their unfolding of grace. "Ellstandissa," starting
+      on a solo performance of the Thammattama drum(s) and working with a more direct rhythmic thrust, deals
+      with cycling melodic ideals and dancing time. "Welikadawatte," nodding to a region in Colombo, Sri Lanka,
+      where Jayaweera's grandparents lived for four decades, rides on a Vernel Fournier-esque groove and a
+      sweeping current. "Galadari," a gorgeously dizzying latticework, proves to be a showcase for serious solo
+      work. And "Nilus," with its slow, stately stride, speaks in measured yet decorative language.`,
+         `Jayaweera's creative gifts with pen and sticks are apparent over the course of the first half of the 
+      album, but so, too, are his gifts in personnel selection. With Cheek, pianist Aaron Parks, guitarist
+      Hugh Stuckey and bassist Sam Anning filling out the ranks, the drummer is never short on unique and
+      pliant personalities. The remaining material simply furthers that fact. There's "The Elephant," evoking
+      images of a pachyderm making its way across the jungle; "Hirimbura," a swinging geographical beacon
+      pointing to Jayaweera's grandfather's hometown; and "Malkoha Bird," which finds Cheek moving to soprano
+      to best reflect the song and shining spirit of one of Sri Lanka's feathered friends.`,
+         `While drummer-composers often feel a need to make their mark through a show of force, Jayaweera takes 
+      a more fanciful approach. Preferring blossoming expressions over bombast, he separates himself from the
+      pack with Pistils.`],
+      body_img: '',
+      writer: 'Dan Bilawsky',
+      url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music'
+   },
+   {
+      id: 6,
+      feature: true,
+      img: pbsFM,
+      title: '',
+      publication: 'PBS 106.7FM',
+      artist: '',
+      album: '',
+      label: '',
+      quote: '',
+      body: [''],
+      body_img: pbs_fm,
+      writer: '',
+      url: 'https://www.pbsfm.org.au/news/rajiv-jayaweera'
+   },
+   {
+      id: 7,
+      review: true,
+      img: '',
+      title: '',
+      publication: `In a Blue Mood`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      label: 'Outside in Music, 2020',
+      quote: `Jayaweera adds his rhythmic accents with a deft touch on the cymbals and the snare drum in an 
+      evocative performance. It caps an excellent recording of first-rate performances of memorable and
+      engaging compositions.`,
+      body: [`"Pistils" is the debut album by Sri Lankan/Australian jazz drummer and composer, Rajiv Jayaweera.
+      The album features eight original compositions by the New York-based Jayaweera that draw inspiration
+      from Sri Lanka. Jayaweera, who plays drums, cymbals, thammattama, and caxixi, leads a band of Chris
+      Cheek (soprano & tenor saxophones), Aaron Parks (piano), Hugh Stuckey (guitar), and Sam Anning
+      (double bass). Lara Bello adds her voice as a special guest.`,
+         `Two versions of the title track open and close this recording. The initial rendition of "Pistils" 
+      features Lara Bello's enchanting vocal set against a sparse setting. This composition illustrates
+      Jayaweera's ability to compose beautiful melodies. "Ellstandissa," opens with the leader playing the
+      relatively unknown Thammattama drum (also known as a temple drum), a two-headed traditional drum that
+      is played with a pair of fascinating curly wooden sticks. It incorporates rhythms from a Sri Lankan
+      dance entitled 'Gajaga Wannama' in 7/8 time. Again, we are given a memorable melody, which provides
+      Cheek an opportunity to display his marvelous tone as well as the ensemble's intricate rhythmic
+      interplay. Parks adds a choice piano solo here as well.`,
+      `The next song, "Welikadawatte," translates to Welikada Gardens in Sinhalese. This title refers to an 
+      area in central Colombo (the commercial capital and largest city in Sri Lanka). Against the stately
+      rhythm, it affords another opportunity for Cheek to display the warmth of his saxophone. At the same
+      time, Stuckey accents with his chords, and the leader's deft drumming lightly pushes the performance
+      along. Anning's bass hints at Ahmad Jamal's classic performance of "Poinciana." Cheek's tenor sax is
+      at the fore of "Galadari" with an intriguing rhythm and bass riff along with some stop-time passages.
+      Stuckey contributes a scintillating solo. The ballad "Nilus" is a scrumptious performance with Cheek
+      playing with a sublime tone, while bassist Anning also solos strongly.`,
+         `Jayaweera incorporates the Thammattama drum on the playful "The Elephant," with Parks playing in a 
+      bouncy fashion. There is a bluesy feel to "Hirimbura," which takes its title from Rajiv's Grandfather's
+      hometown in the south of Sri Lanka, with Cheek's robust tenor at the forefront, with Parks adding a
+      well-constructed solo as well. Cheek switches to soprano sax for "A Malkoha Bird," playing an
+      appropriately flighty solo.`,
+      `An instrumental version of the title track closes this recording with Cheek's sax set against Stuckey's 
+      lush chords. Jayaweera adds his rhythmic accents with a deft touch on the cymbals and the snare drum in
+      an evocative performance. It caps an excellent recording of first-rate performances of memorable and
+      engaging compositions.`],
+      writer: 'Ron Weinstock',
+      url: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html'
+   },
+   {
+      id: 8,
+      review: true,
+      img: jazzhalo,
+      title: '',
+      publication: `Jazz Halo`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      label: 'Outside in Music, 2020',
+      quote: `Jayaweera lets the New York influences sink in but doesn't forget his Sri Lankan roots.
+      ...All the classic basic elements from western jazz are ingeniously woven into the songs.`,
+      body: [`The fastest musical connection between New York and South Asia with a stopover in Australia 
+      nowadays runs through drummer and percussionist Rajiv Jayaweera. Together with Aaron Parks and Chris
+      Cheek, among others, he provides VIP treatment along the way.`,
+      `Today things are less vibrant than a few months ago, but in the pre-corona era, New York's appeal as 
+      a jazz hub was undisputed. Rajiv Jayaweera couldn't resist the temptation either. Born in London, raised
+      in Melbourne and now a resident of The Big Apple.`,
+      `'Pistils' is his debut. Jayaweera lets the New York influences sink in but doesn't forget his Sri 
+      Lankan roots. He incorporates this colorful mixture into the eight compositions he wrote for this
+      album. He brought in Chris Cheek, Aaron Parks, Hugh Stuckey, Sam Anning and Lara Bello to work
+      everything out expertly. Fortunately, it was not a meaningless fusion or crossover. All the classic
+      basic elements from western jazz are ingeniously woven into the songs. The Asian influences remain
+      extremely limited but are always very functional, such as the use of the thammattama drum or temple
+      drum in 'Ellstandissa' and 'The Elephant'.`,
+      `The emphasis is now on a lyrical approach with a strong focus on smooth melody lines, then on an 
+      adapted rhythm pattern to obtain a (feather) light trance effect. This balancing act keeps the whole
+      thing interesting and engaging. Most different is 'Hirimbura', a semi-blues shuffle. To give an
+      interesting insight into the whole potential, the CD starts and ends with the title track, albeit each
+      time with a different soloist. At the beginning it is vocalist Lara Bello and at the end Chris Cheek
+      gets to do his thing.`,
+      `A CD without dominant characteristics, but with a dispersed dynamic and enough compelling staging 
+      anchored in various origins.`],
+      writer: 'Georges Tonla Briquet',
+      url: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/'
+   },
+   {
+      id: 9,
+      review: true,
+      img: france_musique,
+      title: '',
+      publication: `France Musique`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      label: 'Outside in Music, 2020',
+      quote: `Rajiv Jayaweera is truly a citizen of the world, a fact that permeates and weaves its way 
+      into his playing and composition.`,
+      body: [`“ Pistils ” is the debut recording by Sri Lankan and Australian jazz drummer and composer 
+      Rajiv Jayaweera . The album features eight compelling and thoughtful originals, which draw inspiration
+      from Sri Lanka. Rajiv Jayaweera's compositions are characterized by strong melodies and beauty, combined
+      with complex bass lines and rhythmic playing. His band, made up of Chris Cheek (soprano and tenor
+      saxophones), Aaron Parks (piano), Hugh Stuckey (guitar) and Sam Anning (double bass), really show why
+      he is among the most in-demand musicians on today's scene. `,
+      `Ellstandissa , which features the relatively little-known Thammattama drum (also called temple drum), 
+      a traditional two-headed drum played with a pair of fascinating curly wooden drumsticks and most often
+      used in cultural ceremonies, incorporates the rhythms of a Sri Lankan dance called Gajaga Wannama, or
+      elephant dance, in 7/8. The main melody of the song is circular and haunting, and is played over a
+      counter melody that superimposes a polyrhythmic figure. Ellstandissa is an invented word that combines
+      the names of the composer's grandparents.`,
+      `Rajiv Jayaweera is truly a citizen of the world, a fact that permeates and weaves its way into his 
+      playing and composition. He was born in London, raised in Melbourne, is of Sri Lankan descent and is
+      currently based in New York. He received his bachelor's degree in music from Victorian College of the
+      Arts in 2000, and a master's degree in jazz studies from SUNY Purchase, New York, in 2013.`,
+      `In Australia he has been a very active drummer, touring and recording with the country's top musicians 
+      including the Joe Chindamo Trio, Bennett's Lane Big Band, Sam Anning Quintet, Bopstretch, and the
+      Crossing Roper Bar Project of the Australian Art Orchestra.`,
+      `Since arriving in New York City, Rajiv Jayaweera has performed at legendary jazz clubs, Smalls, The 
+      Blue Note, Bar Next Door, Dizzy's (J @ LC), Birdland, and more. He received scholarships from the
+      Australian Arts Council, the Ian Potter Cultural Trust and the US-Australian Foundation, and was a
+      finalist for the prestigious scholarship Freedman Jazz Fellowship, occurring at the Sydney Opera House
+      in 2013.`],
+      writer: '',
+      url: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548'
+   },
+   {
+      id: 10,
+      review: true,
+      img: jazzsq,
+      title: '',
+      publication: `Jazz Quad`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      label: 'Outside in Music, 2020',
+      quote: `...the album shows that in the person of Rajiv Jayavira we are meeting a very interesting and creative master.`,
+      body: [`Until now, the musician of Sri Lankan origin has only appeared in our reviews once, and then as 
+      a sideman. So, composer, band leader and drummer Rajiv Jayavira is the first Lankan to be featured on the
+      site with an author's work. True, Rajiv has only Sri Lankan roots, but he was born in London, grew up in
+      Melbourne and received his first musical education in Australia. By the way, the album Pistlis, the
+      debut for Rajiv, was created with the assistance of the Australian Council for the Arts. But Jayavira
+      has lived and worked for the last ten years in New York and is in great demand in the jazz capital of
+      the world: he played here with many famous musicians and performed on the stages of the most prestigious
+      clubs. Rajiv also played at many major jazz festivals in different countries - in Tokyo, London,
+      Montreux, Copenhagen.`,
+      `Rajiv Jayavira recorded his debut album in April 2019 in New York. The program of nine tracks is 
+      entirely his own music. Experienced New York musicians took part in the recording of the album with
+      him, and on two tracks the vocals are performed by the Spaniard Lara Bello. The already bright "tropical"
+      cover suggests that the main theme of Jayavira's work was the memories of the ancestral homeland -
+      Beautiful Lanka: this is how the name Sri Lanka sounds in translation. One might assume that ethnicity
+      predominates in music as well. However, with the exception of the fact that Rajiv himself used several
+      ethnic percussion instruments when recording, including the Sri Lankan thammattama or temple drum, and
+      the names of most of the compositions, you do not feel a significant influence of ethnic motives in the
+      music itself. The ensemble under the direction of Rajiv Jayavira plays music close to the modern
+      mainstream, with a solo saxophone (Chris Chick), piano, guitar and rhythm group. At the same time,
+      the leader of the band does not overuse some solo improvisations. Jayavira is more busy thinking about
+      the coherence of the ensemble sound and the accurate transfer of his composing ideas. The program of the
+      album is built in the form of a kind of rondo, beginning and ending with the piece Pistils, only in the
+      opening version Lara Bello sings, and in the purely instrumental finish track Chris Chick comes to the
+      fore. For me, a kind of peak of the album fell in the middle: I especially note such compositions as
+      Nilus and The Elephant. However, there is plenty to choose from: the album shows that in the person of
+      Rajiv Jayavira we are meeting a very interesting and creative master.`],
+      writer: 'Leonid Auskern',
+      url: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568'
+   },
+   {
+      id: 11,
+      feature: true,
+      img: abc_au,
+      title: '',
+      publication: 'ABC',
+      artist: '',
+      album: '',
+      label: '',
+      quote: '',
+      body: [''],
+      body_img: abc_au_content,
+      writer: '',
+      url: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034'
+   },
+   {
+      id: 12,
+      feature: true,
+      img: happysri,
+      title: '',
+      publication: 'Happy Srilankans',
+      artist: '',
+      album: '',
+      label: '',
+      quote: '',
+      body: [''],
+      body_img: happy_srilankans,
+      writer: '',
+      url: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene'
+   },
+   
 
 ]
 export default pressData
