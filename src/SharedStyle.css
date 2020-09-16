@@ -193,8 +193,8 @@ nav {
    padding: 1%;
  }
  .card:hover {
-   box-shadow: 1px 3px 8px #e9e9e9;
-   background-color: rgba(226, 226, 226, 0.246);
+   box-shadow: 1px 3px 8px #dfdfdf;
+   background-color: rgba(235, 235, 235, 0.979);
   }
  .card img {
     width: 100%;
@@ -436,24 +436,28 @@ nav {
 }
 /* ============== DISCOGRAPHY ================ */
 .discography.container {
-   display: flex;
-   align-content: space-between;
+   /* display: flex; */
+   /* align-content: space-between; */
 }
 /* ====== albums =+=== */
 .albums-container {
    display: flex;
-   flex-wrap: wrap;
-   padding: 0 0 0 1em;
-   width: 30%;
+   /* flex-direction: row; */
+   justify-content: space-evenly;
+   /* flex-wrap: wrap; */
+   /* padding: 0 0 0 1em; */
+   width: 21em;
    height: min-content;
    margin: 0;
+   padding: 0;
+   /* background-color: red; */
 }
 .albums img {
-   height: 5em;
-   width: 5em;
-   margin: 0 .2em;
+   height: 3em;
+   width: 3em;
+   margin: 0 0 2em 0;
    border: .5px solid grey;
-   cursor: pointer;
+   /* cursor: pointer; */
    opacity: .8;
 }
 .albums img:hover {
@@ -466,7 +470,7 @@ nav {
 /* ====== album detail ===== */
 .album-detail {
    width: 100%;
-   font-family: Helvetica;
+   /* font-family: Helvetica; */
    font-size: 1em;
    font-weight: 100;
    color: rgb(77, 77, 77);
@@ -474,33 +478,43 @@ nav {
 .album-detail img {
    height: 21em;
    width: 21em;
-   margin: 0 2em 0 0;
+   margin: 0;
    border: .5px solid gray;
 }
 .album-info {
    display: flex;
-   justify-content: space-between;
+   /* align-content: space-evenly; */
+   width: min-content;
 }
 .album-info p{
    font-size: .8em;
-   margin: 0;
-   padding: .2em;
+   margin: .5em 0 0 0;
+   padding: 0;
+}
+.album-info ul{
+   padding: 0 0 0 .5em;
+}
+.album-info ul li{
+   list-style: none;
+   font-size: .8em;
+   text-decoration: none;
+   color: rgb(77,77,77);
 }
 .album-info h2 {
    font-size: 2.2em;
    font-weight: 300;
    margin: 0;
 }
+.album-info h3 {
+   margin: 0 0 .2em 0;
+}
 .info-box {
-   width: 21em;
+   width: 22em;
    height: 22em;
+   margin-left: 1em;
 }
-.album-info .album-title {
 
-}
-.album-info .album-description {
 
-}
 /* ============== PRESS ================ */
 .press.container {
    font-family: 'Montserrat', sans-serif;

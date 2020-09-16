@@ -23,27 +23,18 @@ let albumsData = [
          '6. The Elephant 6:57',
          '7. Hirimbura 7:03',
          '8. Malkoha Bird 6:42',
-         '9. Pistils (feat. Chris Cheek) 5:51',
-         '-'
-      ],
+         '9. Pistils (feat. Chris Cheek) 5:51'],
       personnel: [
          'Rajiv Jayaweera – drums, thammattama, caxixi',
          'Chris Cheek – tenor and soprano saxophone',
          'Aaron Parks – piano',
          'Lara Bello – voice',
          'Hugh Stuckey – guitar',
-         'Sam Anning – double bass',
-         '-',
-      ],
+         'Sam Anning – double bass'],
       credits: [
          'All songs composed by Rajiv Jayaweera. Produced by Rajiv Jayaweera.',
-        
          'Mixing by James Farber. Mastering by Mark Wilder.',
-         
-         'Artwork,"Garden of Earthly Delights" by Dr. Priyantha Udagedera. Design by Lucas Carrillo',
-      ]
-      
-      
+         'Artwork,"Garden of Earthly Delights" by Dr. Priyantha Udagedera. Design by Lucas Carrillo']
    },
 
    {
@@ -61,25 +52,19 @@ let albumsData = [
          '5. Ripples	(S. Anning)	5:42',
          '6. Gott Liebt Diese Welt (W. Schulz) 6:39',
          '7. Losdy (R. Jayaweera) 6:01',
-         '8. Outro (C. Morgan) 1:39',
-         '-'
-
-      ],
+         '8. Outro (C. Morgan) 1:39'],
       personnel: [
          'Carl Morgan – guitar, voice',
          'Sam Anning – d. bass, a. guitars (Datameta)',
          'Rajiv Jayaweera – drums',
-         '+ Sean Wayland – synth (Kleine Ahnung)',
-         
-      ],
+         '+ Sean Wayland – synth (Kleine Ahnung)'],
       credits: [
         'Recorded at Kindred Studio in Neukölln, Berlin in April, 2019.',
         ' Engineered & mixed by Carl Morgan.',
          ' Mastered by David Darlington.',
          '-',
          'Cover art by Scott Bergey ',
-         'Design by Elle Deslandes'
-      ]
+         'Design by Elle Deslandes']
    },
 
    {
@@ -95,20 +80,14 @@ let albumsData = [
          '4. Three',
          '5. Daggry',
          '6. We See',
-         '7. Goodbye',
-         '-'
-      ],
+         '7. Goodbye'],
       personnel: [
          'Jakob Dinesen – tenor saxophone',
          'Sam Anning – double bass',
-         'Rajiv Jayaweera – drums',
-         '-'
-      ],
+         'Rajiv Jayaweera – drums'],
       credits: [
          'Recorded in Copenhagen 2013.',
-         '-',
-         ' Released 2015.'
-      ]
+         ' Released 2015.']
    },
    {
       id: 4,
@@ -126,9 +105,7 @@ let albumsData = [
          '7. Farfalla',
          '8. Simple Fado',
          '9. A Woman and the Universe',
-         '10. La Semilla',
-         '-'
-      ],
+         '10. La Semilla'],
       personnel: [
          'Lara Bello – voice',
          'Gil Goldstein – piano / accordion',
@@ -139,14 +116,10 @@ let albumsData = [
          'Dave Eggar – cello',
          'Leni Stern – ngoni',
          'Samuel Torres – percussion',
-         'Rajiv Jayaweera – percussion',
-         '-'
-      ],
+         'Rajiv Jayaweera – percussion'],
       credits: [
          'Recorded in New York, 2015.',
-         '-',
-        ' Released on Biophilia Records, 2017'
-      ]
+        ' Released on Biophilia Records, 2017']
    },
    {
       id: 5,
@@ -166,203 +139,160 @@ let albumsData = [
          '9. Rocking Chair',
          '10. Panama',
          '11. Sweet Lorraine',
-         '12. I’ll Be Your Baby Tonight',
-         '-'
-      ],
+         '12. I’ll Be Your Baby Tonight'],
       personnel: [
          'Björn Ingelstam – trumpet / vocals',
          'Chris Tanner – clarinet / vocals',
          'Shannon Barnett – trombone / vocals',
          'Craig Fermanis – guitar',
          'Sam Anning – double bass',
-         'Rajiv Jayaweera – drums',
-         '-'
-      ],
+         'Rajiv Jayaweera – drums'],
       credits: [
-         'Recorded in Copenhagen, 2013'
-      ]
+         'Recorded in Copenhagen, 2013']
    },
-
-   {
-      id: 6,
-      description: 'this is description of Album6',
-      cover: pistils,
-      title: 'Album6',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         '-',
-         'Produced by Name'
-      ]
-   },
-
-   {
-      id: 7,
-      description: 'this is description of Album7',
-      cover: laniakea,
-      title: 'Album7',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ]
-   },
-
-   {
-      id: 8,
-      description: 'this is description of Album8',
-      cover: wee3c,
-      title: 'Album8',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ]
-   },
-
-   {
-      id: 9,
-      description: 'this is description of Album9',
-      cover: sikame,
-      title: 'Album9',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ]
-   },
-
-   {
-      id: 10,
-      description: 'this is description of Album10',
-      cover: pistils,
-      title: 'Album10',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ]
-   },
-
-   {
-      id: 11,
-      description: 'this is description of Album11',
-      cover: laniakea,
-      title: 'Album11',
-      label: 'Label',
-      tracks: [
-         '1. Track 0:00',
-         '2. Track 0:00',
-         '3. Track 0:00',
-         '4. Track 0:00',
-         '5. Track 0:00',
-         '6. Track 0:00',
-         '7. Track 0:00',
-         '-'
-      ],
-      personnel: [
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         'First Last - instrument',
-         '-'
-      ],
-      credits: [
-         'All songs composed by Name',
-         'Produced by Name'
-      ]
-   }
-   
+   // {
+   //    id: 6,
+   //    description: 'this is description of Album6',
+   //    cover: pistils,
+   //    title: 'Album6',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // },
+   // {
+   //    id: 7,
+   //    description: 'this is description of Album7',
+   //    cover: laniakea,
+   //    title: 'Album7',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // },
+   // {
+   //    id: 8,
+   //    description: 'this is description of Album8',
+   //    cover: wee3c,
+   //    title: 'Album8',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // },
+   // {
+   //    id: 9,
+   //    description: 'this is description of Album9',
+   //    cover: sikame,
+   //    title: 'Album9',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // },
+   // {
+   //    id: 10,
+   //    description: 'this is description of Album10',
+   //    cover: pistils,
+   //    title: 'Album10',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // },
+   // {
+   //    id: 11,
+   //    description: 'this is description of Album11',
+   //    cover: laniakea,
+   //    title: 'Album11',
+   //    label: 'Label',
+   //    tracks: [
+   //       '1. Track 0:00',
+   //       '2. Track 0:00',
+   //       '3. Track 0:00',
+   //       '4. Track 0:00',
+   //       '5. Track 0:00',
+   //       '6. Track 0:00',
+   //       '7. Track 0:00'],
+   //    personnel: [
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument',
+   //       'First Last - instrument'],
+   //    credits: [
+   //       'All songs composed by Name',
+   //       'Produced by Name']
+   // }
 ]
 export default albumsData

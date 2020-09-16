@@ -70,12 +70,6 @@ export default class Home extends React.Component {
                      {this.props.albums_link[1]}
                   </div>
 
-                  <div className="card">
-                     <Link to="/ka2021-tour">
-                        {home_cards[6]}
-                     </Link>
-                  </div>
-
                </div>
       )
    }

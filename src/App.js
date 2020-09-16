@@ -1,9 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link, NavLink } from "react-router-dom"
 
-
-import KA2021 from './components/press/tour_dates/KA2021'
-
 import Home from './components/Home'
 import Bio from './components/Bio'
 import Photos from './components/Photos'
@@ -197,7 +194,6 @@ class App extends React.Component {
                   <Route exact path='/'>
                      <Home
                         home_cardsData={home_cardsData}
-                        albumsData={albumsData}
                         press_link={press_link}
                         video_link={video_link}
                         albums_link={albums_link}
@@ -205,9 +201,6 @@ class App extends React.Component {
                         closeModal={this.closeModal}
                         videoThumbSelect={this.state.videoThumbSelect}
                      />
-                  </Route>
-                  <Route path='/ka2021-tour'>
-                     <KA2021 />
                   </Route>
                   <Route path='/bio'>
                      <Bio />
@@ -238,7 +231,6 @@ class App extends React.Component {
                         press_releases={press_releases}
                         press_reviews={press_reviews}
                         press_feature={press_feature}
-                        // navigation_link={navigation_link}
                         resetState={this.resetState}
                      />
                   </Route>
