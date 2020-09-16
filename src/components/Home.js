@@ -16,7 +16,7 @@ export default class Home extends React.Component {
          <div>
             <div
                style={{
-                  maxHeight: '12em', overflow: 'hidden'
+                  maxHeight: '12em', overflow: 'hidden', textAlign: 'center'
                }}>
                <img src={item.img}/>
                <img src={item.thumbnail}/>

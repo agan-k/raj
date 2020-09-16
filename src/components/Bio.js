@@ -2,20 +2,14 @@ import React from 'react'
 import bio_pic from '../assets/gig_shots/8.jpg'
 import bio_pic2 from '../assets/gig_shots/6.jpg'
 
-export default function Bio() {
+export default function Bio(props) {
    return (
       <div className="bio container">
-         <img
-            src={bio_pic}
-            style={{
-               height: '10em',
-               float: 'left',
-               margin: '0 1em .7em 0',
-               opacity: '.8',
-               borderRadius: '10px'
-            }}
-         />
+         <div className='feature-quote'>
+            {props.press_quotes[2]}
+         </div>
          <h2>Biography</h2>
+         <img id='ride' src={bio_pic} />
          <p>Rajiv Jayaweera is truly a global citizen, a fact that permeates and weaves its way into his 
          playing and composing. He was born in London, grew up in Melbourne, is of Sri Lankan heritage and is 
          currently based in New York City. He completed his Bachelor of Music at the Victorian College of the 
@@ -27,14 +21,13 @@ export default function Bio() {
          Quintet, Bopstretch and The Australian Art Orchestra’s Crossing Roper Bar Project.
          <br/>
          <br />
-            <img
-            src={bio_pic2}
+            <img id='birdland' src={bio_pic2}
             style={{
-               height: '14em',
-               float: 'right',
-               margin: '0 0 .7em 1em',
-               opacity: '.8',
-               borderRadius: '10px'
+               // height: '14em',
+               // float: 'right',
+               // margin: '0 0 .7em 1em',
+               // opacity: '.8',
+               // borderRadius: '10px'
             }}
          />
          Since moving to New York City, Jayaweera has performed at the legendary jazz 

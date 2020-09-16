@@ -203,7 +203,9 @@ class App extends React.Component {
                      />
                   </Route>
                   <Route path='/bio'>
-                     <Bio />
+                     <Bio
+                        press_quotes={press_quotes}
+                     />
                   </Route>
                   <Route path='/photos'>
                      <Photos />

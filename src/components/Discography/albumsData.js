@@ -62,7 +62,6 @@ let albumsData = [
         'Recorded at Kindred Studio in Neukölln, Berlin in April, 2019.',
         ' Engineered & mixed by Carl Morgan.',
          ' Mastered by David Darlington.',
-         '-',
          'Cover art by Scott Bergey ',
          'Design by Elle Deslandes']
    },

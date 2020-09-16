@@ -15,7 +15,7 @@ body {
    height: 100vh;
    /* opacity: 0; */
    margin: 0;
-   padding: 180px 0 0 0;
+   padding: 22vh 0 0 0;
 }
 .App .layout.view {
    opacity: 1;
@@ -93,7 +93,7 @@ margin: 0 0 0 0;
    font-weight: 400;
    position: fixed;
    top: 0;
-   height: 115px;
+   height: 17vh;
    width: 100vw;
    background: url('./assets/backgrounds/header1.jpg') no-repeat;
    background-size: cover;
@@ -116,8 +116,8 @@ margin: 0 0 0 0;
 }
 nav {
    position: absolute;
-   top: 94px;
-   left: 10px;
+   top: 14vh;
+   left: 0;
    width: 42%;
    height: min-content;
    background:none;
@@ -181,14 +181,14 @@ nav {
    align-content: space-between;
    /* The container needs a fixed height, and it
     * needs to be taller than your tallest column. */
-   height: 1400px;
+   height: 1200px;
  }
  .video {
     cursor: pointer;
  }
  .card {
    position: relative;
-   width: 28%;
+   width: 25%;
    margin-bottom: 2%;
    padding: 1%;
  }
@@ -197,8 +197,8 @@ nav {
    background-color: rgba(235, 235, 235, 0.979);
   }
  .card img {
-    width: 100%;
-    opacity: .8;
+    width: 80%;
+    opacity: .9;
  }
  .card p {
    font-size: .8em;
@@ -244,10 +244,32 @@ nav {
    /* margin: 0 auto; */
 
 }
+.bio img#ride{
+   height: 14em;
+   float: left;
+   margin: 0 1em .7em 0;
+   opacity: .8;
+   border-radius: 10px;
+}
+.bio img#birdland{
+   height: 18em;
+   float: right;
+   margin: 0 0 .7em 1em;
+   opacity: .8;
+   border-radius: 10px;
+}
+.feature-quote {
+   width: 65vw;
+   margin: 0 0 0 20vw;
+   opacity: .6;
+}
 .bio p {
-
+   margin: 0;
+   font-size: .8em;
 }
 .bio h2 {
+   font-size: 1.9em;
+   margin-top: -1em;
 
 }
 /* ============== Photos ================ */
@@ -443,7 +465,7 @@ nav {
 .albums-container {
    display: flex;
    /* flex-direction: row; */
-   justify-content: space-evenly;
+   /* justify-content: space-evenly; */
    /* flex-wrap: wrap; */
    /* padding: 0 0 0 1em; */
    width: 21em;
@@ -455,10 +477,10 @@ nav {
 .albums img {
    height: 3em;
    width: 3em;
-   margin: 0 0 2em 0;
+   margin: 0 1em 2em 0;
    border: .5px solid grey;
    /* cursor: pointer; */
-   opacity: .8;
+   opacity: .7;
 }
 .albums img:hover {
    opacity: 1;
@@ -600,4 +622,56 @@ nav {
    background-size: 100%;
    background-position: center bottom;
 }
-/* ============== AUDIO ================ */
+/* ============== Media Query ================ */
+
+@media only screen and (min-width: 1900px) {
+   .App .layout {
+      /* height: 100vh; */
+      /* opacity: 0; */
+      /* margin: 0; */
+      padding: 20vh 0 0 0;
+   }
+   /* ============== HEADER ================ */
+   .header {
+      height: 15vh;
+   
+   }
+   nav {
+      top: 13vh;
+      left: 5vw;
+   }
+
+   /* ============== HOME ================ */
+   .card p {
+      font-size: 1em;
+   }
+    .card h2 {
+      font-size: 1.4em;
+    }
+    .card h4 {
+      font-size: 1.1em;
+    }
+
+    /* ============== BIO ================ */
+.bio.container {
+   /* margin: 0 auto; */
+
+}
+.bio img#ride{
+   height: 14em;
+   float: left;
+   margin: 0 1em .7em 0;
+   opacity: .8;
+   border-radius: 10px;
+}
+.bio img#birdland{
+   height: 18em;
+   float: right;
+   margin: 0 0 .7em 1em;
+   opacity: .8;
+   border-radius: 10px;
+}
+.bio p {
+   font-size: 1.2em;
+}
+}
