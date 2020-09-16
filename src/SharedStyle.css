@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  background-color: rgb(233, 233, 233);
 }
 .App {
    margin: 0;
@@ -131,6 +132,9 @@ nav {
    list-style-type: none;
    color: rgb(255, 255, 255);
 }
+
+
+
 .menu a {
    text-decoration: none;
    color: white;
@@ -140,6 +144,13 @@ nav {
 .menu a:hover {
    opacity: 1;
 }
+.menu .active-link {
+   opacity: 1;
+}
+.menu .outside-link {
+   margin-top: -19px;
+}
+ 
 /* ===== drop-down option ==== */
 /* .dropdown-media {
    padding: 0;
@@ -497,8 +508,23 @@ nav {
 }
 .press-list-container {
    width: 20vw;
-   font-size: .9em;
+   font-size: .7em;
    text-align: right;
+   /* cursor: pointer; */
+   list-style: none;
+}
+.press-list-container p {
+    display: flex;
+    justify-content: flex-end;
+}
+.press-list-container a {
+   text-decoration: none;
+}
+.press-list-container p a:hover {
+   color: red; 
+}
+.press-list-container a:visited {
+   color: black;
 }
 .press-list li {
    cursor: pointer;
@@ -516,27 +542,27 @@ nav {
    border: 0;
    padding: 0;
 }
-.press-detail {
-}
-.press-detail h2 {
-}
-.press-detail h3 {
-}
+/* .press-detail {
+} */
+/* .press-detail h2 {
+} */
+/* .press-detail h3 {
+} */
 .press-detail p {
    font-weight: 100;
    word-spacing: .1em;
 }
-.press-detail a {
-}
+/* .press-detail a {
+} */
 
-.quotes-container h5 {
+/* .quotes-container h5 {
    margin-bottom: 0;
    text-align: right;
-}
-.quotes-container h4 {
+} */
+/* .quotes-container h4 {
    margin-top: 0;
    text-align: right;
-}
+} */
 /* ============== STORE ================ */
 .store.container {
    

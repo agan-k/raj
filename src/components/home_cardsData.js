@@ -1,6 +1,6 @@
 
 import australian from '../assets/logos/the-australian.png'
-import jazztrail from '../assets/logos/jazztrail.jpg'
+import jazztrail from '../assets/logos/jazztrail.png'
 import pistils from '../assets/albums/pistils.jpg'
 import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
 import ellstandissa from '../assets/video_thumbs/ellstandissa.webp'

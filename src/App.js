@@ -84,12 +84,10 @@ class App extends React.Component {
    render() {
       const navigation_link = navigationData.map((item, index) =>
          <li className={this.state} onClick={this.resetState}>
-            <NavLink exact to={item.navigation_route}
-               activeStyle={{ color: 'white', opacity: '1' }}>{item.navigation_description}
+            <NavLink exact to={item.navigation_route} activeClassName='active-link'>
+               {item.navigation_description}
             </NavLink>
-            <li className={this.state}
-               
-               style={{ marginTop: '-19px' }}>
+            <li className='outside-link'>
                <a onClick={this.resetState} href={item.url}>{item.external_link}</a>
             </li>
          </li> 
@@ -118,7 +116,7 @@ class App extends React.Component {
          <div className="press-list"
            onClick={() => this.handleSelectPress(item)}>
            <li>
-             {`${item.publication} - ${item.album}`}
+             {`${item.publication} - ${item.description}`}
            </li>
          </div>
       )
@@ -126,7 +124,7 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-              {`${item.publication} - ${item.album}`}
+              {`${item.publication} - ${item.description}`}
             </li>
          </div>
       )
@@ -134,7 +132,7 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-              {item.publication}
+            {item.publication}
             </li>
          </div>
       )
@@ -240,6 +238,8 @@ class App extends React.Component {
                         press_releases={press_releases}
                         press_reviews={press_reviews}
                         press_feature={press_feature}
+                        // navigation_link={navigation_link}
+                        resetState={this.resetState}
                      />
                   </Route>
                   <Route path='/contact'>

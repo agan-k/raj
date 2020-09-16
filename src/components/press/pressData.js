@@ -1,5 +1,5 @@
 import australian from '../../assets/logos/the-australian.png'
-import jazztrail from '../../assets/logos/jazztrail.jpg'
+import jazztrail from '../../assets/logos/jazztrail.png'
 import redcatpubl from '../../assets/logos/redcatpubl.png'
 import earshift from '../../assets/logos/earshift.jpg'
 import pbsFM from '../../assets/logos/pbsFM.png'
@@ -22,6 +22,7 @@ const pressData = [
       publication: 'The Australian',
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Earshift Music, 2020',
       quote: `The basic character of the music is determined by Jayaweera, a drummer of unusual
       subtlety and good taste, always alive to punctuating the music but never intrusive...
@@ -38,9 +39,9 @@ const pressData = [
       subtlety and good taste, always alive to punctuating the music but never intrusive. Anning's bass
       lines, beautifully recorded, can be felt as well as heard. It's such a pleasure to know there
       are modern jazz musicians in the world playing like this.`],
-      // body_img: australian,
       writer: 'Eric Myers',
-      url: 'https://ericmyersjazz.com/cd-reviews-page-35-1'
+      url: 'https://ericmyersjazz.com/cd-reviews-page-35-1',
+      url_description: 'https://ericmyersjazz.com/cd-reviews-page-35-1'
    },
 
    {
@@ -51,6 +52,7 @@ const pressData = [
       publication: 'Jazz Trail',
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Laniakea',
       label: 'Outside in Music, 2020',
       quote: `Eschewing any type of fireworks in favor of a relaxed, smooth flowing, the set of songs proposed
       by Jayaweera - his rhythmic sensibilities are reminiscent of Paul Motian, Brian Blade and Peter
@@ -92,15 +94,17 @@ const pressData = [
       Erskine - is fruitful, generous and transparent in its purest form.`],
       body_img: '',
       writer: 'Filipe Freitas',
-      url: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review'
+      url: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review',
+      url_description: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review'
    },
    {
       id: 3,
       press_release: true,
       img: redcatpubl,
       publication: 'Press Release',
-      artist: 'Rajiv Jayaweera',
-      album: 'Pistils',
+      artist: '',
+      album: '',
+      description: 'Album Pistils',
       label: 'Available June 5, 2020 on Outside in Music / Earshift Music (Australia/Asia)',
       title: `Drummer/Percussionist/Composer Rajiv Jayaweera
       Presents Pistils`,
@@ -148,7 +152,9 @@ const pressData = [
       only song on the album where saxophonist Chris Cheek switches from tenor to soprano, singing the
       melody like a bird.`],
       body_img: '',
-      comment: `More about Rajiv Jayaweera`,
+      comment: '',
+      url: '/bio',
+      url_description: 'More about Rajiv Jayaweera',
       writer: `Press Enquiries on RAJIV JAYAWEERA & PISTILS:
       Contact Jason Paul Harman Byrne @ Red Cat Publicity
       Tel +1 646 259 2105, Email redcatjazz@mac.com`
@@ -158,10 +164,11 @@ const pressData = [
       press_release: true,
       img: earshift,
       publication: 'Press Release',
-      artist: 'Kleine Ahnung Trio',
-      album: 'Laniakea',
+      artist: '',
+      album: '',
+      description: 'Album Laniakea',
       label: 'Available June 5, 2020 on Outside in Music / Earshift Music (Australia/Asia)',
-      title: `### FOR IMMEDIATE RELEASE ###`,
+      title: `Trio Kleine Ahnung - Laniakea`,
       subtitle: `Trio Kleine Ahnung (Carl Morgan, Rajiv Jayaweera, Sam Anning) release their debut album,
       Laniakea `,
       subtitle1: `Laniakea is the new album from Trio Kleine Ahnung, a collaboration between guitarist
@@ -203,7 +210,9 @@ const pressData = [
       comment: `Album: Laniakea Release: 10/01/2020 Label: Earshift Music distributed by MGM
       Personnel: Carl Morgan (guitar, voice), Sam Anning (double bass & acoustic guitars),
       Rajiv Jayaweera (drums), guest Sean Wayland (synthesizer)`,
-      writer: `www.earshift.com`
+      url: '/biohttps://www.earshift.com/trio-kleine-ahnung',
+      url_description: 'www.earshift.com',
+      writer: ''
    },
    
    {
@@ -214,6 +223,7 @@ const pressData = [
       publication: 'All About Jazz',
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Outside in Music, 2020',
       quote: `While drummer-composers often feel a need to make their mark through a show of force, Jayaweera 
       takes a more fanciful approach. Preferring blossoming expressions over bombast, he separates himself
@@ -245,7 +255,8 @@ const pressData = [
       pack with Pistils.`],
       body_img: '',
       writer: 'Dan Bilawsky',
-      url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music'
+      url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music',
+      url_description: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music'
    },
    {
       id: 6,
@@ -255,12 +266,14 @@ const pressData = [
       publication: 'PBS 106.7FM',
       artist: '',
       album: '',
+      description: '',
       label: '',
       quote: '',
       body: [''],
       body_img: pbs_fm,
       writer: '',
-      url: 'https://www.pbsfm.org.au/news/rajiv-jayaweera'
+      url: 'https://www.pbsfm.org.au/news/rajiv-jayaweera',
+      url_description: 'https://www.pbsfm.org.au/news/rajiv-jayaweera'
    },
    {
       id: 7,
@@ -270,6 +283,7 @@ const pressData = [
       publication: `In a Blue Mood`,
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Outside in Music, 2020',
       quote: `Jayaweera adds his rhythmic accents with a deft touch on the cymbals and the snare drum in an 
       evocative performance. It caps an excellent recording of first-rate performances of memorable and
@@ -305,7 +319,8 @@ const pressData = [
       an evocative performance. It caps an excellent recording of first-rate performances of memorable and
       engaging compositions.`],
       writer: 'Ron Weinstock',
-      url: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html'
+      url: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html',
+      url_description: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html'
    },
    {
       id: 8,
@@ -315,6 +330,7 @@ const pressData = [
       publication: `Jazz Halo`,
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Outside in Music, 2020',
       quote: `Jayaweera lets the New York influences sink in but doesn't forget his Sri Lankan roots.
       ...All the classic basic elements from western jazz are ingeniously woven into the songs.`,
@@ -340,7 +356,8 @@ const pressData = [
       `A CD without dominant characteristics, but with a dispersed dynamic and enough compelling staging 
       anchored in various origins.`],
       writer: 'Georges Tonla Briquet',
-      url: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/'
+      url: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/',
+      url_description: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/'
    },
    {
       id: 9,
@@ -350,6 +367,7 @@ const pressData = [
       publication: `France Musique`,
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Outside in Music, 2020',
       quote: `Rajiv Jayaweera is truly a citizen of the world, a fact that permeates and weaves its way 
       into his playing and composition.`,
@@ -378,7 +396,8 @@ const pressData = [
       finalist for the prestigious scholarship Freedman Jazz Fellowship, occurring at the Sydney Opera House
       in 2013.`],
       writer: '',
-      url: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548'
+      url: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548',
+      url_description: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548'
    },
    {
       id: 10,
@@ -388,6 +407,7 @@ const pressData = [
       publication: `Jazz Quad`,
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
+      description: 'Album Pistils',
       label: 'Outside in Music, 2020',
       quote: `...the album shows that in the person of Rajiv Jayavira we are meeting a very interesting and creative master.`,
       body: [`Until now, the musician of Sri Lankan origin has only appeared in our reviews once, and then as 
@@ -417,22 +437,25 @@ const pressData = [
       Nilus and The Elephant. However, there is plenty to choose from: the album shows that in the person of
       Rajiv Jayavira we are meeting a very interesting and creative master.`],
       writer: 'Leonid Auskern',
-      url: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568'
+      url: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568',
+      url_description: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568'
    },
    {
       id: 11,
       feature: true,
       img: abc_au,
-      title: '',
+      title: 'Australian Broadcasting Corporation',
       publication: 'ABC',
       artist: '',
       album: '',
+      description: '',
       label: '',
       quote: '',
       body: [''],
       body_img: abc_au_content,
       writer: '',
-      url: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034'
+      url: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034',
+      url_description: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034'
    },
    {
       id: 12,
@@ -442,12 +465,14 @@ const pressData = [
       publication: 'Happy Srilankans',
       artist: '',
       album: '',
+      description: '',
       label: '',
       quote: '',
       body: [''],
       body_img: happy_srilankans,
       writer: '',
-      url: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene'
+      url: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene',
+      url_description: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene'
    },
    
 

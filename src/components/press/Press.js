@@ -1,5 +1,7 @@
 import React from 'react'
 import PressDetail from './PressDetail'
+import { Link, NavLink } from 'react-router-dom'
+import navigation_link from '../../headerNavData';
 
 
 class Press extends React.Component {
@@ -20,6 +22,15 @@ class Press extends React.Component {
                />
             </div>
             <div className='press-list-container'>
+               <div > 
+                  <p
+                     onClick={this.props.resetState}
+                  >
+
+                     <Link to='./press'>press quotes</Link>
+                  </p>
+                 
+               </div>
                <h2>Press Releases</h2>
                <ul>{this.props.press_releases}</ul>
                <h2>Reviews</h2>
