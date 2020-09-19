@@ -13,7 +13,6 @@ class Discography extends React.Component {
    render() {
       return (
          <div className="discography container">
-
             <div className='albums-container'>
                {this.props.albums}
             </div>
@@ -24,9 +23,6 @@ class Discography extends React.Component {
                      albumsData={this.props.albumsData}
                   />
             </div>
-
-            
-
          </div>
       )
    }

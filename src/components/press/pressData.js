@@ -227,7 +227,7 @@ const pressData = [
       label: 'Outside in Music, 2020',
       quote: `While drummer-composers often feel a need to make their mark through a show of force, Jayaweera 
       takes a more fanciful approach. Preferring blossoming expressions over bombast, he separates himself
-      from the pack with Pistils.`,
+      from the pack with "Pistils".`,
       body: [`While London-born, Melbourne-reared, New York-based drummer Rajiv Jayaweera's work is naturally 
       colored by his experiences spanning those points on the map, it's his Sri Lankan heritage that most
       greatly informs and influences this debut. Drawing inspiration from memories of nature, sounds and scents

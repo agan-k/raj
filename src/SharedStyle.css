@@ -8,14 +8,14 @@ body {
 .App {
    margin: 0;
    font-family: 'Montserrat', sans-serif;
+   font-size: 1em;
    word-spacing: .2em;
    font-weight: 300;
 }
 .App .layout {
    height: 100vh;
-   /* opacity: 0; */
    margin: 0;
-   padding: 22vh 0 0 0;
+   padding: 20vh 0 0 0;
 }
 .App .layout.view {
    opacity: 1;
@@ -93,7 +93,7 @@ margin: 0 0 0 0;
    font-weight: 400;
    position: fixed;
    top: 0;
-   height: 17vh;
+   height: 113px;
    width: 100vw;
    background: url('./assets/backgrounds/header1.jpg') no-repeat;
    background-size: cover;
@@ -116,7 +116,7 @@ margin: 0 0 0 0;
 }
 nav {
    position: absolute;
-   top: 14vh;
+   top: 94px;
    left: 0;
    width: 42%;
    height: min-content;
@@ -181,7 +181,9 @@ nav {
    align-content: space-between;
    /* The container needs a fixed height, and it
     * needs to be taller than your tallest column. */
-   height: 1200px;
+   /* height: min; */
+   height: 100em;
+   padding-top: 60vh;
  }
  .video {
     cursor: pointer;
@@ -245,14 +247,14 @@ nav {
 
 }
 .bio img#ride{
-   height: 14em;
+   height: 12em;
    float: left;
    margin: 0 1em .7em 0;
    opacity: .8;
    border-radius: 10px;
 }
 .bio img#birdland{
-   height: 18em;
+   height: 14em;
    float: right;
    margin: 0 0 .7em 1em;
    opacity: .8;
@@ -326,7 +328,7 @@ nav {
    height: min-content;
    width: 75vw;
    display: flex;
-   margin: 0 auto;
+   margin: 3em auto;
 }
 .photo-detail img {
    animation: 2s ease-out fadeIn;
@@ -458,56 +460,65 @@ nav {
 }
 /* ============== DISCOGRAPHY ================ */
 .discography.container {
-   /* display: flex; */
-   /* align-content: space-between; */
 }
 /* ====== albums =+=== */
 .albums-container {
    display: flex;
-   /* flex-direction: row; */
-   /* justify-content: space-evenly; */
-   /* flex-wrap: wrap; */
-   /* padding: 0 0 0 1em; */
-   width: 21em;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 100%;
    height: min-content;
-   margin: 0;
+   margin: 2em 0 1em 0;
    padding: 0;
-   /* background-color: red; */
 }
 .albums img {
-   height: 3em;
-   width: 3em;
-   margin: 0 1em 2em 0;
+   height: 2.8em;
+   width: 2.8em;
    border: .5px solid grey;
-   /* cursor: pointer; */
-   opacity: .7;
+   cursor: pointer;
+   opacity: .6;
 }
 .albums img:hover {
    opacity: 1;
 }
 .album-select {
-   width: 70%;
+   width: 100%;
    height: 100%;
 }
 /* ====== album detail ===== */
 .album-detail {
    width: 100%;
    /* font-family: Helvetica; */
-   font-size: 1em;
+   /* font-size: 1em; */
    font-weight: 100;
    color: rgb(77, 77, 77);
+   /* background-color: blue; */
 }
 .album-detail img {
-   height: 21em;
-   width: 21em;
-   margin: 0;
+   height: 20em;
+   width: 20em;
+   /* height: 100%; */
+   /* width: 100%; */
+   
    border: .5px solid gray;
 }
 .album-info {
    display: flex;
-   /* align-content: space-evenly; */
-   width: min-content;
+   justify-content: space-between;
+   width: 100%;
 }
+.info-box {
+   height: 20em;
+   width: 20em;
+   margin: 0;
+}
+.info-box.personnel li {
+   padding: .2em;
+}
+.info-box.tracks li {
+   padding: .4em;
+}
+
 .album-info p{
    font-size: .8em;
    margin: .5em 0 0 0;
@@ -530,17 +541,17 @@ nav {
 .album-info h3 {
    margin: 0 0 .2em 0;
 }
-.info-box {
-   width: 22em;
-   height: 22em;
-   margin-left: 1em;
-}
+
 
 
 /* ============== PRESS ================ */
 .press.container {
    font-family: 'Montserrat', sans-serif;
    display: flex;
+}
+.press-quote p {
+   margin: 0;
+   font-size: .8em;
 }
 .press-list-container {
    width: 20vw;
@@ -565,12 +576,10 @@ nav {
 .press-list li {
    cursor: pointer;
    list-style: none;
-
 }
 .press-list li:hover {
    color: red;
 }
-
 
 .press-detail-container {
    width: 60vw;
@@ -578,41 +587,17 @@ nav {
    border: 0;
    padding: 0;
 }
-/* .press-detail {
-} */
-/* .press-detail h2 {
-} */
-/* .press-detail h3 {
-} */
 .press-detail p {
    font-weight: 100;
    word-spacing: .1em;
 }
-/* .press-detail a {
-} */
-
-/* .quotes-container h5 {
-   margin-bottom: 0;
-   text-align: right;
-} */
-/* .quotes-container h4 {
-   margin-top: 0;
-   text-align: right;
-} */
 /* ============== STORE ================ */
 .store.container {
-   
-}
-/* ==== products ===== */
-.product {
-   height: min-content;
-   width: 80vw;
-   margin: 0 auto;
+   /* link to outside! ( bandcamp merch ) */
 }
 /* ============== CONTACT ================ */
 .contact.container {
-
-   /* height: 100%; */
+   /* .jpg image of email*/
 }
 /* ============== FOOTER ================ */
 .footer {
@@ -622,56 +607,99 @@ nav {
    background-size: 100%;
    background-position: center bottom;
 }
+
+
+
+/* ============== Media Query ================ */
+/* ============== Media Query ================ */
+/* ============== Media Query ================ */
+/* ============== Media Query ================ */
 /* ============== Media Query ================ */
 
+
 @media only screen and (min-width: 1900px) {
+   .App {
+      font-size: 1.5em;
+   }
    .App .layout {
       /* height: 100vh; */
-      /* opacity: 0; */
       /* margin: 0; */
-      padding: 20vh 0 0 0;
+      /* padding: 20vh 0 0 0; */
    }
    /* ============== HEADER ================ */
    .header {
-      height: 15vh;
-   
+      height: 185px;
    }
    nav {
-      top: 13vh;
-      left: 5vw;
+      top: 157px;
+      left: 10px;
+      font-size: 24px;
+   }
+   .menu .outside-link {
+      margin-top: -29px;
    }
 
    /* ============== HOME ================ */
+   .home.container {
+      /* height: 200em; */
+   }
    .card p {
-      font-size: 1em;
+      /* font-size: 1em; */
    }
     .card h2 {
-      font-size: 1.4em;
+      /* font-size: 1.4em; */
     }
     .card h4 {
-      font-size: 1.1em;
+      /* font-size: 1.1em; */
     }
 
     /* ============== BIO ================ */
-.bio.container {
-   /* margin: 0 auto; */
+   .bio.container {
+      /* margin: 0 auto; */
 
-}
-.bio img#ride{
-   height: 14em;
-   float: left;
-   margin: 0 1em .7em 0;
-   opacity: .8;
-   border-radius: 10px;
-}
-.bio img#birdland{
-   height: 18em;
-   float: right;
-   margin: 0 0 .7em 1em;
-   opacity: .8;
-   border-radius: 10px;
-}
-.bio p {
-   font-size: 1.2em;
-}
+   }
+   .feature-quote {
+      width: 55vw;
+      margin: 0 0 0 20vw;
+      opacity: .6;
+   }
+   .bio img#ride{
+      height: 14em;
+      float: left;
+      margin: 0 1em .7em 0;
+      opacity: .8;
+      border-radius: 10px;
+   }
+   .bio img#birdland{
+      height: 15em;
+      float: right;
+      margin: 0 0 .7em 1em;
+      opacity: .8;
+      border-radius: 10px;
+   }
+   .bio p {
+      /* font-size: 1.5em; */
+   }
+   /* ============== Photos ================ */
+   .image-container {
+      /* height: 14em; */
+   }
+   /* ======= PhotoDetail ======= */
+   .photo-detail {
+      /* margin: 9em auto */
+   }
+   .photo-detail-img-container img {
+      /* height: 50em; */
+      /* margin: 0 auto; */
+   }
+   .arrow {
+      /* width: 2em; */
+      /* font-size: 5em;    */
+   }
+   .close {
+      /* height: 3em; */
+      /* font-size: 4em; */
+   }
+   /* ============== Videos ================ */
+
 }

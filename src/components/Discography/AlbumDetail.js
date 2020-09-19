@@ -14,15 +14,16 @@ class AlbumDetail extends React.Component {
   }
 
    render() {
-
      return (
 
          <div className="album-detail">
              {this.props.albumSelect ?
             <>
                <div className='album-info'>
-                  <img src={this.props.albumSelect.cover} />
                   <div className='info-box'>
+                     <img src={this.props.albumSelect.cover}/>
+                  </div>
+                  <div className='info-box personnel'>
                      <h2>{this.props.albumSelect.description}</h2>
                      <h3>{this.props.albumSelect.title}</h3>
                      <ul>
@@ -35,36 +36,36 @@ class AlbumDetail extends React.Component {
                         <p>{item}</p>
                      </>
                      )}
-                    </div>
-                    <div className="info-box">
-                  {this.props.albumSelect.bandcamp ?
+                  </div>
+                  <div className="info-box tracks">
+                    {this.props.albumSelect.bandcamp ?
                      <>
                         <BandcampPlayer
                            album={this.props.albumSelect.bandcamp}
-                           height='21.1em' width='21.1em'
-                           artwork='none'
-                            />
+                           height='20.5em'
+                           width='20.5em'
+                           artwork='none' />
                      </> :
                      <>
-                        <p>Tracks:</p>
+                        <h4>Tracks:</h4>
                         <ul>
-                        {this.props.albumSelect.tracks.map(item =>
-                           <li>{item}</li>
-                        )}
+                           {this.props.albumSelect.tracks.map(item =>
+                              <li>{item}</li>
+                           )}
                         </ul>
-                    </>
-                    }
-                    
-               </div>
-               </div>
-
+                     </>
+                     }
+                  </div>
                
+               </div>
              </> : 
         //===================== ON LOAD (display first album)===================================
               <div className="album-detail">
-               <div className="album-info">
-                    <img src={this.props.albumsData[0].cover} />
+                 <div className="album-info">
                     <div className="info-box">
+                       <img src={this.props.albumsData[0].cover} />
+                    </div>
+                    <div className="info-box personnel">
                      <h2>{this.props.albumsData[0].description}</h2>
                      <h3>{this.props.albumsData[0].title}</h3>
                      <ul>
@@ -79,17 +80,13 @@ class AlbumDetail extends React.Component {
                         )}
                   </div>
                   
-                    <div className="info-box">
+                    <div className="info-box tracks">
                      <BandcampPlayer
                            album={this.props.albumsData[0].bandcamp}
-                           height='21.1em'
-                           width='21.1em'
+                           height='20.5em'
+                           width='20.5em'
                            artwork='none' />
                     </div>
-               </div>
-               
-               <div className="album-info">
-               
                </div>
             </div>
          }

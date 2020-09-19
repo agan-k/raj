@@ -99,9 +99,9 @@ class App extends React.Component {
       const press_quotes = pressData.filter(item => item.quote).map(item =>
          <div className="press-quote">
                <p style={{padding: '.1em', margin: '0'}}><em>
-               <span style={{opacity: '.7', fontSize: '2.2em', verticalAlign: 'text-bottom', color: 'grey', padding: '.5em'}}>&#x275E;</span>
+               <span style={{opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-bottom', color: 'grey', padding: '.5em'}}>&#x275E;</span>
                   {item.quote}
-               <span style={{ opacity: '.7', fontSize: '2.2em', verticalAlign: 'text-top', color: 'grey', padding: '.5em'}}>&#x275D;</span>
+               <span style={{ opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-top', color: 'grey', padding: '.5em'}}>&#x275D;</span>
                </em></p>
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                <p >{`${item.writer}`}</p> &nbsp; &nbsp;
