@@ -97,15 +97,17 @@ class App extends React.Component {
          </div>
       )
       const press_quotes = pressData.filter(item => item.quote).map(item =>
-         <div className="press-quote">
-               <p style={{padding: '.1em', margin: '0'}}><em>
-               <span style={{opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-bottom', color: 'grey', padding: '.5em'}}>&#x275E;</span>
-                  {item.quote}
-               <span style={{ opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-top', color: 'grey', padding: '.5em'}}>&#x275D;</span>
-               </em></p>
+         <div>
+            <p>
+               <em>
+                  <span style={{opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-bottom', color: 'black3', padding: '.5em'}}>&#x275E;</span>
+                     {item.quote}
+                  <span style={{ opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-top', color: 'black3', padding: '.5em'}}>&#x275D;</span>
+               </em>
+            </p>
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-               <p >{`${item.writer}`}</p> &nbsp; &nbsp;
-               <p ><strong><em>{item.publication}</em></strong></p>
+               <h4 style={{ margin: '0', fontWeight: '100'}}>{`${item.writer}`}</h4> &nbsp; &nbsp;
+               <h4 style={{ margin: '0 2em 0 0 '}}><em>{item.publication}</em></h4>
             </div>
          </div>
          )
@@ -134,27 +136,23 @@ class App extends React.Component {
          </div>
       )
       const press_link = pressData.map(item =>
-        <Link to='/press'>
-            <div className="home-card-link"
-               onClick={() => this.handleSelectPress(item)}>
-               {/* &#8599; */}
-            </div>
+         <Link className='link' to='/press'
+            onClick={() => this.handleSelectPress(item)}>
+            {/* &#8599; */}
          </Link>
       )
       const video_link = videosData.map(item =>
 
-         <div className="home-card-link"
+         <div className='link'
             onClick={() => this.handleSelectVideos(item)}>
             {/* &#8599; */}
          </div>
       )
       const albums_link = albumsData.map(item =>
-         <Link to='/discography'>
-            <div className="home-card-link"
-               onClick={() => this.handleSelectAlbums(item)}>
-               {/* &#8599; */}
-            </div>
+         <Link className='link' to='/discography'
+            onClick={() => this.handleSelectAlbums(item)}>
          </Link>
+            
       )
 
       return (
@@ -200,6 +198,7 @@ class App extends React.Component {
                         modalShowing={this.state.modalShowing}
                         closeModal={this.closeModal}
                         videoThumbSelect={this.state.videoThumbSelect}
+                        press_quotes={press_quotes}
                      />
                   </Route>
                   <Route path='/bio'>
@@ -223,7 +222,9 @@ class App extends React.Component {
                      />
                   </Route>
                   <Route path='/shows'>
-                     <Shows />
+                     <Shows
+                        albums_link={albums_link}
+                     />
                   </Route>
                   <Route path='/press'>
                      <Press

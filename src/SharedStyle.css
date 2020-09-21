@@ -174,25 +174,106 @@ nav {
 } */
 
 /* ============== HOME ================ */
-
 .home.container {
+   margin-top: -1.4em;
+}
+.home .banner {
+   position: relative;
+   overflow: hidden;
+   margin: 0 0 2em 0;
+   /* text-align: center; */
+   width: 100%;
+   height: 540px;
+   color: white;
+   /* display: flex; */
+   /* background-color: white;
+   opacity: 1;
+   background: url(./assets/backgrounds/1b.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center top; */
+   
+ }
+ .banner .content {
+    position: relative;
+    /* height: 100%; */
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+ .banner .press-quote {
+    /* position: absolute; */
+   font-size: .8em;
+   width: 40%;
+   margin: 0 20% 0 0;
+ }
+ .banner .cta {
+   position: relative; /* for .banner .link overlay*/
+   height: min-content;
+   margin: 14% 7% 0 0;
+   /* z-index: 1; */
+   /* background-color: blue; */
+ }
+ .banner .link {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    /* background-color: red; */
+ }
+ .banner .cta img {
+   width: 13em;
+   height: 13em;
+   /* z-index: 0; */
+   box-shadow: 0 1px 3px grey;
+}
+ .banner .cta p {
+   text-transform: uppercase;
+   font-family: Helvetica, sans-serif;
+   font-size: 1.2em;
+   font-weight: 800;
+   margin: 0;
+   color:#EAB220;
+}
+ .banner .cta p:hover {
+   text-decoration: underline;
+}
+
+
+
+.home-cards-container {
    display: flex;
    flex-flow: column wrap;
    align-content: space-between;
    /* The container needs a fixed height, and it
     * needs to be taller than your tallest column. */
    /* height: min; */
-   height: 100em;
-   padding-top: 60vh;
+   height: 60em;
+   /* padding-top: 60vh; */
+   
  }
+ 
  .video {
     cursor: pointer;
  }
  .card {
-   position: relative;
-   width: 25%;
+   position: relative; /* for .card .link overlay*/
+   width: 28%;
    margin-bottom: 2%;
    padding: 1%;
+ }
+ .card .link {
+   position: absolute;
+   top: 0;
+   left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
  }
  .card:hover {
    box-shadow: 1px 3px 8px #dfdfdf;
@@ -214,18 +295,7 @@ nav {
 
  }
  /* ============================================App.js */
- .home-card-link {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: .6;
-    text-align: right;
- }
+ 
 
  /* Re-order items into 3 rows */
  .card:nth-child(3n+1) { order: 1; }
@@ -233,8 +303,8 @@ nav {
  .card:nth-child(3n)   { order: 3; }
 
  /* Force new columns */
- .home.container::before,
- .home.container::after {
+ .home-cards-container::before,
+ .home-cards-container::after {
    content: "";
    flex-basis: 100%;
    width: 0;
@@ -457,7 +527,16 @@ nav {
 
 /* ============== SHOWS ================ */
 .shows.container {
+   /* position: relative; */
 }
+.shows ul {
+   width: 60vw;   
+}
+.shows li {
+   padding: .5em;   
+}
+
+
 /* ============== DISCOGRAPHY ================ */
 .discography.container {
 }
@@ -549,10 +628,7 @@ nav {
    font-family: 'Montserrat', sans-serif;
    display: flex;
 }
-.press-quote p {
-   margin: 0;
-   font-size: .8em;
-}
+
 .press-list-container {
    width: 20vw;
    font-size: .7em;
@@ -591,6 +667,13 @@ nav {
    font-weight: 100;
    word-spacing: .1em;
 }
+.press-detail .press-quote p {
+   font-size: .9em;
+   margin: 2em 0 0 0;
+}
+.press-detail .press-quote h4 {
+   font-size: .9em;
+}
 /* ============== STORE ================ */
 .store.container {
    /* link to outside! ( bandcamp merch ) */
@@ -619,7 +702,7 @@ nav {
 
 @media only screen and (min-width: 1900px) {
    .App {
-      font-size: 1.5em;
+      font-size: 1.8em;
    }
    .App .layout {
       /* height: 100vh; */
@@ -641,17 +724,11 @@ nav {
 
    /* ============== HOME ================ */
    .home.container {
-      /* height: 200em; */
+      margin-top: -1.9em;
    }
-   .card p {
-      /* font-size: 1em; */
+   .home .banner {
+      height: 840px;
    }
-    .card h2 {
-      /* font-size: 1.4em; */
-    }
-    .card h4 {
-      /* font-size: 1.1em; */
-    }
 
     /* ============== BIO ================ */
    .bio.container {

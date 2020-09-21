@@ -37,9 +37,9 @@ export default class PressDetail extends Component {
                </a>
             </>
                :
-            <>
+            <div className='press-quote'>
                {this.props.press_quotes}
-            </>
+            </div>
          }
          </div>
       )
