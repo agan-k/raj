@@ -20,7 +20,7 @@ export default class Home extends React.Component {
          <div>
             <div
                style={{
-                  maxHeight: '12em', overflow: 'hidden', textAlign: 'center'
+                  maxHeight: '14em', overflow: 'hidden', textAlign: 'center'
                }}>
                <img src={item.img}/>
                <img src={item.thumbnail}/>
@@ -50,7 +50,7 @@ export default class Home extends React.Component {
                   <div className='cta'>
                      <img src={pistils}/>
                      <p>
-                        new album<br/> out now &nbsp;
+                        new album out now&nbsp;
                         <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
                         <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
                         {this.props.albums_link[0]}
@@ -101,6 +101,10 @@ export default class Home extends React.Component {
                      <div className="card">
                         {home_cards[5]}
                         {this.props.albums_link[1]}
+                     </div>
+                     <div className="card">
+                        {home_cards[6]}
+                        
                      </div>
 
                   </div>

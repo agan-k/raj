@@ -10,6 +10,9 @@ export default class Videos extends Component {
          modalShowing: false
       }
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+   }
    handleSelectShowcase = (item, index) => {
       this.setState({
          showcaseThumbSelect: item,

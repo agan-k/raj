@@ -12,64 +12,110 @@ import eleven from '../assets/gig_shots/11.jpg'
 import twelve from '../assets/gig_shots/12.jpg'
 import thirteen from '../assets/gig_shots/13.jpg'
 import fourteen from '../assets/gig_shots/14.jpg'
+// import fifteen from '../assets/gig_shots/15.jpg'
+import fifteen from '../assets/gig_shots/15a.jpg'
+import promo_small1b from '../assets/promo_shots/small/1b.jpg'
+import promo_small1a from '../assets/promo_shots/small/1a.jpg'
+import promo_small2 from '../assets/promo_shots/small/2.jpg'
+import promo_small3 from '../assets/promo_shots/small/3.jpg'
 
 const photosData = [
    {
-      id: 1,
-      image: one
+      id: 19,
+      image: promo_small1b,
+      caption: 'photo: D. White'
 },
    {
-      id: 2,
-      image: two
+      id: 18,
+      image: promo_small1a,
+      caption: 'photo: D. White'
 },
    {
-      id: 3,
-      image: three
+      id: 17,
+      image: promo_small2,
+      caption: 'photo: D. White'
 },
    {
-      id: 4,
-      image: four
+      id: 16,
+      image: promo_small3,
+      caption: 'photo: D. White'
 },
    {
-      id: 5,
-      image: five
-},
-   {
-      id: 6,
-      image: six
-},
-   {
-      id: 7,
-      image: seven
-},
-   {
-      id: 8,
-      image: eight
-},
-   {
-      id: 9,
-      image: nine
-},
-   {
-      id: 10,
-      image: ten
-},
-   {
-      id: 11,
-      image: eleven
-},
-   {
-      id: 12,
-      image: twelve
-},
-   {
-      id: 13,
-      image: thirteen
+      id: 15,
+      image: fifteen,
+      caption: 'photo: T. Yarad - Brooklyn, NY 2020'
 },
    {
       id: 14,
-      image: fourteen
-}
-
+      image: fourteen,
+      caption: 'Freedman Fellowship Finals Sydney Opera House, 2013'
+},
+   {
+      id: 13,
+      image: thirteen,
+      caption: 'Trio Kleine Ahnung, MONA, Hobart, Jan 2020'
+},
+   {
+      id: 12,
+      image: twelve,
+      caption: 'Thailand International Jazz Conference, 2020'
+},
+   {
+      id: 11,
+      image: eleven,
+      caption: 'photo: W. Skibinski - Trio Kleine Ahnung, Jazz Lab, Melbourne, Jan 2020'
+},
+   {
+      id: 10,
+      image: ten,
+      caption: 'photo: W. Skibinski - Trio Kleine Ahnung, Jazz Lab, Melbourne, Jan 2020'
+},
+   {
+      id: 9,
+      image: nine,
+      caption: 'Freedman Fellowship Finals Sydney Opera House, 2013'
+},
+   
+   {
+      id: 8,
+      image: eight,
+      caption: 'Jazz at Lincoln Centre, Doha, Qatar, 2014'
+},
+   {
+      id: 7,
+      image: seven,
+      caption: 'Birdland Jazz Club, NYC, 2019'
+},
+   {
+      id: 6,
+      image: six,
+      caption: 'Birdland Jazz Club, NYC, 2019'
+},
+   {
+      id: 5,
+      image: five,
+      caption: ''
+},
+   {
+      id: 4,
+      image: four,
+      caption: 'Thailand International Jazz Conference, 2020'
+},
+   {
+      id: 3,
+      image: three,
+      caption: 'Thailand International Jazz Conference, 2020'
+},
+   {
+      id: 2,
+      image: two,
+      caption: 'Thailand International Jazz Conference, 2020'
+   },
+   {
+      id: 1,
+      image: one,
+      caption: 'Thailand International Jazz Conference, 2020'
+   },
+   
 ]
 export default photosData

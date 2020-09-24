@@ -1,6 +1,6 @@
 import pistils from '../../assets/albums/pistils.jpg'
 import laniakea from '../../assets/albums/laniakea.jpg'
-import wee3c from '../../assets/albums/wee3c.png'
+import wee3c from '../../assets/albums/wee3c.jpg'
 import joechindamo from '../../assets/albums/joechindamo.png'
 import sikame from '../../assets/albums/sikame.jpg'
 import ragstretch from '../../assets/albums/ragstretch.jpg'
@@ -87,7 +87,7 @@ let albumsData = [
       description: 'Dinesen / Jayaweera / Anning',
       bandcamp: '801737656',
       cover: wee3c,
-      title: 'Good Onions',
+      title: 'We Three See',
       label: 'Label',
       tracks: [
          '1. Sweetheart',

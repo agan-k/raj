@@ -29,7 +29,7 @@ export default class PhotoDetail extends Component {
       })
    }
    render() {
-      // ===========================
+    // ===========================
     const BackArrow = (props) => (
       <div onClick={props.previousImage}>
          <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
@@ -62,7 +62,8 @@ export default class PhotoDetail extends Component {
                return (
 
                <div className='photo-detail-img-container'>
-                  <img src={item.image} />
+                     <img src={item.image} />
+                     <p>{item.caption}</p>
                </div>
                
                )}

@@ -33,7 +33,7 @@ const videosData = [
       id: 4,
       videos_showcase: true,
       thumbnail: welikadawatte,
-      caption: 'Welikadawatte - TIJC 2020',
+      caption: 'Welikadawatte - Birdland, NYC',
       video_url: 'https://youtu.be/OW3TRxUqREY'
    },
    {

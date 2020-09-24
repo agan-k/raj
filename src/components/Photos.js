@@ -10,6 +10,9 @@ export default class Photos extends React.Component {
          index: null
       }
    }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+   }
 
    handleSelect = (item, index) => {
       this.setState({

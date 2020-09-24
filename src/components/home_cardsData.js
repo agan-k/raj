@@ -5,7 +5,7 @@ import pistils from '../assets/albums/pistils.jpg'
 import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
 import ellstandissa from '../assets/video_thumbs/ellstandissa.webp'
 import laniakea from '../assets/albums/laniakea.jpg'
-import ka2020_tour from '../assets/home_cards/ka2020_tour.jpg'
+import tijc from '../assets/content/tijc.jpg'
 
 const home_cardsData = [
    {
@@ -78,12 +78,14 @@ const home_cardsData = [
    },
    {
       id: 7,
-      img: ka2020_tour,
+      img: tijc,
       thumbnail: '',
       video_url: '',
-      date: 'April, 2020',
-      card_subject: `Kleine Ahnung Trio tour 2021 - dates anounced!`,
-      card_blurb: `Kleine Ahnung Trio takes it on the road: BRISBANE | CANBERRA | SYDNEY | HOBART ..[more]`
+      date: 'January, 2020',
+      card_subject: `Thailand International Jazz Conference`,
+      card_blurb: `Excited to be artists in residence for a week at the Thailand International Jazz 
+      Conference in Bangkok, and presenting a set of my music with a great band featuring Chris Cheek, 
+      Adam Birnbaum, Carl Morgan and Sam Anning.`
    },
 
 ]
