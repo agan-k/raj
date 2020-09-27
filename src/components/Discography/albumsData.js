@@ -1,7 +1,7 @@
 import pistils from '../../assets/albums/pistils.jpg'
 import laniakea from '../../assets/albums/laniakea.jpg'
 import wee3c from '../../assets/albums/wee3c.jpg'
-import joechindamo from '../../assets/albums/joechindamo.png'
+import joechindamo from '../../assets/albums/joechindamo.jpg'
 import sikame from '../../assets/albums/sikame.jpg'
 import ragstretch from '../../assets/albums/ragstretch.jpg'
 import benbryden from '../../assets/albums/benbryden.jpg'
@@ -18,7 +18,7 @@ import joechindamo1 from '../../assets/albums/joechindamo1.jpg'
 import wayoutwest from '../../assets/albums/wayoutwest.jpg'
 import goodonions from '../../assets/albums/goodonions.jpg'
 import korema from '../../assets/albums/korema.jpg'
-import dianepeters from '../../assets/albums/dianepeters.jpeg'
+import dianepeters from '../../assets/albums/dianepeters.jpg'
 
 
 

@@ -26,14 +26,28 @@ export default class Photos extends React.Component {
       })
    }
    render() {
-      let photos = photosData.map((item, index) =>
-         <div className='image-container'>
-            <img
-               src={item.image}
-               onClick={() => this.handleSelect(item, index)}
-            />
-         </div>
-         )
+      let photos = photosData.map((item, index) => {
+         if (item.vertical_shot === true) {
+            return (
+               <div className='image-container vertical'>
+                  <img
+                     src={item.image}
+                     onClick={() => this.handleSelect(item, index)}
+                  />
+               </div>
+            )
+         } else {
+            return (
+               <div className='image-container horizontal'>
+                  <img
+                     src={item.image}
+                     onClick={() => this.handleSelect(item, index)}
+                  />
+               </div>
+            )
+         }
+         
+      })
       return (
          <div className="photos container">
 

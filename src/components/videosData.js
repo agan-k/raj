@@ -1,22 +1,22 @@
-import ellstandissa from '../assets/video_thumbs/ellstandissa.webp'
-import pistils from '../assets/video_thumbs/pistils.webp'
-import elephant from '../assets/video_thumbs/elephant.webp'
-import welikadawatte from '../assets/video_thumbs/welikadawatte.webp'
-import hirimbura from '../assets/video_thumbs/hirimbura.webp'
-import elephant_tijc2020 from '../assets/video_thumbs/elephant_tijc2020.webp'
-import galadari from '../assets/video_thumbs/galadari.webp'
+import ellstandissa from '../assets/video_thumbs/ellstandissa.jpg'
+import pistils from '../assets/video_thumbs/pistils.jpg'
+import elephant from '../assets/video_thumbs/elephant.jpg'
+import welikadawatte_birdland2019 from '../assets/video_thumbs/welikadawatte_birdland2019.jpg'
+import hirimbura from '../assets/video_thumbs/hirimbura.jpg'
+import welikadawatte_tijc2020 from '../assets/video_thumbs/welikadawatte_tijc2020.jpg'
+import galadari from '../assets/video_thumbs/galadari.jpg'
 import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
 
 const videosData = [
    {
       id: 1,
+      videos_showcase: true,
       thumbnail: ellstandissa,
       caption: 'Ellstandissa',
       video_url: 'https://youtu.be/n1lvfw0MWMo',
    },
    {
       id: 2,
-      videos_showcase: true,
       videos_showcase: true,
       thumbnail: elephant,
       caption: 'The Elephant',
@@ -32,7 +32,7 @@ const videosData = [
    {
       id: 4,
       videos_showcase: true,
-      thumbnail: welikadawatte,
+      thumbnail: welikadawatte_birdland2019,
       caption: 'Welikadawatte - Birdland, NYC',
       video_url: 'https://youtu.be/OW3TRxUqREY'
    },
@@ -46,7 +46,7 @@ const videosData = [
    {
       id: 6,
       videos_showcase: true,
-      thumbnail: elephant_tijc2020,
+      thumbnail: welikadawatte_tijc2020,
       caption: 'The Elephant - (Live) TIJC 2020',
       video_url: 'https://youtu.be/4JzT8WLun3g'
    },

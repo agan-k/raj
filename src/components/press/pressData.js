@@ -425,7 +425,7 @@ const pressData = [
       album: 'Pistils',
       description: 'Auskern - Pistils',
       label: 'Outside in Music, 2020',
-      quote: `...the album shows that in the person of Rajiv Jayavira we are meeting a very interesting and creative master.`,
+      quote: `...the album shows that in the person of Rajiv Jayaweera we are meeting a very interesting and creative master.`,
       body: [`Until now, the musician of Sri Lankan origin has only appeared in our reviews once, and then as 
       a sideman. So, composer, band leader and drummer Rajiv Jayavira is the first Lankan to be featured on the
       site with an author's work. True, Rajiv has only Sri Lankan roots, but he was born in London, grew up in

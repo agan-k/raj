@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import bio_pic from '../assets/gig_shots/8.jpg'
 import bio_pic2 from '../assets/gig_shots/6.jpg'
+import bioquote_bcg from '../assets/backgrounds/6.jpg'
 
 export default class Bio extends React.Component {
    constructor(props) {
@@ -14,9 +15,11 @@ export default class Bio extends React.Component {
    render(){
       return (
          <div className="bio container">
-            <div className='feature-quote'>
-               {this.props.press_quotes[2]}
-            </div>
+            {/* <div className='bio_banner'>
+               <div className='feature-quote'>
+                  {this.props.press_quotes[2]}
+               </div>
+            </div> */}
             <h2>Biography</h2>
             <img id='ride' src={bio_pic} />
             <p>Rajiv Jayaweera is truly a global citizen, a fact that permeates and weaves its way into his 

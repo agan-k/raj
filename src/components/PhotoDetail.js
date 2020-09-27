@@ -65,7 +65,6 @@ export default class PhotoDetail extends Component {
                      <img src={item.image} />
                      <p>{item.caption}</p>
                </div>
-               
                )}
             })}
                  

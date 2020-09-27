@@ -23,7 +23,6 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
-         // showLanding: true,
          navigationLinkSelect: null,
          videoThumbSelect: null,
          albumSelect: null,
@@ -38,11 +37,6 @@ class App extends React.Component {
    componentDidMount() {
       window.scrollTo(0, 0);
    }
-   // closeLanding = () => {
-   //    this.setState({
-   //       showLanding: false
-   //    })
-   // }
    handleSelectNavigationLink = (item, index) => {
       this.setState({
          navigationLinkSelect: item
@@ -142,7 +136,6 @@ class App extends React.Component {
          </Link>
       )
       const video_link = videosData.map(item =>
-
          <div className='link'
             onClick={() => this.handleSelectVideos(item)}>
             {/* &#8599; */}
@@ -152,38 +145,12 @@ class App extends React.Component {
          <Link className='link' to='/discography'
             onClick={() => this.handleSelectAlbums(item)}>
          </Link>
-            
       )
 
       return (
          <div className="App">
-{/* ======================= LANDING PAGE =========================== */}
-            <div className={`${this.state.showLanding ? "" : "hide"} landing`}>
-               <div className="album-container">
-                  <img src={albumsData[0].cover} />
-                  <div className="out-now">
-                     <p>PISTILS</p>
-                     <br></br>
-                     <p>
-                        featuring <br></br>
-                        Chris Cheek,<br></br>
-                        Aaron Goldberg,<br></br>
-                        Lara Bello and<br></br>
-                        Sam Aning
-                     </p>
-                     <button onClick={this.closeLanding}>
-                        <Link to='/discography'>Listen/Buy</Link>
-                     </button>
-                     <br/>
-                      <h3 id="enter" onClick={this.closeLanding}>
-                        {/* enter site >> */}
-                     </h3>
-                   </div>
-               </div>
-            </div>
-{/* ======================= LANDING PAGE  end ======================== */}
 
-            <div className={`${this.state.showLanding ? "" : "view"} layout`}>
+            <div className='layout'>
                <Header
                   navigation_link={navigation_link}
                />
@@ -212,6 +179,8 @@ class App extends React.Component {
                   <Route path='/videos'>
                      <Videos
                         videosData={videosData}
+                        modalShowing={this.state.modalShowing}
+                        videoThumbSelect={this.state.videoThumbSelect}
                      />
                   </Route>
                   <Route path='/discography'>

@@ -11,14 +11,16 @@ export default class Shows extends React.Component {
    render() {
       return (
          <div className="shows container">
-            <p style={{ textTransform: 'uppercase', color: '#A21E3D' }}>
-               <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
-               <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
-               Due to the current situation, unfortunately most live shows have been cancelled/postponed  
-               but please stay tuned for further updates.
-               <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
-               <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
-            </p>
+            <div className='covid'>
+               <p style={{ textTransform: 'uppercase', color: '#A21E3D' }}>
+                  <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+                  <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+                  &nbsp;Due to the current situation, unfortunately most live shows have been cancelled/postponed  
+                  but please stay tuned for further updates.&nbsp;
+                  <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
+                  <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
+               </p>
+            </div>
    
             <h3>Just announced!</h3>
                <ul>

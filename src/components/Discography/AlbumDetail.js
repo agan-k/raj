@@ -23,7 +23,7 @@ class AlbumDetail extends React.Component {
                   <div className='info-box'>
                      <img src={this.props.albumSelect.cover}/>
                   </div>
-                  <div className='info-box personnel'>
+                  <div className='info-box credits'>
                      <h2>{this.props.albumSelect.description}</h2>
                      <h3>{this.props.albumSelect.title}</h3>
                      <ul>
@@ -40,11 +40,12 @@ class AlbumDetail extends React.Component {
                   <div className="info-box tracks">
                     {this.props.albumSelect.bandcamp ?
                      <>
-                        <BandcampPlayer
+                        <BandcampPlayer className='audio-player'
                            album={this.props.albumSelect.bandcamp}
-                           height='20.5em'
-                           width='20.5em'
-                           artwork='none' />
+                           width='100%'
+                           height='100%'
+                          artwork='none'
+                       />
                      </> :
                      <>
                         <h4>Tracks:</h4>
@@ -65,7 +66,7 @@ class AlbumDetail extends React.Component {
                     <div className="info-box">
                        <img src={this.props.albumsData[0].cover} />
                     </div>
-                    <div className="info-box personnel">
+                    <div className="info-box credits">
                      <h2>{this.props.albumsData[0].description}</h2>
                      <h3>{this.props.albumsData[0].title}</h3>
                      <ul>
@@ -81,11 +82,12 @@ class AlbumDetail extends React.Component {
                   </div>
                   
                     <div className="info-box tracks">
-                     <BandcampPlayer
+                     <BandcampPlayer className='audio-player'
                            album={this.props.albumsData[0].bandcamp}
-                           height='20.5em'
-                           width='20.5em'
-                           artwork='none' />
+                           width='100%'
+                           height='100%'
+                          artwork='none'
+                       />
                     </div>
                </div>
             </div>

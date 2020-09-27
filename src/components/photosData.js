@@ -32,11 +32,13 @@ const photosData = [
 },
    {
       id: 17,
+      vertical_shot: true,
       image: promo_small2,
       caption: 'photo: D. White'
 },
    {
       id: 16,
+      vertical_shot: true,
       image: promo_small3,
       caption: 'photo: D. White'
 },
@@ -62,11 +64,13 @@ const photosData = [
 },
    {
       id: 11,
+      vertical_shot: true,
       image: eleven,
       caption: 'photo: W. Skibinski - Trio Kleine Ahnung, Jazz Lab, Melbourne, Jan 2020'
 },
    {
       id: 10,
+      vertical_shot: true,
       image: ten,
       caption: 'photo: W. Skibinski - Trio Kleine Ahnung, Jazz Lab, Melbourne, Jan 2020'
 },
@@ -75,11 +79,10 @@ const photosData = [
       image: nine,
       caption: 'Freedman Fellowship Finals Sydney Opera House, 2013'
 },
-   
    {
       id: 8,
       image: eight,
-      caption: 'Jazz at Lincoln Centre, Doha, Qatar, 2014'
+      caption: ''
 },
    {
       id: 7,
@@ -93,8 +96,9 @@ const photosData = [
 },
    {
       id: 5,
+      vertical_shot: true,
       image: five,
-      caption: ''
+      caption: 'Jazz at Lincoln Centre, Doha, Qatar, 2014'
 },
    {
       id: 4,
