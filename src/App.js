@@ -9,6 +9,7 @@ import Discography from './components/discography/Discography'
 import Shows from './components/Shows'
 import Press from './components/press/Press'
 import Contact from './components/Contact'
+import Links from './components/Links'
 import Header from './Header'
 import Footer from './Footer'
 

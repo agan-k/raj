@@ -34,9 +34,10 @@ body {
    top: 0;
    height: 113px;
    width: 100vw;
-   background: url('./assets/backgrounds/header1.jpg') no-repeat;
-   background-size: cover;
-   background-position: center top;
+   background-image: url('./assets/backgrounds/header1.jpg');
+   background-repeat: no-repeat;
+   background-size: 105%;
+   background-position: 0px -4px;
    box-shadow: 0 .2px 3px rgb(59, 59, 59);
    z-index: 99;
 }
@@ -85,6 +86,23 @@ nav {
 }
 .menu .outside-link {
    margin-top: -19px;
+}
+.social-icons {
+   /* position: absolute;
+   right: 3%;
+   bottom: -3px; */
+   width: min-content;
+   height: min-content;
+   display: flex;
+   margin-left: 1em;
+   /* justify-content: space-between; */
+   
+}
+.social-icons a {
+   opacity: .7;
+}
+.social-icons a:hover {
+   opacity: 1;
 }
  
 /* ===== drop-down option ==== */
