@@ -1,10 +1,10 @@
-import ellstandissa from '../assets/video_thumbs/ellstandissa.jpg'
-import pistils from '../assets/video_thumbs/pistils.jpg'
-import elephant from '../assets/video_thumbs/elephant.jpg'
-import welikadawatte_birdland2019 from '../assets/video_thumbs/welikadawatte_birdland2019.jpg'
-import hirimbura from '../assets/video_thumbs/hirimbura.jpg'
-import welikadawatte_tijc2020 from '../assets/video_thumbs/welikadawatte_tijc2020.jpg'
-import galadari from '../assets/video_thumbs/galadari.jpg'
+import ellstandissa from '../assets/video_thumbs/ellstandissa.webp'
+import pistils from '../assets/video_thumbs/pistils.webp'
+import elephant from '../assets/video_thumbs/elephant.webp'
+import welikadawatte_birdland2019 from '../assets/video_thumbs/welikadawatte_birdland2019.webp'
+import hirimbura from '../assets/video_thumbs/hirimbura.webp'
+import welikadawatte_tijc2020 from '../assets/video_thumbs/welikadawatte_tijc2020.webp'
+import galadari from '../assets/video_thumbs/galadari.webp'
 import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
 
 const videosData = [

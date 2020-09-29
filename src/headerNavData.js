@@ -46,6 +46,11 @@ const navigation_link = [
       navigation_route: '/contact',
       navigation_description: 'contact'
    },
+   {
+      id: 10,
+      navigation_route: '/links',
+      navigation_description: 'links'
+   },
 
 ]
 export default navigation_link

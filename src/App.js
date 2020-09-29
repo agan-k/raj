@@ -209,6 +209,9 @@ class App extends React.Component {
                   <Route path='/contact'>
                      <Contact />
                   </Route>
+                  <Route path='/links'>
+                     <Links />
+                  </Route>
                </Switch>
                <Footer/>
             </div>

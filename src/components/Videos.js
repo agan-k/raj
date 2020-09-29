@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import VideoDetail from './VideoDetail'
+import ReactPlayer from 'react-player'
 
 
 export default class Videos extends Component {
@@ -26,7 +27,7 @@ export default class Videos extends Component {
    }
 
    render() {
-      const showcase = this.props.videosData.filter(item =>
+      const showcase_thumbnails = this.props.videosData.filter(item =>
          item.videos_showcase !== 'no').map(item => {
             return (
                <div className="video-thumbnail-container"
@@ -40,18 +41,18 @@ export default class Videos extends Component {
          <div className="videos container">
 
             <div className="video-thumb-gallery">
-               {showcase}
+               {showcase_thumbnails}
             </div>
 
-            <div className='video-detail-container'>
-            {this.state.modalShowing && (
+            <div className='video-detail  '>
+            {/* {this.state.modalShowing && ( */}
                   <VideoDetail
                      showcaseVideoDetail={this.state.showcaseVideoThumbSelect}
                      closeModal={this.closeModal}
+                     videosData={this.props.videosData}
                   />
-            )}
+            {/* )} */}
             </div>
-            <p></p>
          </div>
       )
    }
