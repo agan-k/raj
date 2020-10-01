@@ -23,10 +23,7 @@ class Press extends React.Component {
             </div>
             <div className='press-list-container'>
                <div > 
-                  <p
-                     onClick={this.props.resetState}
-                  >
-
+                  <p style={{marginTop: '50px'}} onClick={this.props.resetState}>
                      <Link to='./press'>press quotes</Link>
                   </p>
                  

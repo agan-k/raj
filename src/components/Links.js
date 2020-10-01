@@ -10,13 +10,15 @@ export default class Links extends React.Component {
    render() {
 
       const links = linksData.map(item =>
-         <ul>
+         
             <li><a href={item.url}>{item.link}</a>&nbsp;<em>{item.description}</em></li>
-         </ul>
+         
       )
       return (
          <div className='links container'>
-            {links}
+            <div className='links-list'>
+               {links}
+            </div>
          </div>
       )
    }

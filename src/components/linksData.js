@@ -20,7 +20,7 @@ const linksData = [
    {
       id: 4,
       link: 'Lara Bello',
-      description: 'trombone',
+      description: 'voice',
       url: 'https://www.LaraBello.com/'
    },
    {

@@ -12,6 +12,8 @@ import abc_au from '../../assets/logos/abc_au.jpg'
 import pbs_fm from '../../assets/content/pbs_fm.jpg'
 import happy_srilankans from '../../assets/content/happy_srilankans.jpg'
 import happysri from '../../assets/logos/happysri.jpg'
+import jazz_record_2020 from '../../assets/content/jazz_record_2020.jpg'
+import nycJR from '../../assets/logos/nycJR.png'
 const pressData = [
    
    {
@@ -256,7 +258,7 @@ const pressData = [
       body_img: '',
       writer: 'Dan Bilawsky',
       url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music',
-      url_description: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music'
+      url_description: 'https://www.allaboutjazz.com/Pistils'
    },
    {
       id: 6,
@@ -320,7 +322,7 @@ const pressData = [
       engaging compositions.`],
       writer: 'Ron Weinstock',
       url: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html',
-      url_description: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html'
+      url_description: 'http://inabluemood.blogspot.com/Pistils'
    },
    {
       id: 8,
@@ -357,7 +359,7 @@ const pressData = [
       anchored in various origins.`],
       writer: 'Georges Tonla Briquet',
       url: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/',
-      url_description: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/'
+      url_description: 'https://www.jazzhalo.be/reviews/Pistils'
    },
    {
       id: 9,
@@ -413,7 +415,7 @@ const pressData = [
       breath with groove heavy-weights like Brian Blade before long.`],
       writer: 'Friedrich Kunzmann',
       url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music__17026',
-      url_description: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music__17026'
+      url_description: 'https://www.allaboutjazz.com/pistils'
    },
    {
       id: 10,
@@ -454,7 +456,7 @@ const pressData = [
       Rajiv Jayavira we are meeting a very interesting and creative master.`],
       writer: 'Leonid Auskern',
       url: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568',
-      url_description: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568'
+      url_description: 'https://jazzquad.ru/Pistils'
    },
    {
       id: 11,
@@ -471,7 +473,7 @@ const pressData = [
       body_img: abc_au_content,
       writer: '',
       url: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034',
-      url_description: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034'
+      url_description: 'https://www.abc.net.au/jayaweera'
    },
    {
       id: 12,
@@ -488,7 +490,7 @@ const pressData = [
       body_img: happy_srilankans,
       writer: '',
       url: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene',
-      url_description: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene'
+      url_description: 'https://www.happysrilankans.com/jayaweera'
    },
    {
       id: 13,
@@ -498,7 +500,7 @@ const pressData = [
       publication: `France Musique`,
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
-      description: 'Album Pistils',
+      description: 'FM - Pistils',
       label: 'Outside in Music, 2020',
       quote: `Rajiv Jayaweera is truly a citizen of the world, a fact that permeates and weaves its way 
       into his playing and composition.`,
@@ -528,7 +530,38 @@ const pressData = [
       in 2013.`],
       writer: '',
       url: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548',
-      url_description: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548'
+      url_description: 'https://www.francemusique.fr/jayaweera'
+   },
+   {
+      id: 14,
+      review: true,
+      img: nycJR,
+      title: '',
+      publication: `NYC Jazz Record`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      description: 'Cangiano - Pistils',
+      label: 'Outside in Music, 2020',
+      quote: ``,
+      body: [`Pistils is Rajiv Jayaweera’s debut album. A New-York-based drummer of Sri Lankan origins raised 
+      in Australia, Jayaweera finds inspiration in his family history but also present-day New York. His is a delicate
+      approach, almost intimate, as evident in the two versions of the title track—the first one benefitting from
+      Lara Bello singing in an undecipherable language and the second relying on Chris Cheek’s fluid tenor
+      saxophone. Jayaweera does not take any solos, except for a brief temple drum introduction and an interlude
+      in “Ellstandissa”. But the relentless, shifting and yet almost understated pulse is certainly at the center of his
+      project. Subtlety is the defining quality of Jayaweera’s approach to percussion and is reminiscent of Paul
+      Motian. The musicians could not be more sympathetic to Jayaweera’s vision. Of note are Cheek’s numerous and 
+      enjoyable solos along with his blending and conversing with Hugh Stuckey’s guitar. Parks displays
+      his personal approach as he seems particularly at ease with the material; “Galadari” and “The Elephant”,
+      which denote a jazzier flavor, could have been composed by Parks himself to the extent that rather
+      complex rhythmic figurations are delivered with utter fluidity and simplicity. A very promising debut.`,
+      ``,
+      ``,
+         ``],
+      body_img: jazz_record_2020,
+      writer: 'Marco Cangiano',
+      url: 'http://www.nycjazzrecord.com/',
+      url_description: 'http://www.nycjazzrecord.com/'
    },
    
    

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import VideoDetail from './VideoDetail'
 import ReactPlayer from 'react-player'
+import videosData from './videosData'
 
 
 export default class Videos extends Component {
@@ -32,7 +33,7 @@ export default class Videos extends Component {
             return (
                <div className="video-thumbnail-container"
                   onClick={() => this.handleSelectShowcase(item)}>
-                  {/* <h4>{item.caption}</h4> */}
+                  <p>{item.caption}</p>
                   <img src={item.thumbnail}/>
                </div>
          )}
@@ -51,7 +52,7 @@ export default class Videos extends Component {
                      closeModal={this.closeModal}
                      videosData={this.props.videosData}
                   />
-            {/* )} */}
+             {/* )}  */}
             </div>
          </div>
       )

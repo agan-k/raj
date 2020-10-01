@@ -15,11 +15,11 @@ export default class Bio extends React.Component {
    render(){
       return (
          <div className="bio container">
-            {/* <div className='bio_banner'>
+            <div className='bio_banner'>
                <div className='feature-quote'>
                   {this.props.press_quotes[2]}
                </div>
-            </div> */}
+            </div>
             <h2>Biography</h2>
             <img id='ride' src={bio_pic} />
             <p>Rajiv Jayaweera is truly a global citizen, a fact that permeates and weaves its way into his 
@@ -45,7 +45,7 @@ export default class Bio extends React.Component {
             Since moving to New York City, Jayaweera has performed at the legendary jazz 
             clubs, <strong>Smalls</strong>, <strong>Blue Note</strong>, <strong>Bar Next Door</strong>, <strong>Dizzy’s (J@LC)</strong>, <strong>Birdland</strong>, 
             and others. 
-            He has been awarded grants from <strong>The Australia Council for the Arts</strong>, 
+            He has been awarded grants from <strong>The Australia Council for the Arts</strong>,&nbsp;
             <strong>The Ian Potter Cultural Trust</strong>, <strong>The American-Australian
             Foundation</strong>, and was a finalist 
             for the prestigious <strong>Freedman Jazz Fellowship</strong>, performing at
