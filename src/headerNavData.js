@@ -43,13 +43,13 @@ const navigation_link = [
    },
    {
       id: 9,
-      navigation_route: '/contact',
-      navigation_description: 'contact'
+      navigation_route: '/links',
+      navigation_description: 'links'
    },
    {
       id: 10,
-      navigation_route: '/links',
-      navigation_description: 'links'
+      navigation_route: '/contact',
+      navigation_description: 'contact'
    },
 
 ]

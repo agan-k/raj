@@ -16,6 +16,7 @@ export default class Home extends React.Component {
   }
 
    render() {
+      const banner_quote = Math.floor(Math.random() * this.props.press_quotes.length);
       const home_cards = this.props.home_cardsData.map(item =>
          <div>
             <div
@@ -45,16 +46,23 @@ export default class Home extends React.Component {
                   }} />
                <div className='content'>
                   <div className='press-quote'>
-                     {this.props.press_quotes[0]}
+                     {this.props.press_quotes[banner_quote]}
                   </div>
                   <div className='cta'>
                      <img src={pistils}/>
-                     <p>
+                     {/* <button>
                         new album out now&nbsp;
-                        <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+                        
+                        {this.props.albums_link[0]}
+                     </button> */}
+                     <p>
+                        listen/buy&nbsp;
+                        
+                        {/* <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i> */}
                         <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
                         {this.props.albums_link[0]}
                      </p>
+                        
                   </div>
                </div>
 

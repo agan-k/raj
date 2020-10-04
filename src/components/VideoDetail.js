@@ -26,12 +26,12 @@ export default class VideoDetail extends Component {
          return (
             <div className='video-detail view-full-screen'>
                 <div className='react-player-video'>
-                   <i class="material-icons close" onClick={this.props.closeModal}>&#xe14c;</i>   
+                   <i class="material-icons close-video" onClick={this.props.closeModal}>&#xe14c;</i>   
                    <ReactPlayer
                       url={this.props.videoDetail.video_url}
                       height='100%'
                       width='100%'
-                      playing="true"
+                      
                      
                    />
                 </div>

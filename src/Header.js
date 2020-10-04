@@ -19,8 +19,8 @@ class Header extends React.Component {
                <ul className="menu">
                {this.props.navigation_link}
                   <div className='social-icons'>
-                     <a href="https://www.facebook.com/rajivjayaweera/"><Facebook style={{height: '1.2em'}}/></a>
                      <a href="https://www.instagram.com/euroraj/"><Instagram style={{height: '1.2em'}}/></a>
+                     <a href="https://www.facebook.com/rajivjayaweera/"><Facebook style={{height: '1.2em'}}/></a>
                      <a href="https://www.youtube.com/user/euroraj/videos"><YouTube style={{height: '1.2em'}}/></a>
                   </div>
                </ul>

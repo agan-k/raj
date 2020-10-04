@@ -44,7 +44,7 @@ export default class PhotoDetail extends Component {
       return (
          <div className='photo-detail-container'>
 
-            <div className='close' onClick={this.props.closePhotoDetail}>
+            <div className='close-photo' onClick={this.props.closePhotoDetail}>
                &times;
             </div>
 
