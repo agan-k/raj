@@ -74,16 +74,19 @@ class App extends React.Component {
    }
 
    render() {
-      const navigation_link = navigationData.map((item, index) =>
-         <li className={this.state} onClick={this.resetState}>
-            <NavLink exact to={item.navigation_route} activeClassName='active-link'>
-               {item.navigation_description}
-            </NavLink>
+      const navigation_link = navigationData.map(item => 
+         !item.external_link ?
+            <li className={this.state} onClick={this.resetState}>
+               <NavLink exact to={item.navigation_route} activeClassName='active-link'>
+                  {item.navigation_description}
+               </NavLink>
+            </li>
+            :
             <li className='outside-link'>
                <a onClick={this.resetState} href={item.url}>{item.external_link}</a>
             </li>
-         </li> 
       )
+   
       const albums = albumsData.map((item, index) =>
          <div
             className="albums"

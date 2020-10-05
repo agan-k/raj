@@ -15,11 +15,11 @@ export default class Bio extends React.Component {
    render(){
       return (
          <div className="bio container">
-            <div className='bio_banner'>
+            {/* <div className='bio_banner'>
                <div className='feature-quote'>
                   {this.props.press_quotes[2]}
                </div>
-            </div>
+            </div> */}
             <h2>Biography</h2>
             <img id='ride' src={bio_pic} />
             <p>Rajiv Jayaweera is truly a global citizen, a fact that permeates and weaves its way into his 
@@ -33,15 +33,7 @@ export default class Bio extends React.Component {
             Quintet, Bopstretch and The Australian Art Orchestra’s Crossing Roper Bar Project.
             <br/>
             <br />
-               <img id='birdland' src={bio_pic2}
-               style={{
-                  // height: '14em',
-                  // float: 'right',
-                  // margin: '0 0 .7em 1em',
-                  // opacity: '.8',
-                  // borderRadius: '10px'
-               }}
-            />
+            <img id='birdland' src={bio_pic2} />
             Since moving to New York City, Jayaweera has performed at the legendary jazz 
             clubs, <strong>Smalls</strong>, <strong>Blue Note</strong>, <strong>Bar Next Door</strong>, <strong>Dizzy’s (J@LC)</strong>, <strong>Birdland</strong>, 
             and others. 
@@ -58,17 +50,7 @@ export default class Bio extends React.Component {
             His quintet were featured as ‘artists in residence’ and a headline act at the <strong>Thailand International
             Jazz Conference 2020</strong>.
             <br/>
-               <br />
-               {/* <img
-               src={bio_pic}
-               style={{
-                  height: '10em',
-                  float: 'left',
-                  margin: '0 1em .7em 0',
-                  opacity: '.8',
-                  borderRadius: '10px'
-               }}
-            /> */}
+            <br />
             This year he released his debut album made up of his original compositions entitled <strong>Pistils</strong>.
             The album features <strong>Chris Cheek</strong>, <strong>Aaron Parks
             </strong>, <strong>Lara Bello</strong>, <strong>Hugh Stuckey</strong> and <strong>Sam Anniing</strong>, and

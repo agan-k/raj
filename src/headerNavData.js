@@ -38,8 +38,8 @@ const navigation_link = [
       id: 8,
       url: 'https://pistils.bandcamp.com/merch',
       external_link: 'store',
-      navigation_route: 'store',
-      // navigation_description: ''
+      navigation_route: '',
+      navigation_description: ''
    },
    {
       id: 9,

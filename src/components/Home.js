@@ -49,20 +49,13 @@ export default class Home extends React.Component {
                      {this.props.press_quotes[banner_quote]}
                   </div>
                   <div className='cta'>
-                     <img src={pistils}/>
-                     {/* <button>
-                        new album out now&nbsp;
-                        
+                     <img src={pistils} />
+                     <span>
+                        listen/buy
                         {this.props.albums_link[0]}
-                     </button> */}
-                     <p>
-                        listen/buy&nbsp;
-                        
-                        {/* <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i> */}
-                        <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
-                        {this.props.albums_link[0]}
-                     </p>
-                        
+                     </span>
+                     &nbsp;
+                     <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
                   </div>
                </div>
 

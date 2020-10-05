@@ -100,9 +100,6 @@ nav a:hover {
 nav .active-link {
    opacity: 1;
 }
-nav .outside-link {
-   margin-top: -19px;
-}
 .social-icons {
    width: min-content;
    height: min-content;
@@ -163,32 +160,18 @@ nav .outside-link {
     width: 100%;
     height: 100%;
     z-index: 99;
-    /* background-color: red; */
  }
  .banner .cta img {
    width: 100%;
    height: 100%;
    box-shadow: 0 1px 3px black;
 }
- /* .banner .cta button {
-    width: 70%;
-   text-align: center;
-   text-transform: uppercase;
-   font-family: Helvetica, sans-serif;
-   font-size: .7em;
-   font-weight: 400;
-   padding: .4em;
-   margin: 0;
-   background-color:#EAB220;
-   border: 1px solid grey;
-   border-radius: 9px;
-} */
  .banner .cta p {
    text-align: center;
    font-size: .9em;
    margin: 0;
 }
- .banner .cta p:hover {
+ .banner .cta span:hover {
    text-decoration: underline;
    color: rgb(104, 164, 208);
 }
@@ -489,13 +472,9 @@ position: relative;
    animation: 1.1s ease-out fadeIn;
 }
 .video-detail {
+   position: relative;
    width: 100%;
    height: 430px;
-   position: relative;
-   /* position: fixed;
-   top: 0;
-   right: 0; */
-   /* background-color: grey; */
 }
 .video-detail.view-full-screen {
    width: 100%;
@@ -558,8 +537,10 @@ position: relative;
 .shows.container {
 }
 .shows .covid p {
+   padding: 1em 0;
    margin: 5em 5em 5em 5em;
    text-align: center;
+   background-color: rgb(233, 233, 47);
 }
 .shows ul {
    width: 60vw;   
@@ -767,7 +748,41 @@ position: relative;
 /* ============== Media Query ================ */
 /* ============== Media Query ================ */
 /* ============== Media Query ================ */
-/* ============== Media Query ================ */
+/* ============== Media Query iPhone7================ */
+
+@media only screen and (max-width: 750px) {
+   .App {
+      font-size: .8em;
+   }
+/* ============== HEADER ================ */
+   .header {
+      top: 0px;
+      height: 1334%;
+      width: 750px;
+      background-image: url('./assets/backgrounds/mobile_headerBcg1.jpg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+   }
+   nav {
+      position: initial;
+      width: 42%;
+      height: min-content;
+      background:none;
+      z-index: 99;
+   }
+   .menu {
+      display: initial;
+      font-size: 4em;
+      margin: 0;
+      padding: 0;
+   }
+
+
+
+}
+
+
+
 /* ============== Media Query ================ */
 
 
@@ -776,9 +791,7 @@ position: relative;
       font-size: 1.6em;
    }
    .App .layout {
-      /* height: 100vh; */
-      /* margin: 0; */
-      /* padding: 20vh 0 0 0; */
+      padding: 185px 0 0 0;
    }
    /* ============== HEADER ================ */
    .header {
@@ -795,7 +808,7 @@ position: relative;
 
    /* ============== HOME ================ */
    .home.container {
-      margin-top: -2.2em;
+      /* margin-top: -2.2em; */
    }
    .home .banner {
       height: 840px;
@@ -835,7 +848,14 @@ position: relative;
    .image-container img {
       height: 22em;
    }
-  
+  /* ============== Videos ================ */
+
+  /* ======= VideoDetail ========= */
+   .video-detail {
+      position: relative;
+      width: 100%;
+      height: 730px;
+   }
    /* ============== Discography ================ */
    .info-box {
       height: 470px;
