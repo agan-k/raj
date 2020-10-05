@@ -24,6 +24,7 @@ class App extends React.Component {
    constructor() {
       super()
       this.state = {
+         mobileNavShowing: false,
          navigationLinkSelect: null,
          videoThumbSelect: null,
          albumSelect: null,
@@ -38,9 +39,16 @@ class App extends React.Component {
    componentDidMount() {
       window.scrollTo(0, 0);
    }
+   handleOpenMobileNav = () => {
+      this.setState({
+         mobileNavShowing: !this.state.mobileNavShowing
+      })
+   }
    handleSelectNavigationLink = (item, index) => {
       this.setState({
-         navigationLinkSelect: item
+         navigationLinkSelect: item,
+         mobileNavShowing: false
+
       })
    }
    handleSelectHomeCard = (item, index) => {
@@ -157,6 +165,9 @@ class App extends React.Component {
             <div className='layout'>
                <Header
                   navigation_link={navigation_link}
+                  openMobileNav={this.handleOpenMobileNav}
+                  mobileNavShowing={this.state.mobileNavShowing}
+
                />
 
                <Switch>

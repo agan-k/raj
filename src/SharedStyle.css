@@ -67,6 +67,9 @@ body {
    background-repeat: no-repeat;
    border-radius: 50%;
 }
+.material-icons.burger {
+   display: none;
+}
 nav {
    position: absolute;
    top: 94px;
@@ -76,7 +79,7 @@ nav {
    background:none;
    z-index: 99;
 }
-.menu {
+nav ul {
    display: flex;
    margin: 0;
    padding: 0;
@@ -752,29 +755,56 @@ position: relative;
 
 @media only screen and (max-width: 750px) {
    .App {
-      font-size: .8em;
+      font-size: 1em;
+   }
+   .App .layout {
+      padding: 200px 0 0 0;
    }
 /* ============== HEADER ================ */
    .header {
-      top: 0px;
-      height: 1334%;
+      top: -1090px;
+      height: 1334px;
       width: 750px;
       background-image: url('./assets/backgrounds/mobile_headerBcg1.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
    }
+   .open-mobile.header {
+      top: 0px;
+   }
+   .material-icons.burger {
+      display: initial;
+      font-size: 50px;
+      color: white;
+      opacity: 1;
+      bottom: 20px;
+      right: 10px;
+      background-color: rgba(121, 7, 7, 0.425);
+   }
    nav {
       position: initial;
-      width: 42%;
-      height: min-content;
-      background:none;
-      z-index: 99;
+      width: 100%;
    }
-   .menu {
+   nav ul {
+      
       display: initial;
-      font-size: 4em;
-      margin: 0;
-      padding: 0;
+      font-size: 65px;
+      text-align: right;
+   }
+   nav ul li {
+      padding: 8px 12px;
+      margin-right: 10px;
+   }
+   nav ul a {
+      opacity: 1;
+   }
+   .social-icons {
+      width: 750px;
+      justify-content: flex-end;
+      margin-top: 60px;
+   }
+   .social-icons a {
+      opacity: 1;
    }
 
 
@@ -802,9 +832,7 @@ position: relative;
       left: 10px;
       font-size: 24px;
    }
-   .menu .outside-link {
-      margin-top: -29px;
-   }
+   
 
    /* ============== HOME ================ */
    .home.container {
