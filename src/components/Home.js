@@ -35,27 +35,22 @@ export default class Home extends React.Component {
       return (
          <div className='home container'>
             <div className="banner">
-               <img src={banner_bcg}
-                  style={{
-                     width: '100%',
-                     opacity: '.9',
-                     position: 'absolute',
-                     top: '0px',
-                     left: '30',
-                     zIndex: '-1'
-                  }} />
+
+               <img className='bcg-img' src={banner_bcg} />
+
                <div className='content'>
                   <div className='press-quote'>
                      {this.props.press_quotes[banner_quote]}
                   </div>
                   <div className='cta'>
                      <img src={pistils} />
+                     <br/>
                      <span>
                         listen/buy
                         {this.props.albums_link[0]}
                      </span>
                      &nbsp;
-                     <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+                     <i className="fa fa-angle-right fa-1x buy" aria-hidden="true"></i>
                   </div>
                </div>
 

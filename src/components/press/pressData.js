@@ -371,10 +371,7 @@ const pressData = [
       album: 'Pistils',
       description: 'Kunzmann - Pistils',
       label: 'Outside in Music, 2020',
-      quote: `Pistils reveals a delightful pool of reflections in which Jayaweera paints contours around 
-      melody-driven meditations ...The drummer's understated and nuanced approach to his instrument is a 
-      rare thing in the drummer landscape and his sense for melody in composition all the more exceptional
-      ...Jayaweera is not only a drummer to be reckoned with, but also an ace composer whose understated 
+      quote: `Jayaweera is not only a drummer to be reckoned with, but also an ace composer whose understated 
       attitude and chops may deserve mentioning in the same breath with groove heavy-weights like Brian
       Blade before long.’`,
       body: [`New York-based drummer Rajiv Jayaweera had quite the international upbringing. Born in London

@@ -56,12 +56,13 @@ body {
 }
 #logo {
    position: absolute;
+   margin: 0;
    top: 0px;
    left: 80px;
-   width: 120px;
-   height: 120px;
+   /* width: 120px; */
+   /* height: 120px; */
    text-indent: -9999px;
-   /* background: url(./assets/logos/logo.jpg); */
+   /* background: url('./assets/logos/logo.jpg'); */
    background-size: 100%;
    background-position: center;
    background-repeat: no-repeat;
@@ -121,7 +122,6 @@ nav .active-link {
 .home.container {
    
 }
-
 /*====== banner =======  */
 .home .banner {
    position: relative;
@@ -130,8 +130,14 @@ nav .active-link {
    height: 510px;
    color: white;
  }
+ .banner .bcg-img {
+   width: 100%;
+   opacity: .9;
+   position: absolute;
+   top: 0px;
+   z-index: -1;
+ }
  .banner .content {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -151,10 +157,6 @@ nav .active-link {
    opacity: .9;
    transition: .3s;
  }
- /* .banner .cta:hover {
-    opacity: 1;
-    transition: .3s;
- } */
  .banner .link {
     display: flex;
     position: absolute;
@@ -169,7 +171,7 @@ nav .active-link {
    height: 100%;
    box-shadow: 0 1px 3px black;
 }
- .banner .cta p {
+ .banner .cta span {
    text-align: center;
    font-size: .9em;
    margin: 0;
@@ -225,7 +227,6 @@ nav .active-link {
  .card h4 {
    font-size: .9em;
    color: grey;
-
  }
  /* Re-order items into 3 rows */
  .card:nth-child(3n+1) { order: 1; }
@@ -753,65 +754,212 @@ position: relative;
 /* ============== Media Query ================ */
 /* ============== Media Query iPhone7================ */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 375px) {
    .App {
-      font-size: 1em;
+      /* font-size: 1em; */
    }
    .App .layout {
-      padding: 200px 0 0 0;
+      padding: 60px 0 0 0;
+   }
+   .container {
+      min-height: 100%;
+      width: 375px;
+      
    }
 /* ============== HEADER ================ */
    .header {
-      top: -1090px;
-      height: 1334px;
-      width: 750px;
-      background-image: url('./assets/backgrounds/mobile_headerBcg1.jpg');
+      top: 0;
+      height: 60px;
+      overflow: hidden;
+      width: 375px;
+      background-image: url('./assets/backgrounds/mobile_headerBcg3.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
    }
    .open-mobile.header {
+      height: 667px;
+      top: 0;
+      position: fixed;
+   }
+   #logo {
       top: 0px;
+      left: 0px;
+      width: 100px;
+      height: 60px;
+      background-image: url('./assets/logos/logo.jpg');
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      border-radius: 0;
    }
    .material-icons.burger {
       display: initial;
-      font-size: 50px;
+      font-size: 30px;
       color: white;
       opacity: 1;
-      bottom: 20px;
-      right: 10px;
-      background-color: rgba(121, 7, 7, 0.425);
+      top: 7px;
+      right: 7px;
+      /* background-color: rgba(121, 7, 7, 0.425); */
    }
    nav {
       position: initial;
       width: 100%;
+      margin-top: 40px;
    }
    nav ul {
-      
       display: initial;
-      font-size: 65px;
+      font-size: 38px;
       text-align: right;
    }
    nav ul li {
-      padding: 8px 12px;
-      margin-right: 10px;
+      padding: 4px 6px;
    }
    nav ul a {
       opacity: 1;
    }
    .social-icons {
-      width: 750px;
+      width: 375px;
       justify-content: flex-end;
-      margin-top: 60px;
+      margin-top: 20px;
    }
    .social-icons a {
       opacity: 1;
    }
 
+/* ============== HOME ================ */
+   .home .banner {
+      position: relative;
+      width: 100%;
+      height: 360px;
+      margin-bottom: 60px;
+      /* background: rgb(31, 29, 29); */
+      /* background: white; */
+   }
+   .banner .bcg-img {
+      top: 40%;
+      z-index: 0;
+    }
+   .banner .content {
+      display: initial;
+   }
+   .banner .press-quote {
+      width: 94%;
+      height: 80px;
+      margin:  0 0 0 0;
+      padding: 5% 3%;
+      color: rgb(85, 85, 85);
+   }
+   .banner .press-quote p {
+      margin: 0;
+   }
+   .banner .cta {
+      text-align: left;
+      top: 180px;
+      /* width: 70%; */
+      display: flex;
+      padding: 0 0 0 40%;
+      margin: 0 0 0 0;
+      opacity: 1;
+   }
+   .banner .link {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 375px;
+      height: 100%;
+      z-index: 99;
+   }
+   .banner .cta img {
+      width: 90px;
+      height: 90px;
+   }
+   .banner .cta span {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 45px 0 0 10px;
+      color: rgb(0, 98, 255);
+   }
+   .fa.fa-angle-right.fa-1x.buy {
+      color: rgb(0, 98, 255);
+      margin-top: 48px;
+      font-size: 22px;
+   }
 
+/*====== home news cards =======  */
+   .home-cards-container {
+      display: initial; 
+   }
+   .card {
+      width: 92%;
+      margin-bottom: 2%;
+      padding: 4%;
+   }
+   .card .link {
+      width: 375px;
+      
+    }
+   .card img {
+   width: 80%;
+   opacity: .9;
+   }
+   .card p {
+   font-size: 1em;
+   }
+   .card h2 {
+   font-size: 1.6em;
+   }
+   .card h4 {
+   font-size: 1em;
+   color: grey;
+   }
+   /* Re-order items into 3 rows */
+   .card:nth-child(2n+1) { order: 1; }
+   .card:nth-child(3n) { order: 2; }
+   /* .card:nth-child(3n)   { order: 3; } */
+   /* ============== BIO ================ */
 
+   .bio img#ride{
+      height: 200px;
+      margin: 0 .5em 0 1em;
+   }
+   .bio img#birdland{
+      height: 250px;
+      margin: 0 .5em 0 .5em;
+   }
+   .bio p {
+      padding: 10px;
+      font-size: 1.5em;
+   }
+   .bio h2 {
+      margin-left: 1em;
+      font-size: 1.9em;
+   }
+   /* ============== Photos ================ */
+   .image-container {
+      height: 250px;
+      width: 250px;
+   }
+   .image-container img {
+      height: 380px;
+      overflow: hidden;
+      opacity: .7;
+   }
+   .image-container.vertical img {
+      margin-top: -60px;
+   }
+   /* ======= PhotoDetail ======= */
+   .photo-detail {
+      height: min-content;
+      width: 600px;
+      display: flex;
+      margin: 350px auto;
+   }
+   .photo-detail-img-container img {
+      height: 370px;
+      margin: 0 auto;
+   }
 }
-
-
 
 /* ============== Media Query ================ */
 

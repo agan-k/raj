@@ -8,14 +8,9 @@ class Header extends React.Component {
    constructor(props) {
       super(props)
       this.state = {
-         // mobileNavShowing: false
+         
       }
    }
-   // handleOpenMobileNav = () => {
-   //    this.setState({
-   //       mobileNavShowing: true
-   //    })
-   // }
    render() {
       return (
          <div className={`${this.props.mobileNavShowing ? 'open-mobile': ''} header`}>
