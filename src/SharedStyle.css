@@ -260,35 +260,6 @@ position: relative;
    opacity: .8;
    border-radius: 10px;
 }
-.bio_banner {
-   display: flex;
-   justify-content: flex-end;
-   width: 100%;
-   height: 20em;
-   margin: -7em 0 0 0;
-   background: url(./assets/backgrounds/3bw.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: 70%;
-   opacity: .8;
-}
-.feature-quote {
-   margin: 9em 1em 0 0;
-   width: 45%;
-   height: min-content;
-   
-   /* background-color: red;  */
-
-}
-.feature-quote p {
-   color: #EBA937;
-   /* padding: 4em; */
-}
-.feature-quote h4 {
-   color: #EBA937;
-   /* color: #68A4D0; */
-   /* padding: 4em; */
-}
 .bio p {
    margin: 0;
    font-size: .8em;
@@ -796,7 +767,7 @@ position: relative;
       display: initial;
       font-size: 30px;
       color: white;
-      opacity: 1;
+      /* opacity: 1; */
       top: 7px;
       right: 7px;
       /* background-color: rgba(121, 7, 7, 0.425); */
@@ -804,18 +775,18 @@ position: relative;
    nav {
       position: initial;
       width: 100%;
-      margin-top: 40px;
+      margin-top: 60px;
    }
    nav ul {
       display: initial;
-      font-size: 38px;
+      font-size: 30px;
       text-align: right;
    }
    nav ul li {
       padding: 4px 6px;
    }
    nav ul a {
-      opacity: 1;
+      /* opacity: 1; */
    }
    .social-icons {
       width: 375px;
@@ -823,7 +794,7 @@ position: relative;
       margin-top: 20px;
    }
    .social-icons a {
-      opacity: 1;
+      /* opacity: 1; */
    }
 
 /* ============== HOME ================ */
@@ -894,16 +865,16 @@ position: relative;
       width: 92%;
       margin-bottom: 2%;
       padding: 4%;
+      border-top: grey .5px dashed;
    }
    .card .link {
       width: 375px;
-      
     }
    .card img {
    width: 80%;
    opacity: .9;
    }
-   .card p {
+   /* .card p {
    font-size: 1em;
    }
    .card h2 {
@@ -912,29 +883,32 @@ position: relative;
    .card h4 {
    font-size: 1em;
    color: grey;
-   }
+   } */
    /* Re-order items into 3 rows */
    .card:nth-child(2n+1) { order: 1; }
    .card:nth-child(3n) { order: 2; }
    /* .card:nth-child(3n)   { order: 3; } */
    /* ============== BIO ================ */
-
    .bio img#ride{
-      height: 200px;
-      margin: 0 .5em 0 1em;
+      height: 90px;
+      margin: 0 5px 0 5px;
    }
    .bio img#birdland{
-      height: 250px;
-      margin: 0 .5em 0 .5em;
+      height: 120px;
+      float: right;
+      margin: 0 5px 0 5px;
+      opacity: .8;
+      border-radius: 10px;
    }
    .bio p {
-      padding: 10px;
-      font-size: 1.5em;
+      margin: 0 0 0 5px;
+      font-size: .8em;
    }
    .bio h2 {
-      margin-left: 1em;
       font-size: 1.9em;
+      color: grey;
    }
+   
    /* ============== Photos ================ */
    .image-container {
       height: 250px;

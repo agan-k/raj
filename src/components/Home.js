@@ -21,7 +21,7 @@ export default class Home extends React.Component {
          <div>
             <div
                style={{
-                  maxHeight: '14em', overflow: 'hidden', textAlign: 'center'
+                  maxHeight: '100%', overflow: 'hidden', textAlign: 'center'
                }}>
                <img src={item.img}/>
                <img src={item.thumbnail}/>
@@ -71,7 +71,6 @@ export default class Home extends React.Component {
                      <div className="card">
                         {home_cards[2]}
                         {this.props.albums_link[0]}
-                        
                      </div>
 
                      <div className="card video">
