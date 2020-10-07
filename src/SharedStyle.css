@@ -336,6 +336,7 @@ position: relative;
 .photo-detail-img-container img {
    height: 30em;
    margin: 0 auto;
+   border: .5px solid rgba(255, 255, 255, 0.637);
 }
 .photo-detail-img-container p {
    text-align: center;
@@ -767,10 +768,8 @@ position: relative;
       display: initial;
       font-size: 30px;
       color: white;
-      /* opacity: 1; */
       top: 7px;
       right: 7px;
-      /* background-color: rgba(121, 7, 7, 0.425); */
    }
    nav {
       position: initial;
@@ -785,16 +784,10 @@ position: relative;
    nav ul li {
       padding: 4px 6px;
    }
-   nav ul a {
-      /* opacity: 1; */
-   }
    .social-icons {
       width: 375px;
       justify-content: flex-end;
       margin-top: 20px;
-   }
-   .social-icons a {
-      /* opacity: 1; */
    }
 
 /* ============== HOME ================ */
@@ -869,25 +862,12 @@ position: relative;
    }
    .card .link {
       width: 375px;
-    }
+   }
    .card img {
    width: 80%;
    opacity: .9;
    }
-   /* .card p {
-   font-size: 1em;
-   }
-   .card h2 {
-   font-size: 1.6em;
-   }
-   .card h4 {
-   font-size: 1em;
-   color: grey;
-   } */
-   /* Re-order items into 3 rows */
-   .card:nth-child(2n+1) { order: 1; }
-   .card:nth-child(3n) { order: 2; }
-   /* .card:nth-child(3n)   { order: 3; } */
+  
    /* ============== BIO ================ */
    .bio img#ride{
       height: 90px;
@@ -911,28 +891,49 @@ position: relative;
    
    /* ============== Photos ================ */
    .image-container {
-      height: 250px;
-      width: 250px;
+      height: 125px;
+      width: 125px;
    }
    .image-container img {
-      height: 380px;
+      height: 220px;
       overflow: hidden;
       opacity: .7;
    }
    .image-container.vertical img {
-      margin-top: -60px;
+      margin-top: -37px;
    }
    /* ======= PhotoDetail ======= */
    .photo-detail {
-      height: min-content;
-      width: 600px;
-      display: flex;
-      margin: 350px auto;
+      width: 370px;
+      display: initial;
+   }
+   .photo-detail-img-container {
+      text-align: center;
+      margin: 2em auto;
    }
    .photo-detail-img-container img {
-      height: 370px;
-      margin: 0 auto;
+      height: 220px;
    }
+   .arrow {
+      position: absolute;
+      top: 376px;
+    }
+   .arrow.next {
+      right: 100px;
+   }
+   .arrow.back {
+      left: 100px;
+   }
+   .close-photo {
+      height: 100px;
+      top: 464px;
+      right: 170px;
+      font-size: 60px;
+      font-weight: 400;
+      opacity: .3;
+   }
+   /* ============== Videos ================ */
+   
 }
 
 /* ============== Media Query ================ */
@@ -967,7 +968,6 @@ position: relative;
     /* ============== BIO ================ */
    .bio.container {
       /* margin: 0 auto; */
-
    }
    
    .bio img#ride{
