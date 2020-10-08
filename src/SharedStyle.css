@@ -663,16 +663,19 @@ position: relative;
    font-size: .9em;
    margin: 2em 4em 0 0;
 }
+.press-detail .press-quote .writer-publication {
+   margin-right: 4em;
+}
 .press-detail .press-quote h4 {
    font-size: .9em;
 }
+
 /* ============== STORE ================ */
 .store.container {
    /* link to outside! ( bandcamp merch ) */
 }
 /* ============== CONTACT ================ */
 .contact.container {
-   
 }
 .contact .info {
    padding: 3em;
@@ -689,7 +692,6 @@ position: relative;
   height: 60vh;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .links .links-list li {
@@ -782,7 +784,7 @@ position: relative;
    }
    nav ul {
       display: initial;
-      font-size: 30px;
+      font-size: 24px;
       text-align: right;
    }
    nav ul li {
@@ -815,6 +817,7 @@ position: relative;
       height: 80px;
       margin:  0 0 0 0;
       padding: 5% 3%;
+      font-size: .8em;
       color: rgb(85, 85, 85);
    }
    .banner .press-quote p {

@@ -111,9 +111,9 @@ class App extends React.Component {
                   <span style={{ opacity: '.3', fontSize: '1.6em', verticalAlign: 'text-top', color: 'black3', padding: '.5em'}}>&#x275E;</span>
                </em>
             </p>
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <div className='writer-publication' style={{ display: 'flex', justifyContent: 'flex-end'}}>
                <h4 style={{ margin: '0', fontWeight: '100'}}>{`${item.writer}`}</h4> &nbsp; &nbsp;
-               <h4 style={{ margin: '0 4em 0 0 '}}><em>{item.publication}</em></h4>
+               <h4 style={{ margin: '0'}}><em>{item.publication}</em></h4>
             </div>
          </div>
          )

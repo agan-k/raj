@@ -29,7 +29,7 @@ const pressData = [
       quote: `The basic character of the music is determined by Jayaweera, a drummer of unusual
       subtlety and good taste, always alive to punctuating the music but never intrusive...
       It's such a pleasure to know there are modern jazz musicians in the world playing like this.`,
-      body: [`The Australian This is such a lovely album that it's difficult to know where to start.
+      body: [`This is such a lovely album that it's difficult to know where to start.
       Drummer - percussionist Rajiv Jayaweera now lives in New York, where this album Pistils was recorded.
       Born in London of Sri Lankan parents, he grew up in Melbourne and graduated from the Victorian
       College of the Arts in 2000.`,
