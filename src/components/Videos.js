@@ -41,11 +41,9 @@ export default class Videos extends Component {
       return (
          <div className="videos container">
 
-            <div className="video-thumb-gallery">
-               {showcase_thumbnails}
-            </div>
+            
 
-            <div className='video-detail  '>
+            
             {/* {this.state.modalShowing && ( */}
                   <VideoDetail
                      showcaseVideoDetail={this.state.showcaseVideoThumbSelect}
@@ -53,6 +51,9 @@ export default class Videos extends Component {
                      videosData={this.props.videosData}
                   />
              {/* )}  */}
+            
+            <div className="video-thumb-gallery">
+               {showcase_thumbnails}
             </div>
          </div>
       )

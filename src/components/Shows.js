@@ -21,6 +21,8 @@ export default class Shows extends React.Component {
                   <i className="fa fa-angle-left fa-1x" aria-hidden="true"></i>
                </p>
             </div>
+
+            <h2>Shows</h2>
    
             <h3>Just announced!</h3>
                <ul>
@@ -38,22 +40,22 @@ export default class Shows extends React.Component {
    
             <h3>2020</h3>
             <ul>
-               <li>Live Broadcast - Rajiv Jayaweera Album Release @ Soapbox Gallery, Brooklyn, NY<br />
+               <li>August, Live Broadcast - Rajiv Jayaweera Album Release @ Soapbox Gallery, Brooklyn, NY<br />
                 Mark Turner (sax), Can Olgun (piano), Rick Rosato (bass)
                </li>
                <li>
-                  3rd May 	Rajiv Jayaweera Quintet Pistils Album Release @ Birdland, NY with Chris Cheek (sax), 
+                  3rd May,	Rajiv Jayaweera Quintet Pistils Album Release @ Birdland, NY with Chris Cheek (sax), 
                   Adam Birnbaum (piano), Rick Rosato (bass) & Hugh Stuckey (guitar) – POSTPONED
                </li>
                <li>
-                  28/29 May  	Bruce Barth Quartet @ Clement’s, Newark, NJ with Steve Wilson (sax) & Luke Sellick (piano) 
+                  28/29 May, Bruce Barth Quartet @ Clement’s, Newark, NJ with Steve Wilson (sax) & Luke Sellick (piano) 
                   - CANCELLED
                </li>
                <li>
-                  27th Jun  	Cyrille Aimée, Huntington, NY – CANCELLED
+                  27th Jun, Cyrille Aimée, Huntington, NY – CANCELLED
                </li>
                <li>
-                  1st Feb	Rajiv Jayaweera Quintet @ Thailand International Jazz Conference, Bangkok with Chris Cheek (sax),
+                  1st Feb, Rajiv Jayaweera Quintet @ Thailand International Jazz Conference, Bangkok with Chris Cheek (sax),
                   Adam Birnbaum (piano), Lara Bello (voice), Carl Morgan (guitar), Sam Anning (bass)
                </li>
                <li>
@@ -61,7 +63,7 @@ export default class Shows extends React.Component {
                   Craig Fermanis (guitar), Sam Anning (bass)
                </li>
                <li>
-                  14-20 Jan	Trio Kleine Ahnung Australian Album Release Tour (Canberra, Sydney, Brisbane, Hobart, 
+                  14-20 Jan, Trio Kleine Ahnung Australian Album Release Tour (Canberra, Sydney, Brisbane, Hobart, 
                   Adelaide, Melbourne) with Carl Morgan (guitar) & Sam Anning (bass)
                </li>
             </ul>
