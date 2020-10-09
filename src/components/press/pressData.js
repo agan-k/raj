@@ -14,6 +14,7 @@ import happy_srilankans from '../../assets/content/happy_srilankans.jpg'
 import happysri from '../../assets/logos/happysri.jpg'
 import jazz_record_2020 from '../../assets/content/jazz_record_2020.jpg'
 import nycJR from '../../assets/logos/nycJR.png'
+import jazz_and_mo from '../../assets/logos/jazz_and_mo.png'
 const pressData = [
    
    {
@@ -559,6 +560,34 @@ const pressData = [
       writer: 'Marco Cangiano',
       url: 'http://www.nycjazzrecord.com/',
       url_description: 'http://www.nycjazzrecord.com/'
+   },
+   {
+      id: 15,
+      review: true,
+      img: jazz_and_mo,
+      title: '',
+      publication: `Jazz & Mo'`,
+      artist: 'Rajiv Jayaweera',
+      album: 'Pistils',
+      description: 'Van de Walle - Pistils',
+      label: 'Outside in Music, 2020',
+      quote: ``,
+      body: [`The term Pistils refers to the seed-bearing part of the flower - depicted on the sleeve - 
+      from which the beauty springs. The track Welikadawatta, Sinhala for "Welikada Gardens" refers to
+      this.`,
+         `The structure of the disc is circular oriental: Pistils is both opener and closer. The opener is 
+      lyrical and sung in a non-existent language, the shutter is played in trio (sax, guitar, drums). In
+      between are 7 other compositions by the drummer, all very melodic with a strikingly beautiful
+      playing bass and with refined rhythmic accents.`,
+         `The drummer is quite modest in his compositions. His interventions are therefore all the more 
+      beautiful and impressive. In his breaks he shows himself from a more energetic side, technically
+      strong too.`,
+         `The tunes are more mainstream, and the oriental influence is there, but it is especially 
+         evident in the smoothly constructed beauty of the melody lines. A record that moved us.`],
+      body_img: jazz_record_2020,
+      writer: 'Marc Van de Walle',
+      url: 'http://jazzandmo.be/pistils?fbclid=IwAR0WcH3uHPRAsxeTOMwfvflp8WpKe4RJ6irpkyPiG1XKRK7iNLOLcu8Xfoo',
+      url_description: 'http://jazzandmo.be/pistils'
    },
    
    

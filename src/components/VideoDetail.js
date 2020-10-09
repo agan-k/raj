@@ -30,7 +30,8 @@ export default class VideoDetail extends Component {
                    <ReactPlayer
                       url={this.props.videoDetail.video_url}
                       height='100%'
-                      width='100%' 
+                     width='100%' 
+                     controls='true'
                    />
                 </div>
              </div>
@@ -63,6 +64,8 @@ export default class VideoDetail extends Component {
                       url={this.props.videosData[0].video_url}
                       height='100%'
                       width='100%'
+                      controls='true'
+                     
                     /> 
                </div> 
                <div className="controls">

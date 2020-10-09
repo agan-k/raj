@@ -541,6 +541,7 @@ position: relative;
    margin: 2em auto;
    padding: 0;
 }
+
 .albums img {
    height: 2.1em;
    width: 2.1em;
@@ -992,6 +993,65 @@ position: relative;
    }
    .shows h3 {
       padding-left: .7em;
+   }
+   /* =========== DISCOGRAPHY =========== */
+   /* .albums-container::after {
+      content: '';
+      flex: auto;
+   } */
+   .albums-container {
+      justify-content: initial;
+      padding-left: 5px;
+   }
+   .albums img {
+      height: 3em;
+      width: 3em;
+      /* padding-left: 1px; */
+      border: .5px solid grey;
+      cursor: pointer;
+      opacity: .8;
+   }
+   /* ====== album detail ===== */
+   .album-info {
+      display: initial;
+   }
+   .info-box {
+      height: min-content;
+      width: 100%;
+      margin: 0;
+      font-weight: 500;
+      color: grey;
+   }
+   .info-box.album-cover {
+      height: 350px;
+      text-align: center;
+      
+   }
+   .info-box.album-cover img {
+      height: 100%;
+      /* margin: 0 auto; */
+      border: .5px solid gray;
+   }
+   .info-box.credits {
+      height: min-content;
+      width: 96%;
+      padding: 4% 0 5% 2%;
+   }
+   .info-box.credits ul li {
+      font-size: .9em;
+   }
+   .info-box.credits p {
+      font-size: .8em;
+      margin: .5em 0 0 .2em;
+   }
+   .info-box.tracks {
+      height: 500px;
+   }
+   .info-box h2, h3 {
+      color: black;
+   }
+   .info-box.tracks ul, h4 {
+      padding-left: .5em;
    }
 }
 
