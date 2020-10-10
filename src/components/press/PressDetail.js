@@ -3,18 +3,23 @@ import React, { Component } from 'react'
 export default class PressDetail extends Component {
    constructor(props) {
       super(props)
+      this.state = {
+         
+      }
    }
    componentDidMount() {
       window.scrollTo(0, 0);
-  }
+   }
+   
    render() {
-      
       return (
          <div className='press-detail'>
-
+            <i class="material-icons close-press-detail" onClick={this.props.closeMobilePressDetail}>&#xe14c;</i>
+            <br />
+            <br />
             {this.props.pressSelect ?
             <>
-               <img src={this.props.pressSelect.img} style={{maxHeight: '3em', maxWidth: '24em'}}/>
+               <img src={this.props.pressSelect.img} />
                <h2>{this.props.pressSelect.publication}</h2>
                <h3>{this.props.pressSelect.title}</h3>
                <h4><em>{this.props.pressSelect.subtitle}</em></h4>
@@ -29,7 +34,7 @@ export default class PressDetail extends Component {
                   </>
                   )}   
 
-               <img src={this.props.pressSelect.body_img} style={{maxWidth: '40vw'}}/>   
+               <img className='feature-img' src={this.props.pressSelect.body_img}/>   
                <p>{this.props.pressSelect.comment}</p>
                <p>{this.props.pressSelect.writer}</p>
                <a href={this.props.pressSelect.url}>
@@ -37,7 +42,7 @@ export default class PressDetail extends Component {
                </a>
             </>
                :
-            <div className='press-quote'>
+            <div className='press-quotes'>
                {this.props.press_quotes}
             </div>
          }

@@ -29,7 +29,9 @@ class App extends React.Component {
          videoThumbSelect: null,
          albumSelect: null,
          pressSelect: null,
-         modalShowing: false
+         modalShowing: false,
+         /** MOBILE */
+         showMobilePressDetail: false
       }
       this.baseState = this.state
    }
@@ -48,7 +50,6 @@ class App extends React.Component {
       this.setState({
          navigationLinkSelect: item,
          mobileNavShowing: false
-
       })
    }
    handleSelectHomeCard = (item, index) => {
@@ -70,7 +71,8 @@ class App extends React.Component {
    }
    handleSelectPress = (item) => {
       this.setState({
-         pressSelect: item
+         pressSelect: item,
+         showMobilePressDetail: true
       })
    }
    closeModal = () =>  {
@@ -80,6 +82,13 @@ class App extends React.Component {
          albumSelect: null
       })
    }
+   closeMobilePressDetail = () => {
+      this.setState({
+         showMobilePressDetail: false
+      })
+   }
+   
+   
 
    render() {
       const navigation_link = navigationData.map(item => 
@@ -219,6 +228,8 @@ class App extends React.Component {
                         press_reviews={press_reviews}
                         press_feature={press_feature}
                         resetState={this.resetState}
+                        showMobilePressDetail={this.state.showMobilePressDetail}
+                        closeMobilePressDetail={this.closeMobilePressDetail}
                      />
                   </Route>
                   <Route path='/contact'>
