@@ -28,7 +28,14 @@ export default class Home extends React.Component {
             </div>
             <h4>{item.date}</h4>
             <h2>{item.card_subject}</h2>
-            <p>{item.card_blurb}</p>
+
+            <p>{item.card_blurb}&nbsp;
+               {item.link ?
+                  <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
+                  : ''
+                }
+               
+                  </p>
             <p>{item.link}</p>
          </div>
       )

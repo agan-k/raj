@@ -36,8 +36,13 @@ body {
 .container a:hover  {
    text-decoration: none;
    color: red;
-   
-
+}
+a .fa.fa-angle-right.fa-1x.nav-link-arrow {
+   width: 0;
+   display: none;
+}
+.fa.fa-angle-right.fa-1x.link-arrow {
+   color: red;
 }
 
 /* ============== HEADER ================ */
@@ -80,6 +85,7 @@ nav {
    background:none;
    z-index: 99;
 }
+
 nav ul {
    display: flex;
    margin: 0;
@@ -93,7 +99,7 @@ nav li {
 nav a {
    text-decoration: none;
    color: white;
-   padding: .2em; 
+   /* padding: .2em;  */
    opacity: .6;
    transition: .3s;  
 }
@@ -632,11 +638,9 @@ position: relative;
     justify-content: flex-end;
     margin-top: 50px;
 }
-
 .press-list-container h2 a:hover {
    color: red; 
 }
-
 .press-list-container  a:visited {
    color: black;
 }
@@ -700,7 +704,7 @@ position: relative;
 }
 /* ============== LINKS ================ */
 .links.container {
-   /* .jpg image of email*/
+   
 }
 .links .links-list {
   margin-top: 2em;
@@ -753,10 +757,13 @@ position: relative;
    .App .layout {
       padding: 60px 0 0 0;
    }
+   /* ==============  SHARED ============== */
    .container {
       min-height: 100%;
       width: 375px;
-      
+   }
+   a .fa.fa-angle-right.fa-1x.nav-link-arrow {
+      display: initial;
    }
 /* ============== HEADER ================ */
    .header {
@@ -1069,12 +1076,11 @@ position: relative;
    }
 
    /* ============== PRESS ================ */
-   .press-container {
-      display: initial;
+
+   .press.container {
+      height: 140em;
       
    }
-   
-   
    .press-list-container {
       width: 95%;
       font-size: 1em;
@@ -1102,6 +1108,7 @@ position: relative;
    .press-list-container h2{
       margin-bottom: 0;
    }
+   
    .press-quotes-mobile {
       display: initial;
    }
@@ -1124,7 +1131,7 @@ position: relative;
       border: dashed .5px grey;
       border-right: none;
       box-shadow: -3px -3px 10px grey;
-      z-index: 99;
+      z-index: 9;
    }
    .material-icons.close-press-detail {
       display: initial;
@@ -1143,6 +1150,7 @@ position: relative;
    .press-quotes {
       display: none;
    }
+   /* ============== LINKS ================ */
 }
 
 

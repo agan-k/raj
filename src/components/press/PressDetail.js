@@ -38,7 +38,9 @@ export default class PressDetail extends Component {
                <p>{this.props.pressSelect.comment}</p>
                <p>{this.props.pressSelect.writer}</p>
                <a href={this.props.pressSelect.url}>
-                  <p>{this.props.pressSelect.url_description}</p>
+               <p>{this.props.pressSelect.url_description}&nbsp;
+                  <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
+               </p> 
                </a>
             </>
                :

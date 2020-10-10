@@ -46,7 +46,7 @@ class Press extends React.Component {
 
                <div className='quotes'> 
                   <h2 onClick={this.props.resetState}>
-                     <Link to='./press'>press quotes</Link>
+                     <Link to='./press'>press quotes</Link> <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
                   </h2>
                </div>
                

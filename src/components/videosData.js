@@ -5,7 +5,7 @@ import welikadawatte_birdland2019 from '../assets/video_thumbs/welikadawatte_bir
 import hirimbura from '../assets/video_thumbs/hirimbura.webp'
 import welikadawatte_tijc2020 from '../assets/video_thumbs/welikadawatte_tijc2020.webp'
 import galadari from '../assets/video_thumbs/galadari.webp'
-import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.webp'
+import vinyl_pistils from '../assets/video_thumbs/vinyl_pistils.jpg'
 
 const videosData = [
    {

@@ -95,12 +95,15 @@ class App extends React.Component {
          !item.external_link ?
             <li className={this.state} onClick={this.resetState}>
                <NavLink exact to={item.navigation_route} activeClassName='active-link'>
-                  {item.navigation_description}
+                  {item.navigation_description}&nbsp;
+               <i className="fa fa-angle-right fa-1x nav-link-arrow" aria-hidden="true"></i>
                </NavLink>
             </li>
             :
             <li className='outside-link'>
-               <a onClick={this.resetState} href={item.url}>{item.external_link}</a>
+               <a onClick={this.resetState} href={item.url}>{item.external_link}&nbsp;
+                  <i className="fa fa-angle-right fa-1x nav-link-arrow" aria-hidden="true"></i>
+               </a>
             </li>
       )
    
@@ -130,7 +133,8 @@ class App extends React.Component {
          <div className="press-list"
            onClick={() => this.handleSelectPress(item)}>
            <li>
-             {`${item.publication} - ${item.description}`} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+               {`${item.publication} - ${item.description}`}&nbsp;  
+               <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
            </li>
          </div>
       )
@@ -138,7 +142,8 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-              {`${item.publication} - ${item.description}`} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+               {`${item.publication} - ${item.description}`}&nbsp; 
+               <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
             </li>
          </div>
       )
@@ -146,7 +151,8 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-            {item.publication} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
+               {item.publication}&nbsp; 
+               <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
             </li>
          </div>
       )

@@ -44,7 +44,7 @@ const pressData = [
       are modern jazz musicians in the world playing like this.`],
       writer: 'Eric Myers',
       url: 'https://ericmyersjazz.com/cd-reviews-page-35-1',
-      url_description: 'https://ericmyersjazz.com/cd-reviews-page-35-1'
+      url_description: 'ericmyersjazz.com/pistils'
    },
 
    {
@@ -98,7 +98,7 @@ const pressData = [
       body_img: '',
       writer: 'Filipe Freitas',
       url: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review',
-      url_description: 'https://jazztrail.net/blog/rajiv-jayaweera-pistils-album-review'
+      url_description: 'jazztrail.net/blog/pistils'
    },
    {
       id: 3,
@@ -259,7 +259,7 @@ const pressData = [
       body_img: '',
       writer: 'Dan Bilawsky',
       url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music',
-      url_description: 'https://www.allaboutjazz.com/Pistils'
+      url_description: 'allaboutjazz.com/Pistils'
    },
    {
       id: 6,
@@ -276,7 +276,7 @@ const pressData = [
       body_img: pbs_fm,
       writer: '',
       url: 'https://www.pbsfm.org.au/news/rajiv-jayaweera',
-      url_description: 'https://www.pbsfm.org.au/news/rajiv-jayaweera'
+      url_description: 'pbsfm.org.au/news/jayaweera'
    },
    {
       id: 7,
@@ -323,7 +323,7 @@ const pressData = [
       engaging compositions.`],
       writer: 'Ron Weinstock',
       url: 'http://inabluemood.blogspot.com/2020/08/rajiv-jayaweera-pistils.html',
-      url_description: 'http://inabluemood.blogspot.com/Pistils'
+      url_description: 'Inabluemood.blogspot.com/Pistils'
    },
    {
       id: 8,
@@ -360,7 +360,7 @@ const pressData = [
       anchored in various origins.`],
       writer: 'Georges Tonla Briquet',
       url: 'https://www.jazzhalo.be/reviews/cdlp-reviews/r/rajiv-jayaweera-pistils/',
-      url_description: 'https://www.jazzhalo.be/reviews/Pistils'
+      url_description: 'jazzhalo.be/Pistils'
    },
    {
       id: 9,
@@ -413,7 +413,7 @@ const pressData = [
       breath with groove heavy-weights like Brian Blade before long.`],
       writer: 'Friedrich Kunzmann',
       url: 'https://www.allaboutjazz.com/pistils-rajiv-jayaweera-outside-in-music__17026',
-      url_description: 'https://www.allaboutjazz.com/pistils'
+      url_description: 'allaboutjazz.com/pistils'
    },
    {
       id: 10,
@@ -454,7 +454,7 @@ const pressData = [
       Rajiv Jayavira we are meeting a very interesting and creative master.`],
       writer: 'Leonid Auskern',
       url: 'https://jazzquad.ru/index.pl?act=PRODUCT&id=5568',
-      url_description: 'https://jazzquad.ru/Pistils'
+      url_description: 'jazzquad.ru/Pistils'
    },
    {
       id: 11,
@@ -471,7 +471,7 @@ const pressData = [
       body_img: abc_au_content,
       writer: '',
       url: 'https://www.abc.net.au/jazz/featured-music/feature-albums/pistils-raj-jayaweera/12402034',
-      url_description: 'https://www.abc.net.au/jayaweera'
+      url_description: 'abc.net.au/jayaweera'
    },
    {
       id: 12,
@@ -488,7 +488,7 @@ const pressData = [
       body_img: happy_srilankans,
       writer: '',
       url: 'https://www.happysrilankans.com/sri-lankan-jazz-drummer-in-the-new-york-scene',
-      url_description: 'https://www.happysrilankans.com/jayaweera'
+      url_description: 'happysrilankans.com/jayaweera'
    },
    {
       id: 13,
@@ -528,7 +528,7 @@ const pressData = [
       in 2013.`],
       writer: '',
       url: 'https://www.francemusique.fr/jazz/rajiv-jayaweera-pistils-84548',
-      url_description: 'https://www.francemusique.fr/jayaweera'
+      url_description: 'francemusique.fr/jayaweera'
    },
    {
       id: 14,
@@ -559,7 +559,7 @@ const pressData = [
       body_img: jazz_record_2020,
       writer: 'Marco Cangiano',
       url: 'http://www.nycjazzrecord.com/',
-      url_description: 'http://www.nycjazzrecord.com/'
+      url_description: 'nycjazzrecord.com/'
    },
    {
       id: 15,
@@ -587,7 +587,7 @@ const pressData = [
       body_img: '',
       writer: 'Marc Van de Walle',
       url: 'http://jazzandmo.be/pistils?fbclid=IwAR0WcH3uHPRAsxeTOMwfvflp8WpKe4RJ6irpkyPiG1XKRK7iNLOLcu8Xfoo',
-      url_description: 'http://jazzandmo.be/pistils'
+      url_description: 'jazzandmo.be/pistils'
    },
    
    
