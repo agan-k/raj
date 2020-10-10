@@ -584,7 +584,7 @@ const pressData = [
       strong too.`,
          `The tunes are more mainstream, and the oriental influence is there, but it is especially 
          evident in the smoothly constructed beauty of the melody lines. A record that moved us.`],
-      body_img: jazz_record_2020,
+      body_img: '',
       writer: 'Marc Van de Walle',
       url: 'http://jazzandmo.be/pistils?fbclid=IwAR0WcH3uHPRAsxeTOMwfvflp8WpKe4RJ6irpkyPiG1XKRK7iNLOLcu8Xfoo',
       url_description: 'http://jazzandmo.be/pistils'

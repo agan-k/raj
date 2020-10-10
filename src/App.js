@@ -130,7 +130,7 @@ class App extends React.Component {
          <div className="press-list"
            onClick={() => this.handleSelectPress(item)}>
            <li>
-             {`${item.publication} - ${item.description}`}
+             {`${item.publication} - ${item.description}`} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
            </li>
          </div>
       )
@@ -138,7 +138,7 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-              {`${item.publication} - ${item.description}`}
+              {`${item.publication} - ${item.description}`} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
             </li>
          </div>
       )
@@ -146,7 +146,7 @@ class App extends React.Component {
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
             <li>
-            {item.publication}
+            {item.publication} <i className="fa fa-angle-right fa-1x" aria-hidden="true"></i>
             </li>
          </div>
       )

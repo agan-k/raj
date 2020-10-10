@@ -45,7 +45,6 @@ class Press extends React.Component {
             <div className='press-list-container'>
 
                <div className='quotes'> 
-
                   <h2 onClick={this.props.resetState}>
                      <Link to='./press'>press quotes</Link>
                   </h2>
