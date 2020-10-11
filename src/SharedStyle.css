@@ -468,42 +468,55 @@ position: relative;
    width: 80%;/* % of reactPlayer's (VideoDetail.js) 100% width */
 }
 .video-detail .controls {
+   display: none;
    height: 4em;
    /* background-color: red; */
    width: 4em;
    margin: 0 auto;
    text-align: center;
 }
-.material-icons {
+/* .material-icons {
    font-size: 3em;
    opacity: .7; 
    cursor: pointer;
    transition: .3s;
-}
-.material-icons:hover {
+} */
+/* .material-icons:hover {
    opacity: 1;
    font-size: 3.3em;
    transition: .3s;
-}
-.material-icons.expand {
+} */
+/* .material-icons.expand {
    color: black;
    display: initial;
-}
-.material-icons.reduce {
+} */
+/* .material-icons.reduce {
    display: none;
-}
-.video-detail.view-full-screen .expand {
+} */
+/* .video-detail.view-full-screen .expand {
    display: none;
-}
-.video-detail.view-full-screen .reduce {
+} */
+/* .video-detail.view-full-screen .reduce {
    display: initial;
    color: white;
-}
+} */
 .material-icons.close-video {/* videoDetail from news cards*/
-   display: initial;
+   /* display: initial; */
+   position: absolute;
+   top: 4%;
+   right: 6%;
+   font-size: 2.3em;
+   opacity: .8; 
+   cursor: pointer;
+   transition: .3s;
    color: white;
+}
+.material-icons.close-video:hover {/* videoDetail from news cards*/
+   opacity: 1;
+   transition: .3s;
 }
 .video-detail.view-full-screen {
+   /* text-align: right; */
    width: 100%;
    height: 100%;
    position: fixed;
@@ -1217,16 +1230,6 @@ position: relative;
       
    }
 }
-
-
-
-
-
-
-
-
-
-
 /* ============== Media Query ================ */
 
 
@@ -1276,7 +1279,6 @@ position: relative;
       border-radius: 10px;
    }
    .bio p {
-      /* font-size: 1.5em; */
    }
    /* ============== Photos ================ */
    .photos.container {
@@ -1289,7 +1291,17 @@ position: relative;
    .image-container img {
       height: 22em;
    }
+   .image-container.vertical img {
+      margin-top: -1.5em;
+   }
   /* ============== Videos ================ */
+   .video-detail {
+      width: 100%;
+      height: 800px;
+   }
+   .react-player-video {
+      
+   }
 
   /* ======= VideoDetail ========= */
    

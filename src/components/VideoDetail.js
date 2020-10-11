@@ -68,10 +68,10 @@ export default class VideoDetail extends Component {
                      
                     /> 
                </div> 
-               <div className="controls">
+               {/* <div className="controls">
                    <i className='material-icons expand' onClick={this.handleSelectFullScreen}>&#xe5d0;</i>
                    <i class="material-icons reduce" onClick={this.exitFullScreen}>&#xe5d1;</i>
-               </div>
+               </div> */}
             </div>
          )
       }
