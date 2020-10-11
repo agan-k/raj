@@ -815,8 +815,8 @@ position: relative;
       position: absolute;
       font-size: 30px;
       color: white;
-      top: 14px;
-      right: 7px;
+      top: 20%;
+      right: 4%;
    }
    nav {
       position: initial;
