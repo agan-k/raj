@@ -31,7 +31,6 @@ export default class Contact extends React.Component {
                </p>
                <br/>
                <h3>European Publicity:</h3>
-      
                <p>
                   <a href='http://stilletto.be/en/#contact'>Inge De Pauw, Stiletto Productions</a>
                   &nbsp; 
