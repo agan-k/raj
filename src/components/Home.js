@@ -49,15 +49,18 @@ export default class Home extends React.Component {
                   <div className='press-quote'>
                      {this.props.press_quotes[banner_quote]}
                   </div>
-                  <div className='cta'>
+                  <div className='cta-container'>
+                     <span id='cta-desc'>
+                        new album
+                     </span>
                      <img src={pistils} />
                      <br/>
-                     <span>
+                     <span id='cta'>
                         listen/buy
-                        {this.props.albums_link[0]}
+                        {this.props.albums_link[0]}&nbsp;
+                        <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
                      </span>
-                     &nbsp;
-                     <i className="fa fa-angle-right fa-1x buy" aria-hidden="true"></i>
+                     
                   </div>
                </div>
 
@@ -70,7 +73,7 @@ export default class Home extends React.Component {
                         {this.props.press_link[0]}
                      </div>
 
-                     <div className="card">
+                      <div className="card">
                         {home_cards[1]}
                         {this.props.press_link[1]}
                      </div>

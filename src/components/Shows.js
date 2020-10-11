@@ -27,8 +27,9 @@ export default class Shows extends React.Component {
             <h3>Just announced!</h3>
                <ul>
                   <li>
-                     4th Oct, 2020	Rajiv Jayaweera Online Concert - Earshift Music Festival, 6:30pm AEST&nbsp;
-                        <a href='https://www.earshift.com/news/2020/9/4/earshift-fest-2020'>link</a>
+                  4th Oct, 2020	Rajiv Jayaweera Online Concert - Earshift Music Festival, 6:30pm AEST&nbsp;
+                        <a href='https://www.earshift.com/news/2020/9/4/earshift-fest-2020'>link</a>&nbsp;
+                        <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
                   </li>
                   <li>
                      <strong>Trio Kleine Ahnung’s</strong> Australian November 2020 Tour is postponed until further notice.
