@@ -779,7 +779,7 @@ position: relative;
    /* ==============  SHARED ============== */
    .container {
       min-height: 100%;
-      width: 375px;
+      width: 100%;
    }
    a .fa.fa-angle-right.fa-1x.nav-link-arrow {
       display: initial;
@@ -789,7 +789,7 @@ position: relative;
       top: 0;
       height: 60px;
       overflow: hidden;
-      width: 375px;
+      width: 100%;
       background-image: url('./assets/backgrounds/mobile_headerBcg3.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
@@ -815,8 +815,8 @@ position: relative;
       position: absolute;
       font-size: 30px;
       color: white;
-      top: 20%;
-      right: 4%;
+      top: 14px;
+      right: 14px;
    }
    nav {
       position: initial;
