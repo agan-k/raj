@@ -45,12 +45,12 @@ const linksData = [
       id: 8,
       link: 'Chris Cheek',
       description: 'saxophone',
-      url: 'https://ChrisCheek.net'
+      url: 'https://www.chrischeek.net'
    },
    {
       id: 9,
       link: 'Aaron Choulai',
-      description: 'saxophone',
+      description: 'piano',
       url: 'https://aaronchoulai.bandcamp.com/'
    },
    {
@@ -86,7 +86,7 @@ const linksData = [
    {
       id: 15,
       link: 'Will Guthrie',
-      description: 'saxophone',
+      description: 'drummes',
       url: 'https://will-guthrie.com'
    },
    {
@@ -109,7 +109,7 @@ const linksData = [
    },
    {
       id: 19,
-      link: 'AndreaKeller',
+      link: 'Andrea Keller',
       description: 'piano',
       url: 'https://andreakellerpiano.com.au'
    },
@@ -165,7 +165,7 @@ const linksData = [
       id: 28,
       link: 'Michael Vienø',
       description: 'photographer',
-      url: 'https://michaelvieno.dk'
+      url: 'https://michaelvieno.com'
    },
    {
       id: 29,

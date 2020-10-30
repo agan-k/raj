@@ -344,7 +344,7 @@ position: relative;
 .photo-detail-img-container img {
    height: 30em;
    margin: 0 auto;
-   border: .5px solid rgba(255, 255, 255, 0.637);
+   /* border: .5px solid rgba(255, 255, 255, 0.637); */
 }
 .photo-detail-img-container p {
    text-align: center;
@@ -551,22 +551,23 @@ position: relative;
 
 /* ============== DISCOGRAPHY ================ */
 .discography.container {
+   width: 98%;
 }
 /* ====== albums ===== */
 .albums-container {
    display: flex;
-   justify-content: space-around;
+   /* justify-content: space-between; */
    flex-wrap: wrap;
-   width: 95%;
+   width: 93%;
    height: min-content;
    margin: 2em auto;
    padding: 0;
 }
-
 .albums img {
-   height: 2.1em;
-   width: 2.1em;
-   border: .5px solid grey;
+   height: 18em;
+   width: 18em;
+   /* border: .5px solid grey; */
+   padding: 0 .1em;
    cursor: pointer;
    opacity: .6;
 }
@@ -585,12 +586,13 @@ position: relative;
 }
 .album-detail img {
    height: 99%;
-   border: .5px solid gray;
+   /* border: .5px solid gray; */
 }
 .album-info {
    display: flex;
    justify-content: space-around;
    margin: 0 auto;
+   margin-top: 1em;
    width: 95%;
 }
 .info-box {
@@ -992,6 +994,7 @@ position: relative;
    .photo-detail-img-container {
       text-align: center;
       margin: 2em auto;
+      
    }
    .photo-detail-img-container img {
       height: 220px;
@@ -1075,6 +1078,15 @@ position: relative;
       flex: auto;
    } */
    .albums-container {
+      position: relative;
+      display: flex;
+      /* justify-content: space-around; */
+      flex-wrap: wrap;
+      width: 95%;
+      height: min-content;
+      margin: 2em auto;
+      /* padding: 0; */
+
       justify-content: initial;
       padding-left: 5px;
    }

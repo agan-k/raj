@@ -30,7 +30,7 @@ class App extends React.Component {
          albumSelect: null,
          pressSelect: null,
          modalShowing: false,
-         /** MOBILE */
+         /** MOBILE @ max-width_375 */
          showMobilePressDetail: false
       }
       this.baseState = this.state
@@ -66,8 +66,9 @@ class App extends React.Component {
    }
    handleSelectAlbums = (item, index) => {
       this.setState({
-         albumSelect: item
+         albumSelect: item,
       })
+      window.scrollTo(0, 0);
    }
    handleSelectPress = (item) => {
       this.setState({
@@ -88,8 +89,6 @@ class App extends React.Component {
       })
    }
    
-   
-
    render() {
       const navigation_link = navigationData.map(item => 
          !item.external_link ?
@@ -106,12 +105,11 @@ class App extends React.Component {
                </a>
             </li>
       )
-   
       const albums = albumsData.map((item, index) =>
          <div
             className="albums"
             onClick={() => this.handleSelectAlbums(item, index)}>
-            <img src={item.cover} />
+            <img src={item.cover}/>
          </div>
       )
       const press_quotes = pressData.filter(item => item.quote).map(item =>
@@ -128,7 +126,7 @@ class App extends React.Component {
                <h4 style={{ margin: '0'}}><em>{item.publication}</em></h4>
             </div>
          </div>
-         )
+      )
       const press_releases = pressData.filter(item => item.press_release === true).map(item =>
          <div className="press-list"
            onClick={() => this.handleSelectPress(item)}>
@@ -218,6 +216,7 @@ class App extends React.Component {
                         albumsData={albumsData}
                         albumSelect={this.state.albumSelect}
                         albums={albums}
+                        
                      />
                   </Route>
                   <Route path='/shows'>

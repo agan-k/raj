@@ -433,7 +433,7 @@ let albumsData = [
       ],
       personnel: [
          `Michael Valeanu - guitar`,
-         `Thomas Ehnco - piano`,
+         `Thomas Enhco - piano`,
          `Or Bareket - Bass`,
          `Rajiv Jayaweera - Drums`,
       ],
@@ -506,7 +506,7 @@ let albumsData = [
    {
       id: 19,
       description: 'Way Out West',
-      bandcamp: '827241178',
+      bandcamp: '1602420040',
       cover: wayoutwest,
       title: 'The Effects of Weather',
       label: 'Jazz Head',
