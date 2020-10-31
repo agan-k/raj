@@ -554,6 +554,9 @@ position: relative;
    width: 98%;
 }
 /* ====== albums ===== */
+.dropdown-albums-container {
+   display: none;
+}
 .albums-container {
    display: flex;
    /* justify-content: space-between; */
@@ -1078,25 +1081,56 @@ position: relative;
       flex: auto;
    } */
    .albums-container {
-      position: relative;
+      display: none;
+   }
+   .dropdown-albums-container {
+      display: initial;
+      position: fixed;
+      top: -770px;
+      /* top: 60px; */
+      width: 98%;
+      height: min-content;
+      margin: 0;
+      padding: 0;
+      background-color: #ebe7cf;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: -3px -3px 10px grey;
+   }
+   .open.dropdown-albums-container {
+      position: absolute;
+      top: 55px;
+   }
+   .expand-mobile-albums-container .material-icons {
+      display: block;
+      line-height: .7em;
+      opacity: .3;
+      margin: 0 auto;
+      padding: 0;
+      font-size: 1.6em;
+      width: min-content;
+   }
+   
+   .mobile-albums-container {
+      background-color: #ebe7cf;
       display: flex;
-      /* justify-content: space-around; */
       flex-wrap: wrap;
       width: 95%;
       height: min-content;
-      margin: 2em auto;
-      /* padding: 0; */
-
-      justify-content: initial;
-      padding-left: 5px;
+      margin: 1em auto;
+      /* padding-bottom: 25px; */
    }
+   
    .albums img {
-      height: 3em;
-      width: 3em;
+      height: 7em;
+      width: 7em;
       /* padding-left: 1px; */
-      border: .5px solid grey;
+      
       cursor: pointer;
       opacity: .8;
+   }
+   .album-select {
+      margin-top: 2.5em;
    }
    /* ====== album detail ===== */
    .album-info {
@@ -1241,6 +1275,15 @@ position: relative;
       padding: .6em;
       
    }
+   /* ============== FOOTER ================ */
+   .footer {
+      width: 100%;
+      margin: 0;
+      height: 85px;
+      background: url('./assets/backgrounds/footer.jpg') no-repeat;
+      background-size: 100%;
+      background-position: center bottom;
+   }
 }
 /* ============== Media Query ================ */
 
@@ -1318,6 +1361,12 @@ position: relative;
   /* ======= VideoDetail ========= */
    
    /* ============== Discography ================ */
+   .albums img {
+      height: 13em;
+      width: 13em;
+      
+   }
+   /* ====== album detail ===== */
    .info-box {
       height: 470px;
       width: 470px;

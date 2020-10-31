@@ -30,7 +30,8 @@ class App extends React.Component {
          albumSelect: null,
          pressSelect: null,
          modalShowing: false,
-         /** MOBILE @ max-width_375 */
+      /** MOBILE @ max-width_375 */
+         showMobileDiscographySelect: false,
          showMobilePressDetail: false
       }
       this.baseState = this.state
@@ -41,11 +42,21 @@ class App extends React.Component {
    componentDidMount() {
       window.scrollTo(0, 0);
    }
+
+/** MOBILE @ max-width_375 */
    handleOpenMobileNav = () => {
       this.setState({
          mobileNavShowing: !this.state.mobileNavShowing
       })
    }
+   handleMobileDiscograpySelect = () => {
+      this.setState({
+         showMobileDiscographySelect: !this.state.showMobileDiscographySelect
+      })
+      window.scrollTo(0, 0);
+   }
+/** MOBILE @ max-width_375 -- E N D */
+   
    handleSelectNavigationLink = (item, index) => {
       this.setState({
          navigationLinkSelect: item,
@@ -67,9 +78,11 @@ class App extends React.Component {
    handleSelectAlbums = (item, index) => {
       this.setState({
          albumSelect: item,
+         showMobileDiscographySelect: false
       })
       window.scrollTo(0, 0);
    }
+   
    handleSelectPress = (item) => {
       this.setState({
          pressSelect: item,
@@ -216,7 +229,8 @@ class App extends React.Component {
                         albumsData={albumsData}
                         albumSelect={this.state.albumSelect}
                         albums={albums}
-                        
+                        showMobileDiscographySelect={this.state.showMobileDiscographySelect}
+                        handleMobileDiscograpySelect={this.handleMobileDiscograpySelect}
                      />
                   </Route>
                   <Route path='/shows'>
