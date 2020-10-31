@@ -158,6 +158,15 @@ class App extends React.Component {
             </li>
          </div>
       )
+      const press_interviews = pressData.filter(item => item.interview === true).map(item =>
+         <div className="press-list"
+            onClick={() => this.handleSelectPress(item)}>
+            <li>
+               {`${item.publication}`}&nbsp; 
+               <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
+            </li>
+         </div>
+      )
       const press_feature = pressData.filter(item => item.feature === true).map(item =>
          <div className="press-list"
             onClick={() => this.handleSelectPress(item)}>
@@ -245,6 +254,7 @@ class App extends React.Component {
                         pressSelect={this.state.pressSelect}
                         press_releases={press_releases}
                         press_reviews={press_reviews}
+                        press_interviews={press_interviews}
                         press_feature={press_feature}
                         resetState={this.resetState}
                         showMobilePressDetail={this.state.showMobilePressDetail}

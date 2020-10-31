@@ -54,6 +54,8 @@ class Press extends React.Component {
                <ul>{this.props.press_releases}</ul>
                <h2>Reviews</h2>
                <ul>{this.props.press_reviews}</ul>
+               <h2>Interviews</h2>
+               <ul>{this.props.press_interviews}</ul>
                <h2>Features</h2>
                <ul>{this.props.press_feature}</ul>
                <div className='press-quotes-mobile'>

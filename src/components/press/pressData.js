@@ -15,6 +15,7 @@ import happysri from '../../assets/logos/happysri.jpg'
 import jazz_record_2020 from '../../assets/content/jazz_record_2020.jpg'
 import nycJR from '../../assets/logos/nycJR.png'
 import jazz_and_mo from '../../assets/logos/jazz_and_mo.png'
+import modern_drummer from '../../assets/logos/modern_drummer.webp'
 const pressData = [
    
    {
@@ -55,7 +56,7 @@ const pressData = [
       publication: 'Jazz Trail',
       artist: 'Rajiv Jayaweera',
       album: 'Pistils',
-      description: 'Freitas - Laniakea',
+      description: 'Freitas - Pistils',
       label: 'Outside in Music, 2020',
       quote: `Eschewing any type of fireworks in favor of a relaxed, smooth flowing, the set of songs proposed
       by Jayaweera - his rhythmic sensibilities are reminiscent of Paul Motian, Brian Blade and Peter
@@ -588,6 +589,70 @@ const pressData = [
       writer: 'Marc Van de Walle',
       url: 'http://jazzandmo.be/pistils?fbclid=IwAR0WcH3uHPRAsxeTOMwfvflp8WpKe4RJ6irpkyPiG1XKRK7iNLOLcu8Xfoo',
       url_description: 'jazzandmo.be/pistils'
+   },
+   {
+      id: 16,
+      interview: true,
+      img: modern_drummer,
+      title: 'Rajiv Jayaweera Draws From Sri Lankan Heritage on Debut Album, Pistils',
+      publication: `Modern Drummer`,
+      artist: '',
+      album: '',
+      description: 'Modern Drummer',
+      label: '',
+      quote: `On Pistils (Outside in Music), Jayaweera’s superb touch yields dancing interplay and dramatic dynamics, 
+      calling to mind Paul Motian and Jon Christensen circa their ECM days.`,
+      body: [`It’s atypical for a drummer-led debut to open with a contemplative, rubato tune shaded by hushed, 
+      minimal brushwork. But jazz drummer/composer Rajiv Jayaweera favors attention to sound and ensemble voice
+      over bluster.`,
+      `On Pistils (Outside in Music), Jayaweera’s superb touch yields dancing interplay and dramatic dynamics, 
+      calling to mind Paul Motian and Jon Christensen circa their ECM days. On several numbers, Rajiv draws from
+      his Sri Lankan heritage, as on “Ellstandissa,” where he interprets a traditional dance rhythm. In addition,
+      his kit is augmented with the thammattama, a ceremonial drum pair played with curved-end sticks.`,
+      `Artful at creating contrasting textures, Jayaweera often alternates seamlessly between various combinations 
+      of sticks, brushes, mallets, and rods. And though his rhythmic drive is fluid and breathing, it’s potently
+      propulsive, as on “Galadari,” where he generates an effortless joy ride from shifting odd meters. In a set
+      intended to evoke nature, this outstanding quintet’s patient, lyrical, and finely detailed tapestry undeniably
+      succeeds. We wanted to know more.`,
+      `MD: You integrate Sri Lankan elements in your music. How is that specifically present in your composing or 
+      drumming?`,
+      `RAJIV: In general, I tried to use images and memories from Sri Lanka that I had in my mind as inspiration for 
+      the compositions. I wanted to try to capture and convey the beauty that exists there through the songs.`,
+      `MD: Could you explain and breakdown the traditional dance rhythm you’re applying in “Ellstandissa”?`,
+      `RAJIV: The introduction to “Ellstandissa” is based on a dance in 7/8. The opening phrases are rubato, but when 
+      the time begins I play parts of the same rhythm as triplets grouped in seven, counting in 3/4. The bass line is
+      also related, and groupings of three in 9/8 shift back by two 8th notes each time [2223, 2232, 2322, 3222]. This
+      creates a rhythmic pattern in seven, but the harmonic rate remains in 9/8 or 3/4.`,
+      `I was drawn to the thammattama drum because it’s played with sticks, so I could utilize my technique from 
+      playing the drumset. The sticks themselves are really interesting, and the end that strikes the drum has a
+      hollow circle instead of a small bead like a conventional drumstick. This helps to create a warm tone and also
+      protects the drumhead. I actually pierced a skin once trying to play it with a regular stick!`,
+      `MD: You grew up in Melbourne and were busy on the jazz scene there. What prompted you to pull up stakes and 
+      move to New York?`,
+      `RAJIV: I had wanted to move to New York ever since I spent three months here in 2002. During that trip I saw 
+      multiple shows every single night and really fell for the city. I knew I wanted to move here but didn’t know
+      how. Ten years later, I finally decided to audition for some schools to do my master’s, and that’s what
+      ultimately brought me to the city in 2011. I completed my master’s in jazz studies at SUNY Purchase, New York,
+      in 2013.`,
+      `MD: Though this is a drummer-led debut, it’s certainly not a drum-centric record. Even when you’re allowed 
+      your one solo break on “Galadari,” it’s kept brief.`,
+      `RAJIV: My goal was to showcase the melodies and harmony of each song, and to try to create honest music as a 
+      band. I wanted to serve the songs but didn’t feel the need to feature the drums or play more just because it
+      was a drummer-led album, except for when the music called for it. In general, I like the approach of leaving
+      space and seeing what happens, and I think that gave [saxophonist] Chris Cheek, [pianist] Aaron Parks,
+      [vocalist] Lara Bello, [guitarist] Hugh Stuckey, and [bassist] Sam Anning the freedom to bring their own
+      interpretations and personalities to the music. After I had written the songs, I actually sometimes found it
+      challenging to know what to play myself on the drums. I even considered having songs without drums on them at all.`,
+      `MD: You’re able to exert strong rhythmic power with a light touch and within soft to moderate volumes. Was that 
+      a conscious development?`,
+      `RAJIV: I have always naturally gravitated to playing at a softer dynamic. I mostly play in acoustic settings, 
+      so I’m usually paying close attention to the overall balance of the band and to dynamics in general. I don’t
+      feel as though the drums necessarily have to be at the front of the mix for the music to be powerful.`
+      ],
+      body_img: '',
+      writer: 'Jeff Potter',
+      url: 'https://www.moderndrummer.com/2020/10/jazz-drummer-rajiv-jayaweera-draws-from-his-sri-lankan-heritage-on-his-brilliant-debut-album-pistils/',
+      url_description: 'https://www.moderndrummer.com/rajiv-jayaweera'
    },
    
    
