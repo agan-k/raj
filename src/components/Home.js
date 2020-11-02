@@ -18,13 +18,14 @@ export default class Home extends React.Component {
    render() {
       const banner_quote = Math.floor(Math.random() * this.props.press_quotes.length);
       const home_cards = this.props.home_cardsData.map(item =>
-         <div>
+         // !item.video_link ?
+         <div className={`${item.video_link ? 'video' : ''} card`}>
             <div
                style={{
                   maxHeight: '100%', overflow: 'hidden', textAlign: 'center'
                }}>
                <img src={item.img}/>
-               <img src={item.thumbnail}/>
+               <img src={item.video_thumbnail}/>
             </div>
             <h4>{item.date}</h4>
             <h2>{item.card_subject}</h2>
@@ -34,10 +35,26 @@ export default class Home extends React.Component {
                   <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
                   : ''
                 }
-               
-                  </p>
-            <p>{item.link}</p>
-         </div>
+            </p>
+
+            {item.album_link ?
+               this.props.albums_link[item.album_link] : ''
+            }
+            
+            {item.video_link ?
+               this.props.video_link[item.video_link] : ''
+            }
+            {this.props.modalShowing && (
+            <VideoDetail
+               videoDetail={this.props.videoThumbSelect}
+               closeModal={this.props.closeModal} />
+            )}
+            
+            {item.press_link ?
+               this.props.press_link[item.press_link] : ''
+         }
+            
+         </div> 
       )
       return (
          <div className='home container'>
@@ -60,59 +77,15 @@ export default class Home extends React.Component {
                         {this.props.albums_link[0]}&nbsp;
                         <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
                      </span>
-                     
                   </div>
                </div>
 
             </div>
 
             <div className="home-cards-container">
-
-                     <div className="card">
-                        {home_cards[0]}
-                        {this.props.press_link[0]}
-                     </div>
-
-                      <div className="card">
-                        {home_cards[1]}
-                        {this.props.press_link[1]}
-                     </div>
-
-                     <div className="card">
-                        {home_cards[2]}
-                        {this.props.albums_link[0]}
-                     </div>
-
-                     <div className="card video">
-                           {home_cards[3]}
-                           {this.props.video_link[7]}
-                           {this.props.modalShowing && (
-                           <VideoDetail
-                              videoDetail={this.props.videoThumbSelect}
-                              closeModal={this.props.closeModal} />
-                           )}
-                     </div>
-
-                     <div className="card video">
-                           {home_cards[4]}
-                           {this.props.video_link[0]}
-                           {this.props.modalShowing && (
-                           <VideoDetail
-                              videoDetail={this.props.videoThumbSelect}
-                              closeModal={this.props.closeModal} />
-                           )}
-                     </div>
-
-                     <div className="card">
-                        {home_cards[5]}
-                        {this.props.albums_link[1]}
-                     </div>
-                     <div className="card">
-                        {home_cards[6]}
-                        
-                     </div>
-
-                  </div>
+               {home_cards}
+            </div>
+            
          </div>
       )
    }

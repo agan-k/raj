@@ -179,13 +179,11 @@ class App extends React.Component {
       const press_link = pressData.map(item =>
          <Link className='link' to='/press'
             onClick={() => this.handleSelectPress(item)}>
-            {/* &#8599; */}
          </Link>
       )
       const video_link = videosData.map(item =>
          <div className='link'
             onClick={() => this.handleSelectVideos(item)}>
-            {/* &#8599; */}
          </div>
       )
       const albums_link = albumsData.map(item =>

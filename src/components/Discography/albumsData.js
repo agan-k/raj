@@ -7,7 +7,7 @@ import ragstretch from '../../assets/albums/ragstretch.jpg'
 import benbryden from '../../assets/albums/benbryden.jpg'
 import pauljones from '../../assets/albums/pauljones.jpg'
 import cyrille from '../../assets/albums/cyrille.jpg'
-import qmorrow from '../../assets/albums/qmorrow.jpeg'
+import q from '../../assets/albums/q.jpg'
 import peterknight from '../../assets/albums/peterknight.jpg'
 import angeladavis from '../../assets/albums/angeladavis.jpg'
 import rotemsivan from '../../assets/albums/rotemsivan.jpg'
@@ -202,7 +202,8 @@ let albumsData = [
    {
       id: 7,
       description: 'Q Morrow',
-      cover: qmorrow,
+      bandcamp: '1863518205',
+      cover: q,
       title: 'There Are Stars in Brooklyn',
       label: '',
       tracks: [
@@ -461,10 +462,11 @@ let albumsData = [
          `10. Is it OK if I call you mine (McCrane)`
       ],
       personnel: [
-         `Michael Valeanu - guitar`,
-         `Thomas Ehnco - piano`,
-         `Or Bareket - Bass`,
+         `Emma Gilmartin - voice`,
+         `Will Poskitt - piano`,
+         `Ben Robertson - Bass`,
          `Rajiv Jayaweera - Drums`,
+         'Eugene Ball - trumpet'
       ],
       credits:
          ['2005 Move Records',

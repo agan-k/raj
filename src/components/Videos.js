@@ -34,7 +34,7 @@ export default class Videos extends Component {
                <div className="video-thumbnail-container"
                   onClick={() => this.handleSelectShowcase(item)}>
                   <p>{item.caption}</p>
-                  <img src={item.thumbnail}/>
+                  <img src={item.video_thumbnail}/>
                </div>
          )}
       )
