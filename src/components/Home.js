@@ -18,14 +18,13 @@ export default class Home extends React.Component {
    render() {
       const banner_quote = Math.floor(Math.random() * this.props.press_quotes.length);
       const home_cards = this.props.home_cardsData.map(item =>
-         // !item.video_link ?
-         <div className={`${item.video_link ? 'video' : ''} card`}>
+         !item.video_link ?
+         <div className='card'>
             <div
                style={{
                   maxHeight: '100%', overflow: 'hidden', textAlign: 'center'
                }}>
                <img src={item.img}/>
-               <img src={item.video_thumbnail}/>
             </div>
             <h4>{item.date}</h4>
             <h2>{item.card_subject}</h2>
@@ -41,20 +40,33 @@ export default class Home extends React.Component {
                this.props.albums_link[item.album_link] : ''
             }
             
-            {item.video_link ?
-               this.props.video_link[item.video_link] : ''
-            }
-            {this.props.modalShowing && (
-            <VideoDetail
-               videoDetail={this.props.videoThumbSelect}
-               closeModal={this.props.closeModal} />
-            )}
-            
             {item.press_link ?
                this.props.press_link[item.press_link] : ''
-         }
+            }
             
-         </div> 
+         </div> :
+         
+         <div className='video card'>
+            <img src={item.video_thumbnail}/>
+            <h4>{item.date}</h4>
+            <h2>{item.card_subject}</h2>
+
+            <p>{item.card_blurb}&nbsp;
+               {item.link ?
+                  <i className="fa fa-angle-right fa-1x link-arrow" aria-hidden="true"></i>
+                  : ''
+                }
+               {item.video_link ?
+                  this.props.video_link[item.video_link] : ''
+               }
+               {this.props.modalShowing && (
+               <VideoDetail
+                  videoDetail={this.props.videoThumbSelect}
+                  closeModal={this.props.closeModal} />
+               )}
+            </p>
+         </div>
+         
       )
       return (
          <div className='home container'>
@@ -85,7 +97,7 @@ export default class Home extends React.Component {
             <div className="home-cards-container">
                {home_cards}
             </div>
-            
+
          </div>
       )
    }
