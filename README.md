@@ -5,9 +5,15 @@ This artist profile web app is going to feature the work of and information abou
 
 # Mockups
 
-LANDING PAGE
+DESKTOP
 
-![](https://i.imgur.com/qtEdpQt.jpg)
+![](readme_assets/raj_desktop.jpg)
+![](readme_assets/raj_desktop1.jpg)
+
+DISCOGRAPHY
+
+![](readme_assets/raj_mogile.jpg) ![](readme_assets/raj_mogile1.jpg)![](readme_assets/raj_mogile2.jpg)![](readme_assets/raj_mogile3.jpg)
+
 
 DISCOGRAPHY
 

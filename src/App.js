@@ -82,7 +82,6 @@ class App extends React.Component {
       })
       window.scrollTo(0, 0);
    }
-   
    handleSelectPress = (item) => {
       this.setState({
          pressSelect: item,
