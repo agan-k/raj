@@ -5,5 +5,5 @@ This artist profile web app is going to feature the work of and information abou
 
 # Mockups
 
-![](readme_assets/image.jpg)
+![](readme_assets/mockups.jpg)
 
